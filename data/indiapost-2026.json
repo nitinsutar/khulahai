@@ -1,0 +1,2165 @@
+{
+ "source": "https://www.indiapost.gov.in/holidays-list",
+ "checked": "2026-11-11",
+ "siteUpdated": "2026-10-30",
+ "circles": {
+  "All India": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Prophet Mohammad's Birthday (Id-e-Milad)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijay Dashmi)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Arunachal Pradesh ( North East Circle )": [
+   {
+    "d": "2026-01-14",
+    "n": "Makar Sankranti"
+   },
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-uz-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Prophet Mohammad’s Birthday (Id-e-Milad)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi’s Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Dussehra (Mahashtami)"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijaya Dashmi)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak’s Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Manipur (North East Circle)": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-01-23",
+    "n": "Sri Panchami, Basant Panchami"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnva)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Dussehra (Mahashtami)"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-09",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Meghalaya (North East Circle)": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnva)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Dussehra (Mahashtami)"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijay Dashmi) / (Mahanavmi)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Mizoram (North East Circle)": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnva)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Dussehra (Mahashtami)"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Nagaland (North East Circle)": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-04-15",
+    "n": "Vaisakhadi (Bengal)/ Bahag Bihu (Assam)"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnva)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Dussehra (Mahashtami)"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Tripura (North East Circle)": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budh Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnava)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi’s Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Dussehra (Mahashtami)"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak’s Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Jharkhand Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-26",
+    "n": "Ram Navami"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budh Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad(Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Dussehra (Mahashtami)"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali(Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Delhi Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-26",
+    "n": "Ram Navami"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnva)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Assam Circle": [
+   {
+    "d": "2026-01-14",
+    "n": "Makar Sankranti/Magha Bihu"
+   },
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-Ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-04-15",
+    "n": "Vaisakhadi/Bahag Bihu"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-Ul-Zuha(Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad(Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi’s Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussera"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak’s Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "West Bengal Circle": [
+   {
+    "d": "2026-01-23",
+    "n": "Basant Panchami/Sri Panchami"
+   },
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-uz-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-E-Milad (Birth Day of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi’s Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Dussehra (Maha Ashtami) (Additional Day)"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak’s Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Sikkim ( West Bengal Circle )": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-uz-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-E-Milad (Birth Day of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-14",
+    "n": "Ganesh Chaturthi/Vinayak Chaturthi"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "An addition Day for Dussehra"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijay Dashmi)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Andaman & Nicobar Islands (West Bengal Circle)": [
+   {
+    "d": "2026-01-14",
+    "n": "Makar Sankranti/Pongal/Magha Bihu"
+   },
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Idu’lFitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanthi"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budh Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)*"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnavi)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi’s Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijaya Dashami)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak’s Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Tamil Nadu Circle": [
+   {
+    "d": "2026-01-15",
+    "n": "Pongal/Makar Sankranti"
+   },
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Idu'l Fitr (Ramzan)"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanthi"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-28",
+    "n": "Idu'l Zuha(Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Prophet Mohammed's Birthday (Id-e-milad)"
+   },
+   {
+    "d": "2026-09-14",
+    "n": "Ganesh Chaturthi/Vinayagar Chathurthi"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "An Additional Holiday for Dussehra"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijaya Dasami)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Gujarat Circle": [
+   {
+    "d": "2026-01-14",
+    "n": "Makar Sankranti"
+   },
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha(Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad(Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnva)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali(Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Andhra Pradesh Circle": [
+   {
+    "d": "2026-01-14",
+    "n": "Makar Sankaranti"
+   },
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-19",
+    "n": "Chaitra Sukladi / Gudi Padava / UGADI / Cheti Chand"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi / Id-e-Milad"
+   },
+   {
+    "d": "2026-09-14",
+    "n": "Ganesh Chaturthi / Vinayaka Chaturthi"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Maharashtra Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-03",
+    "n": "Holi (Dhulivandan)"
+   },
+   {
+    "d": "2026-03-19",
+    "n": "Gudi Padava"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr(Ramzan Id)"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha(Bakri Id)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-14",
+    "n": "Ganesh Chaturthi/Vinayak Chaturthi"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijayadashmi)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Bihar Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-nabi or Id-e-Milad(Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnva)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi’s Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijay Dashmi)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-16",
+    "n": "Chhath Puja (Usha Arghya)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak’s Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Uttarakhand Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-26",
+    "n": "Ram Navami"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnva)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Telangana Circle": [
+   {
+    "d": "2026-01-14",
+    "n": "Pongal / Makar Sankranti"
+   },
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-19",
+    "n": "Ugadi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr (Ramzan)"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-Un-Nabi or Id-E-Milad (Birthday of Prophet Mohammed)"
+   },
+   {
+    "d": "2026-09-14",
+    "n": "Ganesh Chaturthi / Vinayaka Chaturthi"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi’s Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak’s Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Kerala Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-20",
+    "n": "Idu'l Fitr (Ramzan)"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-04-15",
+    "n": "Vaisakhadi/ Bhag Bihu"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Idu'l-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-25",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-25",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Onam"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahathma Gandhi's Birth Day"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Dussehra (Mahaashtami)"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijay Dashmi)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali(Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Punjab Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-Ul-Fitr"
+   },
+   {
+    "d": "2026-03-26",
+    "n": "Ram Navami"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-Ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-Un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janamashtami (Vaishnva)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepawali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Odisha Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul- Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-07-16",
+    "n": "Ratha Yatra"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi’s Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Maha Navami"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijay Dashmi)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak’s Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Karnataka Circle": [
+   {
+    "d": "2026-01-14",
+    "n": "Makara Sankranthi"
+   },
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-19",
+    "n": "Ugadi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanthi"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad Un Nabi or ID-E-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-14",
+    "n": "Ganesh Chaturthi"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi’s Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijayadashami)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak’s Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Haryana Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-26",
+    "n": "Ram Navami"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnva)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Madhya Pradesh Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi / Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami"
+   },
+   {
+    "d": "2026-09-14",
+    "n": "Ganesh Chaturthi"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijay Dashmi)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Chhattisgarh Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnava)"
+   },
+   {
+    "d": "2026-09-14",
+    "n": "Ganesh Chaturthi/Vinayaka Chaturthi"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Rajasthan Circle": [
+   {
+    "d": "2026-01-14",
+    "n": "Makar Sankranti"
+   },
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi (Dhulandi)"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami (Vaishnava)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra (Vijay Dashmi)"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Himachal Pradesh Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Budha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha(Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-Un-Nabi or Id-E-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-19",
+    "n": "Dussehra(Mahashtami)"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ],
+  "Uttar Pradesh Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Eid-Ul-Fitar"
+   },
+   {
+    "d": "2026-03-26",
+    "n": "Ram Navami"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddh Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Eid-Ul-Juha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi/Eid-E-Milav(Prophet Mohammad b'day)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmashtami"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi B'day"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dusshera"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Deepawali"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Gurunanak Jayanti"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas"
+   }
+  ],
+  "Jammu & Kashmir Circle": [
+   {
+    "d": "2026-01-26",
+    "n": "Republic Day"
+   },
+   {
+    "d": "2026-03-04",
+    "n": "Holi"
+   },
+   {
+    "d": "2026-03-21",
+    "n": "Id-ul-Fitr"
+   },
+   {
+    "d": "2026-03-26",
+    "n": "Ramnavami"
+   },
+   {
+    "d": "2026-03-31",
+    "n": "Mahavir Jayanti"
+   },
+   {
+    "d": "2026-04-03",
+    "n": "Good Friday"
+   },
+   {
+    "d": "2026-05-01",
+    "n": "Buddha Purnima"
+   },
+   {
+    "d": "2026-05-27",
+    "n": "Id-ul-Zuha (Bakrid)"
+   },
+   {
+    "d": "2026-06-26",
+    "n": "Muharram"
+   },
+   {
+    "d": "2026-08-15",
+    "n": "Independence Day"
+   },
+   {
+    "d": "2026-08-26",
+    "n": "Milad-un-Nabi or Id-e-Milad (Birthday of Prophet Mohammad)"
+   },
+   {
+    "d": "2026-09-04",
+    "n": "Janmasthami (Vaishnava)"
+   },
+   {
+    "d": "2026-10-02",
+    "n": "Mahatma Gandhi's Birthday"
+   },
+   {
+    "d": "2026-10-20",
+    "n": "Dussehra"
+   },
+   {
+    "d": "2026-11-08",
+    "n": "Diwali (Deepavali)"
+   },
+   {
+    "d": "2026-11-24",
+    "n": "Guru Nanak's Birthday"
+   },
+   {
+    "d": "2026-12-25",
+    "n": "Christmas Day"
+   }
+  ]
+ }
+}

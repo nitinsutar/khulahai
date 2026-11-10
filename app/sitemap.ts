@@ -13,9 +13,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     e('/', 1, 'daily', { en: '/', hi: '/hi' }),
     e('/hi', 0.9, 'daily', { en: '/', hi: '/hi' }),
-    e('/bank-holiday-today', 0.9), e('/bank-holiday-tomorrow', 0.8), e('/saturday-bank-holiday', 0.8), e('/bank-holiday-this-month', 0.8),
+    e('/bank-holiday-today', 1, 'daily', { en: '/bank-holiday-today', hi: '/hi/aaj-bank-khula-hai' }), e('/hi/aaj-bank-khula-hai', 0.9, 'daily', { en: '/bank-holiday-today', hi: '/hi/aaj-bank-khula-hai' }),
+    e('/is-bank-open-on-guru-nanak-jayanti-2026', 0.9, 'daily', { en: '/is-bank-open-on-guru-nanak-jayanti-2026', hi: '/hi/guru-nanak-jayanti-2026-bank-khula-hai' }), e('/hi/guru-nanak-jayanti-2026-bank-khula-hai', 0.8, 'daily', { en: '/is-bank-open-on-guru-nanak-jayanti-2026', hi: '/hi/guru-nanak-jayanti-2026-bank-khula-hai' }),
+    e('/is-post-office-open-today', 0.8), e('/bank-holiday-tomorrow', 0.8), e('/saturday-bank-holiday', 0.8), 
     e('/bank-holidays-2026', 0.9, 'weekly'), e('/sbi-holiday-list-2026', 0.8, 'weekly'),
-    e('/share-market', 0.9, 'daily', { en: '/share-market', hi: '/hi/share-market' }), e('/hi/share-market', 0.7, 'daily', { en: '/share-market', hi: '/hi/share-market' }),
+    e('/is-share-market-open-today', 0.9, 'daily', { en: '/is-share-market-open-today', hi: '/hi/share-market' }), e('/hi/share-market', 0.7, 'daily', { en: '/is-share-market-open-today', hi: '/hi/share-market' }),
     e('/nse-bse-holidays-2026', 0.9, 'weekly'), e('/nse-bse-holidays-2027', 0.6, 'weekly'), e('/bank-holidays-2027', 0.6, 'weekly'),
     e('/post-office-holidays-2026', 0.8, 'weekly'), e('/post-office-holidays-2027', 0.7, 'weekly'),
     e('/about', 0.3, 'monthly'), e('/privacy', 0.2, 'monthly'),

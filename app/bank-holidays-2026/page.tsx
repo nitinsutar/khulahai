@@ -1,3 +1,4 @@
+import { webPageLd, datasetLd } from '@/lib/ld';
 import { Page } from '@/components/page';
 import { StateGrid } from '@/components/lists';
 import { SvcIcon } from '@/components/icons';
@@ -9,10 +10,10 @@ import { meta } from '@/lib/meta';
 
 export const revalidate = 3600;
 export const metadata = meta({
-  title: 'Bank holidays 2026: state-wise RBI holiday list for India',
-  description: 'Bank holidays 2026 for every state from the official RBI list — national holidays, state festivals, 2nd & 4th Saturdays, month-wise view and add-to-calendar files.',
+  title: 'Bank Holidays 2026 India: State-wise RBI Holiday List + CSV',
+  description: 'Bank holidays 2026 for every state from RBI’s holiday matrix — national holidays, state festivals, 2nd & 4th Saturdays, month-wise view and add-to-calendar files.',
   path: '/bank-holidays-2026',
-  og: { t: 'Bank holidays 2026', s: 'State-wise · official RBI list' },
+  og: { t: 'Bank holidays 2026', s: 'State-wise · RBI holiday matrix' },
 });
 const faq = [
   { q: 'How many bank holidays are there in 2026?', a: 'It depends on your state. RBI lists between 15 and 28 holidays per regional office in 2026, on top of every Sunday and the 2nd and 4th Saturday of each month. Pick your state above for the exact list.' },
@@ -31,7 +32,7 @@ export default function P() {
   }
   return (
     <Page>
-      <JsonLd data={[faqLd(faq), holidayListLd('Bank holidays common to all of India, 2026', '/bank-holidays-2026', all.map((h) => ({ d: h.d, n: shortName(h.n) })))]} />
+      <JsonLd data={[webPageLd({ name: 'Bank holidays 2026 in India', path: '/bank-holidays-2026', basedOn: [RBI.source] }), datasetLd({ name: 'RBI bank holidays 2026 by regional office', description: 'Bank holidays in 2026 for all 34 RBI regional offices (Negotiable Instruments Act holidays), as listed in RBI’s holiday matrix, with states mapped to offices.', path: '/bank-holidays-2026', csv: '/data/bank-holidays-2026.csv', temporal: '2026-01-01/2026-12-31', basedOn: RBI.source }), faqLd(faq), holidayListLd('Bank holidays common to all of India, 2026', '/bank-holidays-2026', all.map((h) => ({ d: h.d, n: shortName(h.n) })))]} />
       <div className="layout narrow">
         <div>
           <Crumb items={[{ href: '/', label: 'Home' }, { label: 'Bank holidays 2026' }]} />
@@ -39,6 +40,7 @@ export default function P() {
           <p className="lead">Pick your state for the full RBI list. Banks also close every Sunday and on the 2nd and 4th Saturday of every month.</p>
           <StateGrid hrefFor={(s) => `/bank-holidays-2026/${s}`} />
           <Source tag="RBI" checked={LAST_CHECKED}><a href={RBI.source} rel="noopener">{RBI.title}</a></Source>
+          <p className="footsrc" style={{ marginTop: 0 }}><a href="/data/bank-holidays-2026.csv" download>Download all 34 RBI centres as CSV</a> · Punjab &amp; Haryana use the RBI Chandigarh list (a mapping). Co-operative banks and RRBs may differ.</p>
           <div className="tabs" role="navigation" aria-label="Months">
             {MONTHS.map((m, i) => <a key={m} href={`/bank-holidays/${m}-2026`}>{monthName(i + 1)}</a>)}
           </div>

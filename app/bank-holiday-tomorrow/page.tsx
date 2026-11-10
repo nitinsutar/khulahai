@@ -7,8 +7,8 @@ export const revalidate = 300;
 export async function generateMetadata() {
   const d = addDays(todayIST(), 1);
   return meta({
-    title: `Bank holiday tomorrow (${fmtMed(d)}): are banks open tomorrow?`,
-    description: `Is tomorrow a bank holiday? See where banks are closed on ${fmtMed(d)} across India, by state and city, from the official RBI holiday list.`,
+    title: `Bank Holiday Tomorrow? ${fmtMed(d)} — Are Banks Open Tomorrow?`,
+    description: `Is tomorrow a bank holiday? See where banks are closed on ${fmtMed(d)} across India, by state and city, from RBI’s holiday matrix.`,
     path: '/bank-holiday-tomorrow',
     og: { t: 'Bank holiday tomorrow', s: fmtMed(d) },
   });

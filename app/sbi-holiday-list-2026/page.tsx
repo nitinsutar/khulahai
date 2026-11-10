@@ -9,7 +9,7 @@ import { meta } from '@/lib/meta';
 
 export const revalidate = 3600;
 export const metadata = meta({
-  title: 'SBI holiday list 2026: state-wise bank holidays (RBI list)',
+  title: 'SBI Holiday List 2026: State-wise Bank Holidays (RBI List)',
   description: 'SBI holiday list 2026 for every state. SBI branches follow the RBI holiday list for their state, plus the 2nd & 4th Saturdays and Sundays. Pick your state to see all dates.',
   path: '/sbi-holiday-list-2026',
   og: { t: 'SBI holiday list 2026', s: 'State-wise · RBI list' },

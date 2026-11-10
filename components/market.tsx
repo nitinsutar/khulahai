@@ -1,4 +1,4 @@
-import { NSE, marketDay, nextMarketHoliday, lastMarketHoliday, nextMarketOpen, LAST_CHECKED } from '@/lib/data';
+import { NSE, MCX, marketDay, nextMarketHoliday, lastMarketHoliday, nextMarketOpen, LAST_CHECKED } from '@/lib/data';
 import { addDays, fmtDM, fmtLong, fmtMed, monthName, monthNum } from '@/lib/date';
 import { T } from '@/lib/text';
 import { SvcIcon } from './icons';
@@ -40,10 +40,11 @@ export function MarketView({ today, mins, lang = 'en', mode }: { today: string; 
   const nh = nextMarketHoliday(today);
   const lh = lastMarketHoliday(today);
   const no = nextMarketOpen(today);
+  const mcxToday = MCX.holidays.find((h) => h.d === today);
   const hh = String(Math.floor(mins / 60)).padStart(2, '0') + ':' + String(mins % 60).padStart(2, '0');
   const months = [...new Set(NSE.holidays.map((h) => monthNum(h.d)))];
   const weekday = NSE.holidays.filter((h) => !h.weekend);
-  const path = hi ? '/hi/share-market' : mode === 'status' ? '/share-market' : '/nse-bse-holidays-2026';
+  const path = hi ? '/hi/share-market' : mode === 'status' ? '/is-share-market-open-today' : '/nse-bse-holidays-2026';
   return (
     <div className="layout narrow">
       <div>
@@ -65,6 +66,9 @@ export function MarketView({ today, mins, lang = 'en', mode }: { today: string; 
             {!m.open && <> · {hi ? 'अगला सत्र' : 'Next session'}: <b className="t">{fmtMed(no, lang)}</b></>}
           </p>
         </section>
+        <p className="answer"><b>{hi ? (m.open ? `हाँ, NSE और BSE आज, ${fmtLong(today, 'hi')}, खुले हैं।` : `नहीं, NSE और BSE आज, ${fmtLong(today, 'hi')}, बंद हैं`) : m.open ? `Yes, NSE and BSE are open today, ${fmtLong(today)}.` : `No, NSE and BSE are closed today, ${fmtLong(today)},`}</b>{' '}
+          {hi ? (m.open ? `इक्विटी सत्र ${NSE.session.open}–${NSE.session.close} IST है।` : `— ${m.kind === 'holiday' ? nm(m.name!, 'hi') + ' का ट्रेडिंग अवकाश' : 'सप्ताहांत'}। अगला सत्र ${fmtMed(no, 'hi')} को है।`) : m.open ? `The equity session runs ${NSE.session.open}–${NSE.session.close} IST.` : `${m.kind === 'holiday' ? `for ${m.name}, a trading holiday` : 'as it is the weekend'}. Trading resumes ${fmtMed(no)}.`}{' '}
+          (<a href={NSE.source} rel="noopener">{hi ? 'NSE अवकाश सूची' : 'NSE holiday list'}</a>){mcxToday ? <> {hi ? `MCX: सुबह का सत्र ${mcxToday.m === 'Open' ? 'खुला' : 'बंद'}, शाम का सत्र ${mcxToday.e === 'Open' ? 'खुला' : 'बंद'}` : `MCX: morning session ${mcxToday.m.toLowerCase()}, evening session ${mcxToday.e.toLowerCase()}`} (<a href={MCX.source} rel="noopener">{hi ? 'MCX परिपत्र' : 'MCX circular'}</a>).</> : null}</p>
         <div className="two">
           <div className="card mini"><div className="k">{hi ? 'कल' : 'Tomorrow'}</div><Pill v={t.open ? 'yes' : 'no'} size="xs">{t.open ? T.o(lang) : T.c(lang)}</Pill><div className="v t">{fmtMed(addDays(today, 1), lang)}</div><div className="s">{t.kind === 'holiday' ? nm(t.name!, lang) : t.kind === 'weekend' ? (hi ? 'सप्ताहांत' : 'Weekend') : hi ? 'ट्रेडिंग दिवस' : 'Trading day'}</div></div>
           <div className="card mini"><div className="k">{hi ? 'अगली छुट्टी' : 'Next holiday'}</div><div className="v t">{nh ? fmtMed(nh.d, lang) : '—'}</div><div className="s">{nh ? nm(nh.n, lang) : hi ? '2027 सूची जल्द' : '2027 list coming'}</div>{lh && <div className="s">{hi ? 'पिछली' : 'Last'}: <span className="t">{fmtMed(lh.d, lang)}</span> · {nm(lh.n, lang)}</div>}</div>
@@ -72,6 +76,7 @@ export function MarketView({ today, mins, lang = 'en', mode }: { today: string; 
         <Source tag="NSE · BSE" checked={LAST_CHECKED} lang={lang}>
           <a href={NSE.source} rel="noopener">NSE</a> &amp; <a href={NSE.bseSource} rel="noopener">BSE</a> {hi ? '2026 ट्रेडिंग अवकाश परिपत्र' : '2026 trading holiday circulars'}
         </Source>
+        {mode === 'list' && <p className="footsrc" style={{ marginTop: 0 }}><a href="/data/nse-bse-holidays-2026.csv" download>Download as CSV</a> · MCX: <a href={MCX.source} rel="noopener">commodity holidays</a> differ (evening session often open).</p>}
         <Share text={hi ? `आज शेयर बाज़ार ${m.open ? 'खुला है' : 'बंद है'}` : `Share market is ${m.open ? 'open' : 'closed'} today (${fmtMed(today)})`} path={path} lang={lang} ics={{ href: '/ics/nse-bse-2026.ics', label: hi ? 'कैलेंडर में जोड़ें' : 'Add to calendar' }} />
         <div className="sech"><h2>{hi ? 'NSE और BSE छुट्टियाँ 2026' : 'NSE & BSE trading holidays 2026'}</h2><span><span className="t">{weekday.length}</span> {hi ? 'कार्यदिवस बंद' : 'weekday closures'}</span></div>
         <div className="card list">

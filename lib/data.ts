@@ -1,6 +1,9 @@
 import rbi from '@/data/rbi-2026.json';
 import nse from '@/data/nse-2026.json';
 import central from '@/data/central.json';
+import indiapost from '@/data/indiapost-2026.json';
+import mcx from '@/data/mcx-2026.json';
+export const MCX = mcx as { source: string; circular: string; checked: string; sessions: { morning: string; evening: string }; holidays: { d: string; n: string; m: string; e: string }[] };
 import { addDays, dow, dayNum } from './date';
 import { CITIES, STATES, City, cityBySlug, stateBySlug } from './places';
 
@@ -116,30 +119,55 @@ export const nextMarketHoliday = (iso: string) => NSE.holidays.find((h) => !h.we
 export const lastMarketHoliday = (iso: string) => [...NSE.holidays].reverse().find((h) => !h.weekend && h.d < iso);
 
 // ---------- Post office ----------
-// Post offices are central government offices. Compulsory DoPT holidays apply everywhere; Delhi also gets DoPT's 3 picks.
-export type PostStatus = { date: string; state: 'open' | 'closed' | 'check'; kind: 'holiday' | 'sunday' | 'saturday' | 'open' | 'localFestival' | 'nodata'; name?: string; hi?: string; moon?: boolean; bankHoliday?: string };
+// India Post publishes an All-India list plus one list per postal circle (indiapost.gov.in/holidays-list).
+export const INDIAPOST = indiapost as { source: string; checked: string; siteUpdated: string; circles: Record<string, { d: string; n: string }[]> };
+const CIRCLE: Record<string, [string, string?]> = {
+  punjab: ['Punjab Circle'], haryana: ['Haryana Circle'],
+  'andhra-pradesh': ['Andhra Pradesh Circle'], 'arunachal-pradesh': ['Arunachal Pradesh ( North East Circle )'], assam: ['Assam Circle'], bihar: ['Bihar Circle'],
+  chandigarh: ['Punjab Circle', 'Chandigarh is served by India Post’s Punjab Circle'], chhattisgarh: ['Chhattisgarh Circle'], delhi: ['Delhi Circle'],
+  goa: ['Maharashtra Circle', 'Goa is part of India Post’s Maharashtra Circle'], gujarat: ['Gujarat Circle'], 'himachal-pradesh': ['Himachal Pradesh Circle'],
+  'jammu-and-kashmir': ['Jammu & Kashmir Circle'], jharkhand: ['Jharkhand Circle'], karnataka: ['Karnataka Circle'], kerala: ['Kerala Circle'],
+  'madhya-pradesh': ['Madhya Pradesh Circle'], maharashtra: ['Maharashtra Circle'], manipur: ['Manipur (North East Circle)'], meghalaya: ['Meghalaya (North East Circle)'],
+  mizoram: ['Mizoram (North East Circle)'], nagaland: ['Nagaland (North East Circle)'], odisha: ['Odisha Circle'], rajasthan: ['Rajasthan Circle'],
+  sikkim: ['Sikkim ( West Bengal Circle )'], 'tamil-nadu': ['Tamil Nadu Circle'], telangana: ['Telangana Circle'], tripura: ['Tripura (North East Circle)'],
+  'uttar-pradesh': ['Uttar Pradesh Circle'], uttarakhand: ['Uttarakhand Circle'], 'west-bengal': ['West Bengal Circle'],
+};
+export const circleOf = (stateSlug: string) => ({ name: CIRCLE[stateSlug]?.[0] ?? 'All India', note: CIRCLE[stateSlug]?.[1] });
+export const circleList = (stateSlug: string) => INDIAPOST.circles[circleOf(stateSlug).name] ?? INDIAPOST.circles['All India'];
+export const circleShort = (c: string) => c.replace(/\s*\(.*\)\s*/, '').trim();
+
+export type PostStatus = { date: string; state: 'open' | 'closed' | 'check'; kind: 'holiday' | 'sunday' | 'saturday' | 'open' | 'localFestival' | 'nodata'; name?: string; hi?: string; moon?: boolean; bankHoliday?: string; allIndia?: boolean };
 export function centralList(year: 2026 | 2027) {
   return CENTRAL[String(year) as '2026' | '2027'].holidays;
 }
+const HI_PO: Record<string, string> = {};
+for (const y of ['2026', '2027'] as const) for (const h of CENTRAL[y].holidays) HI_PO[h.d] = h.hi;
 export function postDay(stateSlug: string, iso: string, bankHols?: Hol[]): PostStatus {
-  const y = iso.slice(0, 4);
-  const list = y === '2026' || y === '2027' ? centralList(Number(y) as 2026 | 2027) : [];
-  const isDelhi = stateSlug === 'delhi';
-  const h = list.find((x) => x.d === iso && (x.c || isDelhi));
-  if (h) return { date: iso, state: 'closed', kind: 'holiday', name: h.n, hi: h.hi, moon: h.moon };
-  if (dow(iso) === 0) return { date: iso, state: 'closed', kind: 'sunday' };
-  if (!isDelhi) {
-    const opt = list.find((x) => x.d === iso && !x.c);
-    if (opt) return { date: iso, state: 'check', kind: 'localFestival', name: opt.n, hi: opt.hi };
+  if (iso.startsWith('2026')) {
+    const h = circleList(stateSlug).find((x) => x.d === iso);
+    const all = INDIAPOST.circles['All India'].some((x) => x.d === iso);
+    if (h) return { date: iso, state: 'closed', kind: 'holiday', name: h.n, hi: (all && HI_PO[iso]) || h.n, allIndia: all };
+    if (dow(iso) === 0) return { date: iso, state: 'closed', kind: 'sunday' };
+    const bh = bankHols?.find((x) => x.d === iso && x.t === 'ni');
+    if (bh) return { date: iso, state: 'open', kind: 'localFestival', bankHoliday: bh.n };
+    if (dow(iso) === 6) return { date: iso, state: 'check', kind: 'saturday' };
+    return { date: iso, state: 'open', kind: 'open' };
   }
-  const bh = bankHols?.find((x) => x.d === iso && x.t === 'ni');
-  if (bh && iso.startsWith('2026')) return { date: iso, state: 'open', kind: 'localFestival', bankHoliday: bh.n };
-  if (dow(iso) === 6) return { date: iso, state: 'open', kind: 'saturday' };
-  return { date: iso, state: 'open', kind: 'open' };
+  // 2027: India Post circle lists are not out yet; only DoPT's compulsory central government holidays are known.
+  const list = iso.startsWith('2027') ? centralList(2027) : [];
+  const h = list.find((x) => x.d === iso && x.c);
+  if (h) return { date: iso, state: 'closed', kind: 'holiday', name: h.n, hi: h.hi, moon: h.moon, allIndia: true };
+  if (dow(iso) === 0) return { date: iso, state: 'closed', kind: 'sunday' };
+  if (dow(iso) === 6) return { date: iso, state: 'check', kind: 'saturday' };
+  return { date: iso, state: 'check', kind: 'nodata' };
+}
+export function upcomingPostHolidays(stateSlug: string, iso: string) {
+  const a = circleList(stateSlug).filter((x) => x.d > iso && dow(x.d) !== 0).map((x) => ({ d: x.d, n: x.n, hi: (INDIAPOST.circles['All India'].some((y) => y.d === x.d) && HI_PO[x.d]) || x.n }));
+  const b = centralList(2027).filter((x) => x.c && dow(x.d) !== 0).map((x) => ({ d: x.d, n: x.n, hi: x.hi }));
+  return [...a, ...b];
 }
 export function nextPostHoliday(stateSlug: string, iso: string) {
-  const isDelhi = stateSlug === 'delhi';
-  return [...centralList(2026), ...centralList(2027)].find((x) => x.d > iso && (x.c || isDelhi) && dow(x.d) !== 0);
+  return upcomingPostHolidays(stateSlug, iso)[0];
 }
 export function nextPostOpen(stateSlug: string, iso: string) {
   for (let i = 1; i < 30; i++) {

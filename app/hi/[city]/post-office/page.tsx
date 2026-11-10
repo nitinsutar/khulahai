@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const p = postDay(c.state, t, cityHolidays(c));
   return meta({
     title: `आज ${c.hi} में डाकघर खुला है या नहीं? (${fmtMed(t, 'hi')})`,
-    description: `${c.hi} में डाकघर आज: ${postLabel(p, 'hi')}। सामान्य समय, कल की स्थिति और केंद्र सरकार की अवकाश सूची।`,
+    description: `${c.hi} में डाकघर आज: ${postLabel(p, 'hi')}। सामान्य समय, कल की स्थिति और भारत डाक की अवकाश सूची।`,
     path: `/hi/${c.slug}/post-office`, en: `/${c.slug}/post-office`, hi: `/hi/${c.slug}/post-office`,
     og: { t: `${c.hi} में डाकघर`, s: postLabel(p, 'hi', true) },
   });

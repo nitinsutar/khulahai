@@ -4,7 +4,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   async redirects() {
     return [
-      { source: '/stock-market', destination: '/share-market', permanent: true },
+      { source: '/share-market', destination: '/is-share-market-open-today', permanent: true },
+      { source: '/is-bank-open-today', destination: '/bank-holiday-today', permanent: true },
+      { source: '/stock-market', destination: '/is-share-market-open-today', permanent: true },
       { source: '/nse-holidays-2026', destination: '/nse-bse-holidays-2026', permanent: true },
       { source: '/bank-holidays', destination: '/bank-holidays-2026', permanent: false },
     ];

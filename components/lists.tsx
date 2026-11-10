@@ -61,6 +61,7 @@ export function StateYear({ slug, today }: { slug: string; today: string }) {
           {upcoming.length ? <>Next: <b className="t">{fmtMed(upcoming[0].d)}</b>, {shortName(upcoming[0].n)}.</> : 'No festival holidays left this year.'}
           {multi && <> {st.name} has {st.offices.length} RBI offices ({st.offices.map((o) => RBI.offices[o].name).join(', ')}); days that apply only to some are marked.</>}
         </p>
+        {st.mappedFrom && <p className="note"><b>Mapping, not a separate RBI list:</b> RBI has no regional office for {st.name}. We show the RBI <b>{st.mappedFrom}</b> centre’s list, which covers the {st.name} region. A state government notification can add local holidays — check with your branch.</p>}
         <MonthCal year={2026} month={curM} holidays={new Set(list.map((h) => h.d))} today={today} />
         <div className="legend"><span><i className="hol" />Festival holiday</span><span><i className="wk" />Sunday / 2nd &amp; 4th Saturday</span><span><i className="td" />Today</span></div>
         <Source tag="RBI" checked={LAST_CHECKED}><a href={RBI.source} rel="noopener">Holiday Matrix</a> · {st.offices.map((o) => RBI.offices[o].name).join(', ')}</Source>
@@ -84,6 +85,7 @@ export function StateYear({ slug, today }: { slug: string; today: string }) {
             );
           })}
         </div>
+        <p className="footsrc"><a href="/data/bank-holidays-2026.csv" download>Download all states as CSV</a> · Co-operative banks and regional rural banks (RRBs) may follow a different list.</p>
         <p className="footsrc">The RBI list covers holidays under the Negotiable Instruments Act. Sundays and the 2nd/4th Saturday are extra weekly closures. Names are RBI’s; we add a short label for readability.</p>
       </div>
       <aside className="side">
@@ -96,7 +98,7 @@ export function StateYear({ slug, today }: { slug: string; today: string }) {
             })}
           </div>
         )}
-        <div className="card panel"><div className="top"><h2>Other states</h2></div><a className="lnk" href="/bank-holidays-2026">All 28 states &amp; UTs →</a></div>
+        <div className="card panel"><div className="top"><h2>Other states</h2></div><a className="lnk" href="/bank-holidays-2026">All {STATES.length} states &amp; UTs →</a></div>
       </aside>
     </div>
   );
@@ -115,6 +117,7 @@ export function MonthAll({ month, today, h1 }: { month: number; today: string; h
         <Crumb items={[{ href: '/', label: 'Home' }, { href: '/bank-holidays-2026', label: 'Bank holidays 2026' }, { label: `${monthName(month)} 2026` }]} />
         <div className="phero"><SvcIcon s="bank" size="lg" /><div><div className="e">Banks · All India</div><h1>{h1 ?? `Bank holidays in ${monthName(month)} 2026`}</h1></div></div>
         <p className="lead">{rows.length} days in {monthName(month)} 2026 with an RBI holiday somewhere in India, plus {sats.length} bank Saturdays off ({sats.map((d) => fmtMed(d)).join(', ')}) and every Sunday. Check your state below — most holidays are regional.</p>
+        {month === 11 && <p className="note"><b>24 Nov, Guru Nanak Jayanti:</b> banks closed at {officesClosedOn("2026-11-24").length} of 34 RBI centres. <a href="/is-bank-open-on-guru-nanak-jayanti-2026">See where banks are open or closed →</a></p>}
         <div className="tabs" role="navigation" aria-label="Months">
           {MONTHS.map((m, i) => <a key={m} href={`/bank-holidays/${m}-2026`} className={i + 1 === month ? 'on' : ''}>{monthName(i + 1).slice(0, 3)}</a>)}
         </div>
@@ -156,57 +159,75 @@ function StateGridMini() {
   return <>{STATES.map((s) => <div className="prow" key={s.slug}><a href={`/bank-holidays-2026/${s.slug}`}>{s.name}</a><span className="k">{s.code}</span></div>)}</>;
 }
 
-export function TodayAll({ day, label, today }: { day: string; label: 'today' | 'tomorrow'; today: string }) {
+export function todayAllAnswer(day: string, label: 'today' | 'tomorrow', lang: 'en' | 'hi' = 'en') {
+  const hi = lang === 'hi';
+  const closed = officesClosedOn(day);
+  const base = bankDay([], day);
+  const w = label === 'today' ? (hi ? 'आज' : 'today') : hi ? 'कल' : 'tomorrow';
+  const d = fmtLong(day, lang);
+  const names = [...new Set(closed.map((o) => shortName(o.h.n, lang)))].slice(0, 2).join(hi ? ' / ' : ' / ');
+  const places = closed.map((o) => o.name).join(', ');
+  if (!base.open) {
+    const why = base.reason.kind === 'sunday' ? (hi ? 'रविवार' : 'it is a Sunday') : hi ? `महीने का ${base.reason.kind === 'saturday2' ? 'दूसरा' : 'चौथा'} शनिवार` : `it is the ${base.reason.kind === 'saturday2' ? 'second' : 'fourth'} Saturday of the month`;
+    return hi ? { b: `नहीं, ${w}, ${d}, पूरे भारत में बैंक शाखाएँ बंद हैं`, r: `— कारण: ${why}। UPI, ATM और नेट बैंकिंग चलते रहेंगे; चेक क्लियरिंग अगले कार्य दिवस पर होगी।` } : { b: `No, bank branches across India are closed ${w}, ${d},`, r: `because ${why}. UPI, ATMs and net banking still work; cheque clearing waits for the next working day.` };
+  }
+  if (closed.length) return hi ? { b: `${w}, ${d}, ज़्यादातर भारत में बैंक खुले हैं, लेकिन ${closed.length} आरबीआई केंद्रों में बंद हैं`, r: `(${names}): ${places}। UPI, ATM और नेट बैंकिंग हर जगह चलते हैं; बंद जगहों पर चेक क्लियरिंग अगले कार्य दिवस पर होगी।` } : { b: `Banks are open in most of India ${w}, ${d}, but closed at ${closed.length} of 34 RBI centres`, r: `for ${names}: ${places}. UPI, ATMs and net banking work everywhere; cheque clearing in those places waits for the next working day.` };
+  return hi ? { b: `हाँ, ${w}, ${d}, पूरे भारत में बैंक खुले हैं।`, r: 'किसी भी आरबीआई केंद्र पर अवकाश नहीं है। UPI, ATM और चेक क्लियरिंग सामान्य रूप से चलते हैं।' } : { b: `Yes, banks are open across India ${w}, ${d}.`, r: 'No RBI centre lists a holiday. UPI, ATMs and cheque clearing run as normal.' };
+}
+
+export function TodayAll({ day, label, today, lang = 'en' }: { day: string; label: 'today' | 'tomorrow'; today: string; lang?: 'en' | 'hi' }) {
+  const hi = lang === 'hi';
   const closed = officesClosedOn(day);
   const base = bankDay([], day);
   const isTomorrow = label === 'tomorrow';
   const tc = CITIES.map((c) => ({ c, s: bankDay(cityHolidays(c), day) }));
+  const ans = todayAllAnswer(day, label, lang);
+  const pre = hi ? '/hi' : '';
   return (
     <div className="layout narrow">
       <div>
-        <Crumb items={[{ href: '/', label: 'Home' }, { label: isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today' }]} />
+        <Crumb lang={lang} items={[{ href: hi ? '/hi' : '/', label: hi ? 'होम' : 'Home' }, { label: hi ? 'आज बैंक खुला है?' : isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today' }]} />
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="bank" size="lg" />
-          <p className="q">{isTomorrow ? 'Is tomorrow a bank holiday?' : 'Is today a bank holiday?'}</p>
-          <h1 id="ans">{isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today'}</h1>
+          <h1 className="qh">{hi ? 'आज बैंक खुला है या नहीं?' : isTomorrow ? 'Is tomorrow a bank holiday?' : 'Is today a bank holiday? Is the bank open today?'}</h1>
+          <p className="big" id="ans">{hi ? 'आज की बैंक छुट्टी' : isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today'}</p>
           <div className="statusrow">
-            {!base.open ? <Pill v="no" size="lg">Closed across India</Pill> : closed.length ? <Pill v="no" size="lg">Closed in {closed.length} of 34 centres</Pill> : <Pill v="yes" size="lg">Open across India</Pill>}
-            <span className="dt t">{fmtLong(day)}</span>
+            {!base.open ? <Pill v="no" size="lg">{hi ? 'पूरे भारत में बंद' : 'Closed across India'}</Pill> : closed.length ? <Pill v="no" size="lg">{hi ? `34 में से ${closed.length} केंद्रों में बंद` : `Closed in ${closed.length} of 34 centres`}</Pill> : <Pill v="yes" size="lg">{hi ? 'पूरे भारत में खुला' : 'Open across India'}</Pill>}
+            <span className="dt t">{fmtLong(day, lang)}</span>
           </div>
-          <p className="reason">
-            {!base.open ? (base.reason.kind === 'sunday' ? 'It’s a Sunday — banks are closed everywhere.' : `It’s the ${base.reason.kind === 'saturday2' ? 'second' : 'fourth'} Saturday — banks are closed everywhere in India.`) : closed.length ? `Banks are closed ${isTomorrow ? 'tomorrow' : 'today'} only in the places listed below. Everywhere else, branches are open as usual.` : `No RBI holiday at any of the 34 centres ${isTomorrow ? 'tomorrow' : 'today'}. Banks are open across India.`}
-          </p>
+          <p className="answer"><b>{ans.b}</b> {ans.r} (<a href={RBI.source} rel="noopener">{hi ? 'आरबीआई अवकाश तालिका' : 'RBI holiday matrix'}</a>)</p>
         </section>
-        <Source tag="RBI" checked={LAST_CHECKED}><a href={RBI.source} rel="noopener">Holiday Matrix</a>, all regional offices</Source>
+        <Source tag="RBI" checked={LAST_CHECKED} lang={lang}><a href={RBI.source} rel="noopener">Holiday Matrix</a>, {hi ? 'सभी क्षेत्रीय कार्यालय' : 'all regional offices'}</Source>
         {closed.length > 0 && (
           <>
-            <div className="sech"><h2>Banks closed {isTomorrow ? 'tomorrow' : 'today'}</h2><span>{closed.length} centres</span></div>
+            <div className="sech"><h2>{hi ? 'आज बैंक यहाँ बंद हैं' : `Banks closed ${isTomorrow ? 'tomorrow' : 'today'}`}</h2><span>{closed.length} {hi ? 'केंद्र' : 'centres'}</span></div>
             <div className="card list">
               {closed.map((o) => (
                 <div className="row" key={o.slug}>
-                  <div className="nm"><a href={`/bank-holidays-2026/${o.state.slug}`}><b>{o.name}</b></a> · {o.state.name}<small>{shortName(o.h.n)}{o.h.n !== shortName(o.h.n) ? ` — RBI: ${o.h.n}` : ''}</small></div>
-                  <Pill v="no" size="xs">Closed</Pill>
+                  <div className="nm"><a href={`/bank-holidays-2026/${o.state.slug}`}><b>{o.name}</b></a> · {hi ? o.state.hi : o.state.name}<small>{shortName(o.h.n, lang)}{o.h.n !== shortName(o.h.n) ? ` — RBI: ${o.h.n}` : ''}</small></div>
+                  <Pill v="no" size="xs">{hi ? 'बंद' : 'Closed'}</Pill>
                 </div>
               ))}
             </div>
           </>
         )}
-        <div className="sech"><h2>Major cities</h2><span className="t">{fmtMed(day)}</span></div>
+        <div className="sech"><h2>{hi ? 'बड़े शहर' : 'Major cities'}</h2><span className="t">{fmtMed(day, lang)}</span></div>
         <div className="card else">
           <div className="chips">
-            {tc.map(({ c, s }) => <a key={c.slug} className={s.open ? 'y' : 'n'} href={`/${c.slug}/bank`}><i aria-hidden="true" />{c.name} <em>{s.open ? 'Open' : 'Closed'}</em></a>)}
+            {tc.map(({ c, s }) => <a key={c.slug} className={s.open ? 'y' : 'n'} href={`${pre}/${c.slug}/bank`}><i aria-hidden="true" />{hi ? c.hi : c.name} <em>{s.open ? (hi ? 'खुला' : 'Open') : hi ? 'बंद' : 'Closed'}</em></a>)}
           </div>
         </div>
-        <Share text={`${isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today'} (${fmtMed(day)})`} path={isTomorrow ? '/bank-holiday-tomorrow' : '/bank-holiday-today'} />
-        <p className="footsrc">{isTomorrow ? <a href="/bank-holiday-today">Bank holiday today →</a> : <a href="/bank-holiday-tomorrow">Bank holiday tomorrow →</a>} · <a href="/saturday-bank-holiday">Saturday rules</a> · <a href="/bank-holiday-this-month">This month</a></p>
+        <p className="note">{hi ? 'यह अनुसूचित बैंकों के लिए है। सहकारी बैंक और क्षेत्रीय ग्रामीण बैंक (RRB) अलग हो सकते हैं। पंजाब और हरियाणा के लिए आरबीआई चंडीगढ़ की सूची दिखाई जाती है।' : 'Covers scheduled banks. Co-operative banks and regional rural banks (RRBs) may differ. Punjab and Haryana use the RBI Chandigarh list (a mapping).'}</p>
+        <Share lang={lang} text={hi ? `आज बैंक खुला है या नहीं (${fmtMed(day, 'hi')})` : `${isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today'} (${fmtMed(day)})`} path={hi ? '/hi/aaj-bank-khula-hai' : isTomorrow ? '/bank-holiday-tomorrow' : '/bank-holiday-today'} />
+        <p className="footsrc">{hi ? <><a href="/bank-holiday-today">English</a> · <a href="/hi/guru-nanak-jayanti-2026-bank-khula-hai">गुरु नानक जयंती 2026</a></> : <>{isTomorrow ? <a href="/bank-holiday-today">Bank holiday today →</a> : <a href="/bank-holiday-tomorrow">Bank holiday tomorrow →</a>} · <a href="/saturday-bank-holiday">Saturday rules</a> · <a href="/bank-holidays/november-2026">November 2026</a> · <a href="/is-bank-open-on-guru-nanak-jayanti-2026">Guru Nanak Jayanti</a></>}</p>
       </div>
       <aside className="side">
         <div className="card panel">
-          <div className="top"><h2>Next 7 days</h2></div>
+          <div className="top"><h2>{hi ? 'अगले 7 दिन' : 'Next 7 days'}</h2></div>
           {Array.from({ length: 7 }, (_, i) => addDays(today, i + 1)).map((d) => {
             const b = bankDay([], d);
             const n = officesClosedOn(d).length;
-            return <div className="prow" key={d}><span className="t">{fmtMed(d)}<small>{!b.open ? (b.reason.kind === 'sunday' ? 'Sunday' : 'Bank Saturday') : n ? `${n} centres closed` : 'Open everywhere'}</small></span><Pill v={!b.open ? 'no' : n ? 'neu' : 'yes'} size="xs">{!b.open ? 'All closed' : n ? 'Some closed' : 'Open'}</Pill></div>;
+            return <div className="prow" key={d}><span className="t">{fmtMed(d, lang)}<small>{!b.open ? (b.reason.kind === 'sunday' ? (hi ? 'रविवार' : 'Sunday') : hi ? 'बैंक शनिवार' : 'Bank Saturday') : n ? (hi ? `${n} केंद्र बंद` : `${n} centres closed`) : hi ? 'हर जगह खुला' : 'Open everywhere'}</small></span><Pill v={!b.open ? 'no' : n ? 'neu' : 'yes'} size="xs">{!b.open ? (hi ? 'सब बंद' : 'All closed') : n ? (hi ? 'कुछ बंद' : 'Some closed') : hi ? 'खुला' : 'Open'}</Pill></div>;
           })}
         </div>
       </aside>

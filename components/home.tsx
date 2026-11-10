@@ -47,7 +47,7 @@ export function HomeView({ city, today, lang = 'en', h1 }: { city: City; today: 
               <div><div className="k">{hi ? 'अगला कार्य दिवस' : 'Next working day'}</div><div className="v t">{fmtMed(nb, lang)}</div></div>
             </div>
           </a>
-          <a className="card svc small" href={hi ? '/hi/share-market' : '/share-market'}>
+          <a className="card svc small" href={hi ? '/hi/share-market' : '/is-share-market-open-today'}>
             <div className="top"><SvcIcon s="mkt" /><Go /></div>
             <h2 className="name">{hi ? 'शेयर बाज़ार' : 'Share market'}</h2>
             <div><Pill v={m.open ? 'yes' : 'no'}>{m.open ? T.open(lang) : T.closed(lang)}</Pill></div>
@@ -57,9 +57,9 @@ export function HomeView({ city, today, lang = 'en', h1 }: { city: City; today: 
           <a className="card svc small" href={`${pre}/${city.slug}/post-office`}>
             <div className="top"><SvcIcon s="post" /><Go /></div>
             <h2 className="name">{hi ? 'डाकघर' : 'Post office'}</h2>
-            <div><Pill v={p.state === 'closed' ? 'no' : p.state === 'check' ? 'neu' : 'yes'}>{p.state === 'closed' ? T.closed(lang) : p.state === 'check' ? (hi ? 'स्थानीय रूप से जाँचें' : 'Check locally') : T.open(lang)}</Pill></div>
+            <div><Pill v={p.state === 'closed' ? 'no' : p.state === 'check' ? 'neu' : 'yes'}>{p.state === 'closed' ? T.closed(lang) : p.state === 'check' ? (p.kind === 'saturday' ? (hi ? 'अवकाश नहीं' : 'Not a holiday') : hi ? 'स्थानीय रूप से जाँचें' : 'Check locally') : T.open(lang)}</Pill></div>
             <div className="hrs t">{p.state === 'closed' ? (p.kind === 'sunday' ? (hi ? 'रविवार' : 'Sunday') : hi ? p.hi : p.name) : POST_HOURS}</div>
-            <div className="sub">{p.state === 'closed' ? (hi ? 'केंद्र सरकार अवकाश' : 'Central govt holiday') : hi ? 'सामान्य काउंटर समय' : 'Typical counter hours'}</div>
+            <div className="sub">{p.state === 'closed' ? (hi ? 'भारत डाक अवकाश' : 'India Post holiday') : p.kind === 'saturday' ? (hi ? 'शनिवार का समय कार्यालय अनुसार' : 'Saturday hours vary by office') : hi ? 'सामान्य काउंटर समय' : 'Typical counter hours'}</div>
           </a>
           <a className="card tile" href={hi ? `/hi/${city.slug}/bank` : '/saturday-bank-holiday'}>
             <div className="k">{sat === today ? (hi ? 'आज शनिवार' : 'Today, Saturday') : hi ? 'इस शनिवार' : 'This Saturday'}</div>
@@ -84,7 +84,7 @@ export function HomeView({ city, today, lang = 'en', h1 }: { city: City; today: 
           </div>
         </div>
         <p className="footsrc">
-          {hi ? 'स्रोत: ' : 'Sources: '}<a href="https://rbi.org.in/Scripts/HolidayMatrixDisplay.aspx" rel="noopener">RBI Holiday Matrix</a> ({RBIname(city)}), <a href={NSE.source} rel="noopener">NSE</a> &amp; <a href={NSE.bseSource} rel="noopener">BSE</a> {hi ? 'परिपत्र' : 'circulars'}, <a href="https://doptcirculars.nic.in/Default.aspx?URL=2vsQHp2tsbRD" rel="noopener">DoPT</a>. {hi ? 'समय सामान्य हैं, आधिकारिक नहीं।' : 'Hours are typical, not official.'} <span className="t">{hi ? 'अंतिम जाँच' : 'Last checked'}: {LAST_CHECKED}</span>
+          {hi ? 'स्रोत: ' : 'Sources: '}<a href="https://rbi.org.in/Scripts/HolidayMatrixDisplay.aspx" rel="noopener">RBI Holiday Matrix</a> ({RBIname(city)}), <a href={NSE.source} rel="noopener">NSE</a> &amp; <a href={NSE.bseSource} rel="noopener">BSE</a> {hi ? 'परिपत्र' : 'circulars'}, <a href="https://www.indiapost.gov.in/holidays-list" rel="noopener">India Post</a>. {hi ? 'समय सामान्य हैं, आधिकारिक नहीं।' : 'Hours are typical, not official.'} <span className="t">{hi ? 'अंतिम जाँच' : 'Last checked'}: {LAST_CHECKED}</span>
         </p>
       </div>
       <aside className="side">

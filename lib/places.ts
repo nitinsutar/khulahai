@@ -1,4 +1,4 @@
-export type State = { slug: string; name: string; hi: string; code: string; offices: string[] };
+export type State = { slug: string; name: string; hi: string; code: string; offices: string[]; mappedFrom?: string };
 export type City = { slug: string; name: string; hi: string; office: string; state: string; derived?: boolean };
 
 export const STATES: State[] = [
@@ -22,6 +22,8 @@ export const STATES: State[] = [
   { slug: 'meghalaya', name: 'Meghalaya', hi: 'मेघालय', code: 'ML', offices: ['shillong'] },
   { slug: 'mizoram', name: 'Mizoram', hi: 'मिज़ोरम', code: 'MZ', offices: ['aizawl'] },
   { slug: 'nagaland', name: 'Nagaland', hi: 'नागालैंड', code: 'NL', offices: ['kohima'] },
+  { slug: 'haryana', name: 'Haryana', hi: 'हरियाणा', code: 'HR', offices: ['chandigarh'], mappedFrom: 'Chandigarh' },
+  { slug: 'punjab', name: 'Punjab', hi: 'पंजाब', code: 'PB', offices: ['chandigarh'], mappedFrom: 'Chandigarh' },
   { slug: 'odisha', name: 'Odisha', hi: 'ओडिशा', code: 'OD', offices: ['bhubaneswar'] },
   { slug: 'rajasthan', name: 'Rajasthan', hi: 'राजस्थान', code: 'RJ', offices: ['jaipur'] },
   { slug: 'sikkim', name: 'Sikkim', hi: 'सिक्किम', code: 'SK', offices: ['gangtok'] },
@@ -80,4 +82,5 @@ export const CITIES: City[] = [
 export const TOP_CITIES = ['mumbai', 'delhi', 'bengaluru', 'hyderabad', 'chennai', 'kolkata', 'pune', 'ahmedabad', 'jaipur', 'lucknow'];
 
 export const cityBySlug = (s: string) => CITIES.find((c) => c.slug === s);
+export const RBI_STATES = STATES.filter((s) => !s.mappedFrom);
 export const stateBySlug = (s: string) => STATES.find((c) => c.slug === s);

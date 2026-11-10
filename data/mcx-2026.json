@@ -1,0 +1,24 @@
+{
+ "source": "https://www.mcxindia.com/market-operations/trading-surveillance/trading-holidays",
+ "circular": "MCX/TRD/636/2025 dated 15 December 2025",
+ "checked": "2026-11-11",
+ "sessions": {"morning": "9:00 am – 5:00 pm", "evening": "5:00 pm – 11:30/11:55 pm"},
+ "holidays": [
+  {"d":"2026-01-01","n":"New Year Day","m":"Open","e":"Closed"},
+  {"d":"2026-01-26","n":"Republic Day","m":"Closed","e":"Closed"},
+  {"d":"2026-03-03","n":"Holi (2nd day)","m":"Closed","e":"Open"},
+  {"d":"2026-03-26","n":"Shri Ram Navmi","m":"Closed","e":"Open"},
+  {"d":"2026-03-31","n":"Shri Mahavir Jayanti","m":"Closed","e":"Open"},
+  {"d":"2026-04-03","n":"Good Friday","m":"Closed","e":"Closed"},
+  {"d":"2026-04-14","n":"Dr. Baba Saheb Ambedkar Jayanti","m":"Closed","e":"Open"},
+  {"d":"2026-05-01","n":"Maharashtra Day","m":"Closed","e":"Open"},
+  {"d":"2026-05-28","n":"Bakri Id","m":"Closed","e":"Open"},
+  {"d":"2026-06-26","n":"Moharram","m":"Closed","e":"Open"},
+  {"d":"2026-09-14","n":"Ganesh Chaturthi","m":"Closed","e":"Open"},
+  {"d":"2026-10-02","n":"Mahatma Gandhi Jayanti","m":"Closed","e":"Closed"},
+  {"d":"2026-10-20","n":"Dassera","m":"Closed","e":"Open"},
+  {"d":"2026-11-10","n":"Diwali-Balipratipada","m":"Closed","e":"Open"},
+  {"d":"2026-11-24","n":"Guru Nanak Jayanti","m":"Closed","e":"Open"},
+  {"d":"2026-12-25","n":"Christmas","m":"Closed","e":"Closed"}
+ ]
+}

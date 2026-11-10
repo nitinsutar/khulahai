@@ -5,6 +5,7 @@ import { bankReason, bankShort, T } from '@/lib/text';
 import { shortName } from '@/lib/names';
 import { BANK_HOURS } from '@/lib/site';
 import { SvcIcon } from './icons';
+import { BankAnswer } from './answer';
 import { CitySwitcher, Crumb, DTile, Faq, Pill, Share, Source } from './ui';
 
 export function bankFaq(city: City, lang: 'en' | 'hi') {
@@ -12,13 +13,13 @@ export function bankFaq(city: City, lang: 'en' | 'hi') {
   if (lang === 'hi')
     return [
       { q: 'क्या आज ATM और UPI चलेंगे?', a: 'हाँ। यह जानकारी केवल बैंक शाखाओं के लिए है। छुट्टी के दिन भी ATM, UPI, IMPS और नेट बैंकिंग आमतौर पर चलते हैं।' },
-      { q: 'क्या प्राइवेट बैंक भी बंद रहेंगे?', a: 'हाँ। परक्राम्य लिखत अधिनियम के तहत आरबीआई की छुट्टियाँ सभी अनुसूचित बैंकों पर लागू होती हैं — SBI, HDFC, ICICI, Axis, सहकारी बैंक आदि।' },
+      { q: 'क्या प्राइवेट बैंक भी बंद रहेंगे?', a: 'हाँ। परक्राम्य लिखत अधिनियम के तहत आरबीआई की छुट्टियाँ सभी अनुसूचित बैंकों पर लागू होती हैं — SBI, HDFC, ICICI, Axis आदि। कुछ सहकारी बैंक और क्षेत्रीय ग्रामीण बैंक अलग हो सकते हैं।' },
       { q: 'बैंक किन शनिवारों को बंद रहते हैं?', a: 'हर महीने के दूसरे और चौथे शनिवार को सभी बैंक बंद रहते हैं। पहले, तीसरे और पाँचवें शनिवार को बैंक खुले रहते हैं।' },
       { q: 'यह जानकारी कहाँ से आती है?', a: `आरबीआई की अवकाश तालिका (${RBI.offices[city.office].name} क्षेत्रीय कार्यालय) से। यह पेज हर दिन भारतीय समय के अनुसार अपने आप अपडेट होता है।` },
     ];
   return [
     { q: 'Are ATMs and UPI working on a bank holiday?', a: 'Yes. This status is for bank branches only. ATMs, UPI, IMPS and net banking usually keep working on bank holidays. NEFT and RTGS run 24×7.' },
-    { q: 'Does this cover private banks like HDFC, ICICI and Axis?', a: 'Yes. RBI holidays under the Negotiable Instruments Act apply to all scheduled banks — public sector banks like SBI, private banks, and co-operative banks.' },
+    { q: 'Does this cover private banks like HDFC, ICICI and Axis?', a: 'Yes. RBI holidays under the Negotiable Instruments Act apply to all scheduled banks — public sector banks like SBI and private banks. Some co-operative banks and regional rural banks may follow a different state list, so check with your branch.' },
     { q: 'Which Saturdays are banks closed?', a: 'All banks close on the second and fourth Saturday of every month. The first, third and fifth Saturdays are working days.' },
     { q: `Where does the ${city.name} bank holiday list come from?`, a: `From the RBI Holiday Matrix for the ${RBI.offices[city.office].name} regional office, which covers ${st.name}${city.derived ? ` (${city.name} has no RBI office of its own, so we use this list)` : ''}. The page updates itself every day in Indian time.` },
   ];
@@ -51,14 +52,12 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
         <Crumb lang={lang} items={[{ href: hi ? '/hi' : '/', label: hi ? 'होम' : 'Home' }, { href: hi ? undefined : `/${city.slug}`, label: cname }, { label: hi ? 'बैंक' : 'Banks' }]} />
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="bank" size="lg" />
-          <p className="q">{hi ? 'क्या आज बैंक खुला है?' : 'Is the bank open today?'}</p>
-          <h1 id="ans">{hi ? `${cname} में बैंक` : `Banks in ${city.name}`}</h1>
+          <h1 className="qh">{hi ? `क्या आज ${cname} में बैंक खुला है?` : `Is the bank open today in ${city.name}?`}</h1>
+          <p className="big" id="ans">{hi ? `${cname} में बैंक` : `Banks in ${city.name}`}</p>
           <div className="statusrow"><Pill v={b.open ? 'yes' : 'no'} size="lg">{b.open ? T.open(lang) : T.closed(lang)}</Pill><span className="dt t">{fmtLong(today, lang)}</span></div>
-          <p className="reason">
-            {bankReason(b.reason, lang, where)}
-            {b.open && y.reason.kind === 'holiday' ? (hi ? ` कल ${shortName(y.reason.rbi!, 'hi')} के लिए बैंक बंद थे।` : ` Yesterday banks were closed for ${shortName(y.reason.rbi!)}.`) : ''}
-            {b.reason.kind === 'holiday' && <small>RBI: {b.reason.rbi}</small>}
-          </p>
+          <BankAnswer city={city} s={b} nextOpen={nb} lang={lang} />
+          {b.open && y.reason.kind === 'holiday' && <p className="reason">{hi ? `कल (${fmtMed(y.date, 'hi')}) बैंक ${shortName(y.reason.rbi!, 'hi')} के लिए बंद थे।` : `Yesterday (${fmtMed(y.date)}) banks were closed for ${shortName(y.reason.rbi!)}.`}</p>}
+          {b.reason.kind === 'holiday' && <p className="reason"><small>RBI: {b.reason.rbi}</small></p>}
           <div className="hrs">
             <div><div className="k">{b.open ? (hi ? 'शाखा का सामान्य समय' : 'Typical branch hours') : hi ? 'बैंक फिर खुलेंगे' : 'Banks reopen'}</div><div className="v t">{b.open ? BANK_HOURS : fmtMed(nb, lang)}{b.open && <small>{hi ? 'शाखा के अनुसार अलग हो सकता है' : 'Varies by branch'}</small>}</div></div>
             <div><div className="k">{hi ? 'अगला कार्य दिवस' : 'Next working day'}</div><div className="v t">{fmtMed(nb, lang)}</div></div>
@@ -73,6 +72,7 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
         </Source>
         <Share text={shareText} path={`${pre}/${city.slug}/bank`} lang={lang} ics={{ href: `/ics/bank-${city.state}-2026.ics`, label: hi ? 'कैलेंडर में जोड़ें' : 'Add to calendar' }} />
 
+        <p className="note">{hi ? 'यह स्थिति अनुसूचित बैंकों (SBI, HDFC, ICICI आदि) के लिए है। कुछ सहकारी बैंक और क्षेत्रीय ग्रामीण बैंक (RRB) राज्य की अलग सूची मान सकते हैं — अपनी शाखा से पुष्टि करें।' : 'This covers scheduled banks (SBI, HDFC, ICICI, Axis and others). Some co-operative banks and regional rural banks (RRBs) may follow a different state list — check with your branch.'}</p>
         <div className={`card module ${satS.open ? 'openm' : 'closed'}`}>
           <div className="k t">{sat === today ? (hi ? 'आज, शनिवार' : 'Today, Saturday') : hi ? 'इस शनिवार' : 'This Saturday'}, {fmtDM(sat, lang)}</div>
           <h3>{satS.open ? (hi ? 'बैंक खुले' : 'Banks open') : hi ? 'बैंक बंद' : 'Banks closed'} <Pill v={satS.open ? 'yes' : 'no'} size="xs">{bankShort(satS.reason, lang)}</Pill></h3>
@@ -95,7 +95,7 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
         <p className="footsrc">
           <a href={`/bank-holidays-2026/${city.state}`}>{hi ? `${where} की 2026 की पूरी सूची →` : `Full 2026 bank holiday list for ${st.name} →`}</a>{' · '}
           <a href={`${pre}/${city.slug}/post-office`}>{hi ? 'डाकघर आज' : 'Post office today'}</a>{' · '}
-          <a href={hi ? '/hi/share-market' : '/share-market'}>{hi ? 'शेयर बाज़ार आज' : 'Share market today'}</a>
+          <a href={hi ? '/hi/share-market' : '/is-share-market-open-today'}>{hi ? 'शेयर बाज़ार आज' : 'Share market today'}</a>
         </p>
         <div className="sech"><h2>{hi ? 'अक्सर पूछे जाने वाले सवाल' : 'Questions people ask'}</h2></div>
         <Faq items={faq} />

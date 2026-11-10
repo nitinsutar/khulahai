@@ -10,7 +10,7 @@ export async function generateMetadata() {
   return meta({
     title: `Bank holidays this month (${n} ${t.slice(0, 4)}): state-wise list`,
     description: `Bank holidays this month — ${n} ${t.slice(0, 4)}. Every RBI holiday by state, the 2nd & 4th Saturdays and Sundays, updated automatically each month.`,
-    path: '/bank-holiday-this-month',
+    path: t.startsWith('2026') ? `/bank-holidays/${n.toLowerCase()}-2026` : '/bank-holiday-this-month', // canonical = the dated month page
     og: { t: 'Bank holidays this month', s: `${n} ${t.slice(0, 4)}` },
   });
 }

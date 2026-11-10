@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const t = todayIST();
   const p = postDay(c.state, t, cityHolidays(c));
   return meta({
-    title: `Is post office open today in ${c.name}? Timings & holidays (${fmtMed(t)})`,
-    description: `Post offices in ${c.name}: ${postLabel(p, 'en')} today, ${fmtMed(t)}. Typical counter hours, tomorrow's status, Saturday rules and the official central government holiday list.`,
+    title: `Is Post Office Open Today in ${c.name}? ${fmtMed(t)} — ${postLabel(p, 'en')}`,
+    description: `Post offices in ${c.name}: ${postLabel(p, 'en')} today, ${fmtMed(t)}. Typical counter hours, tomorrow's status, and the India Post holiday list for the circle.`,
     path: `/${c.slug}/post-office`, en: `/${c.slug}/post-office`, hi: `/hi/${c.slug}/post-office`,
     og: { t: `Post office in ${c.name}`, s: `${postLabel(p, 'en')} today · ${fmtMed(t)}`, v: p.state === 'closed' ? 'no' : p.state === 'check' ? 'neu' : 'yes' },
   });

@@ -1,5 +1,5 @@
 import { STATES, stateBySlug } from '@/lib/places';
-import { stateHolidays, NSE, CENTRAL } from '@/lib/data';
+import { stateHolidays, NSE, CENTRAL, INDIAPOST } from '@/lib/data';
 import { addDays } from '@/lib/date';
 import { shortName } from '@/lib/names';
 
@@ -36,7 +36,8 @@ export async function GET(_: Request, { params }: { params: Promise<{ file: stri
     body = ics('NSE & BSE trading holidays 2026', NSE.holidays.filter((h) => !h.weekend).map((h) => ({ d: h.d, uid: `nse-${h.d}`, title: `Market holiday: ${h.n}`, desc: 'NSE & BSE equity trading holiday. Source: NSE/BSE circulars. khulahai.in' })));
   } else if (f === 'post-office-2026.ics' || f === 'post-office-2027.ics') {
     const y = f.includes('2027') ? '2027' : '2026';
-    body = ics(`Post office holidays ${y}`, CENTRAL[y].holidays.filter((h) => h.c).map((h) => ({ d: h.d, uid: `po-${h.d}-${h.n.replace(/\W+/g, '')}`, title: `Post office holiday: ${h.n}`, desc: `Compulsory central government holiday. Source: ${CENTRAL[y].om}. khulahai.in` })));
+    if (y === '2026') body = ics('Post office holidays 2026 (All India)', INDIAPOST.circles['All India'].map((h) => ({ d: h.d, uid: `po-${h.d}-${h.n.replace(/\W+/g, '')}`, title: `Post office holiday: ${h.n}`, desc: `India Post All-India holiday. Your circle may add more. Source: ${INDIAPOST.source}. khulahai.in` })));
+    else body = ics(`Post office holidays ${y}`, CENTRAL[y].holidays.filter((h) => h.c).map((h) => ({ d: h.d, uid: `po-${h.d}-${h.n.replace(/\W+/g, '')}`, title: `Post office holiday: ${h.n}`, desc: `Compulsory central government holiday. Source: ${CENTRAL[y].om}. khulahai.in` })));
   } else return new Response('Not found', { status: 404 });
   return new Response(body, { headers: { 'Content-Type': 'text/calendar; charset=utf-8', 'Content-Disposition': `attachment; filename="${f}"`, 'Cache-Control': 'public, max-age=86400' } });
 }
