@@ -1,0 +1,3831 @@
+{
+ "source": "https://rbi.org.in/Scripts/HolidayMatrixDisplay.aspx",
+ "title": "RBI Holiday Matrix — Holidays under the Negotiable Instruments Act, 2026",
+ "checked": "2026-11-11",
+ "offices": {
+  "agartala": {
+   "name": "Agartala",
+   "state": "tripura",
+   "holidays": [
+    {
+     "d": "2026-01-23",
+     "n": "Birthday of Netaji Subhas Chandra Bose/Saraswati Puja (Shree Panchami)/Vir Surendrasai Jayanti/Basanta Panchami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-15",
+     "n": "Bengali New Year’s Day (Nababarsha)/Bohag Bihu/Vishu/Himachal Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-21",
+     "n": "Garia Puja/General Election to Aizawl Municipal Corporation, 2026",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-26",
+     "n": "Birthday of Kazi Nazrul Islam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-07-22",
+     "n": "Kharchi Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-04",
+     "n": "Ker Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-19",
+     "n": "Birthday of Maharaja Bir Bikram Kishore Manikya Bahadur",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-17",
+     "n": "Maha Saptami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-21",
+     "n": "Vijaya Dasami/Durga Puja (Dasain)/Maha Dashami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-26",
+     "n": "Laxmi Puja/Accession Day/Maharishi Valmiki’s Birthday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-09",
+     "n": "Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "ahmedabad": {
+   "name": "Ahmedabad",
+   "state": "gujarat",
+   "holidays": [
+    {
+     "d": "2026-01-14",
+     "n": "Makar Sankranti/Magh Bihu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-15",
+     "n": "Samvatsari (Chaturthi Paksha)/Nuakhai/Ganesh Chaturthi (2nd Day)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-31",
+     "n": "Sardar Vallabhbhai Patel's Birthday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Diwali (Bali Pratipada)/Deepawali (Govardhan Puja)/Laxmi Puja/Vikram Samvant New Year Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "aizawl": {
+   "name": "Aizawl",
+   "state": "mizoram",
+   "holidays": [
+    {
+     "d": "2026-01-01",
+     "n": "New Year’s Day/Gaan-Ngai",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-02",
+     "n": "New Year Celebration/Mannam Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-02-20",
+     "n": "State Day/Statehood Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-13",
+     "n": "Chapchar Kut/Jumat-ul-Vida",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-21",
+     "n": "Garia Puja/General Election to Aizawl Municipal Corporation, 2026",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-15",
+     "n": "YMA Day/Raja Sankranti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-30",
+     "n": "Remna Ni",
+     "t": "ni"
+    },
+    {
+     "d": "2026-07-06",
+     "n": "MHIP Day/Birth Anniversary of Dr. Syama Prasad Mookerjee",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-24",
+     "n": "Christmas Eve",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-31",
+     "n": "New Year's Eve",
+     "t": "ni"
+    }
+   ]
+  },
+  "belapur": {
+   "name": "Belapur",
+   "state": "maharashtra",
+   "holidays": [
+    {
+     "d": "2026-01-15",
+     "n": "Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-02-19",
+     "n": "Chhatrapati Shivaji Maharaj Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-14",
+     "n": "Ganesh Chaturthi/Ganesh Puja/Varasiddhi Vinayaka Vrata/Vinayakar Chathurthi/Hartalika",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Diwali (Bali Pratipada)/Deepawali (Govardhan Puja)/Laxmi Puja/Vikram Samvant New Year Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "bengaluru": {
+   "name": "Bengaluru",
+   "state": "karnataka",
+   "holidays": [
+    {
+     "d": "2026-01-15",
+     "n": "Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-30",
+     "n": "Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-20",
+     "n": "Basava Jayanti / Akshaya Tritiya",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-14",
+     "n": "Ganesh Chaturthi/Ganesh Puja/Varasiddhi Vinayaka Vrata/Vinayakar Chathurthi/Hartalika",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-10",
+     "n": "Mahalaya Amavasye",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-21",
+     "n": "Vijaya Dasami/Durga Puja (Dasain)/Maha Dashami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-26",
+     "n": "Laxmi Puja/Accession Day/Maharishi Valmiki’s Birthday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Diwali (Bali Pratipada)/Deepawali (Govardhan Puja)/Laxmi Puja/Vikram Samvant New Year Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-27",
+     "n": "Kanakadasa Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "bhopal": {
+   "name": "Bhopal",
+   "state": "madhya-pradesh",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-27",
+     "n": "Shree Ram Navami (Chaite Dasain)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-30",
+     "n": "Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-09",
+     "n": "Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "bhubaneswar": {
+   "name": "Bhubaneswar",
+   "state": "odisha",
+   "holidays": [
+    {
+     "d": "2026-01-14",
+     "n": "Makar Sankranti/Magh Bihu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-23",
+     "n": "Birthday of Netaji Subhas Chandra Bose/Saraswati Puja (Shree Panchami)/Vir Surendrasai Jayanti/Basanta Panchami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-27",
+     "n": "Shree Ram Navami (Chaite Dasain)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-15",
+     "n": "YMA Day/Raja Sankranti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-07-16",
+     "n": "Ratha Yatra/Kang (Rathajatra)/Harela",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-14",
+     "n": "Ganesh Chaturthi/Ganesh Puja/Varasiddhi Vinayaka Vrata/Vinayakar Chathurthi/Hartalika",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-15",
+     "n": "Samvatsari (Chaturthi Paksha)/Nuakhai/Ganesh Chaturthi (2nd Day)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "chandigarh": {
+   "name": "Chandigarh",
+   "state": "chandigarh",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-26",
+     "n": "Laxmi Puja/Accession Day/Maharishi Valmiki’s Birthday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-09",
+     "n": "Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "chennai": {
+   "name": "Chennai",
+   "state": "tamil-nadu",
+   "holidays": [
+    {
+     "d": "2026-01-01",
+     "n": "New Year’s Day/Gaan-Ngai",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-15",
+     "n": "Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-16",
+     "n": "Thiruvalluvar Day/Kanuma",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-17",
+     "n": "Uzhavar Thirunal",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-23",
+     "n": "General Elections to Tamil Nadu Legislative Assembly 2026",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-14",
+     "n": "Ganesh Chaturthi/Ganesh Puja/Varasiddhi Vinayaka Vrata/Vinayakar Chathurthi/Hartalika",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "dehradun": {
+   "name": "Dehradun",
+   "state": "uttarakhand",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-07-16",
+     "n": "Ratha Yatra/Kang (Rathajatra)/Harela",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Diwali (Bali Pratipada)/Deepawali (Govardhan Puja)/Laxmi Puja/Vikram Samvant New Year Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-20",
+     "n": "Igas-Bagwal",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "gangtok": {
+   "name": "Gangtok",
+   "state": "sikkim",
+   "holidays": [
+    {
+     "d": "2026-01-01",
+     "n": "New Year’s Day/Gaan-Ngai",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-15",
+     "n": "Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-02-18",
+     "n": "Losar",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-27",
+     "n": "Shree Ram Navami (Chaite Dasain)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-16",
+     "n": "State Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-07-18",
+     "n": "Drukpa Tshe-zi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-08",
+     "n": "Tendong Lho Rum Faat",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-25",
+     "n": "Indrajatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-21",
+     "n": "Vijaya Dasami/Durga Puja (Dasain)/Maha Dashami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-22",
+     "n": "Durga Puja (Dasain)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-23",
+     "n": "Durga Puja (Dasain)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-09",
+     "n": "Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Diwali (Bali Pratipada)/Deepawali (Govardhan Puja)/Laxmi Puja/Vikram Samvant New Year Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-11",
+     "n": "Laxmi Puja (Deepawali)/Ningol Chakkouba/Bhratridwitiya/Bhaidooj/Chitragupt Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-09",
+     "n": "Losoong / Namsoong",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-10",
+     "n": "Losoong / Namsoong",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-11",
+     "n": "Losoong / Namsoong",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "guwahati": {
+   "name": "Guwahati",
+   "state": "assam",
+   "holidays": [
+    {
+     "d": "2026-01-14",
+     "n": "Makar Sankranti/Magh Bihu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-15",
+     "n": "Bengali New Year’s Day (Nababarsha)/Bohag Bihu/Vishu/Himachal Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-16",
+     "n": "Bohag Bihu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-27",
+     "n": "Eid-UI-Adha-(Bakri-Eid)/Id-ul-Zuha",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-12",
+     "n": "Tirubhav Tithi of Srimanta Sankardeva",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-21",
+     "n": "Janmotsav of Srimanta Sankardeva/Sree Narayana Guru Samadhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-21",
+     "n": "Vijaya Dasami/Durga Puja (Dasain)/Maha Dashami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-09",
+     "n": "Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "hyderabad": {
+   "name": "Hyderabad",
+   "state": "telangana",
+   "holidays": [
+    {
+     "d": "2026-01-15",
+     "n": "Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-27",
+     "n": "Shree Ram Navami (Chaite Dasain)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-14",
+     "n": "Ganesh Chaturthi/Ganesh Puja/Varasiddhi Vinayaka Vrata/Vinayakar Chathurthi/Hartalika",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "imphal": {
+   "name": "Imphal",
+   "state": "manipur",
+   "holidays": [
+    {
+     "d": "2026-01-01",
+     "n": "New Year’s Day/Gaan-Ngai",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-07-16",
+     "n": "Ratha Yatra/Kang (Rathajatra)/Harela",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-13",
+     "n": "Patriot’s Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-09",
+     "n": "Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-11",
+     "n": "Laxmi Puja (Deepawali)/Ningol Chakkouba/Bhratridwitiya/Bhaidooj/Chitragupt Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "itanagar": {
+   "name": "Itanagar",
+   "state": "arunachal-pradesh",
+   "holidays": [
+    {
+     "d": "2026-01-01",
+     "n": "New Year’s Day/Gaan-Ngai",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-14",
+     "n": "Makar Sankranti/Magh Bihu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-02-20",
+     "n": "State Day/Statehood Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-15",
+     "n": "Bengali New Year’s Day (Nababarsha)/Bohag Bihu/Vishu/Himachal Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-01",
+     "n": "Indigenous Faith Day/State Inauguration Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "jaipur": {
+   "name": "Jaipur",
+   "state": "rajasthan",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-11",
+     "n": "Elections in the jurisdiction of Jaipur Municipal Corporation",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-09",
+     "n": "Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "jammu": {
+   "name": "Jammu",
+   "state": "jammu-and-kashmir",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-13",
+     "n": "Chapchar Kut/Jumat-ul-Vida",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-17",
+     "n": "Shab-I-Qadr",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-27",
+     "n": "Eid-UI-Adha-(Bakri-Eid)/Id-ul-Zuha",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-23",
+     "n": "Birthday of Maharaja Hari Singh Ji",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-26",
+     "n": "Laxmi Puja/Accession Day/Maharishi Valmiki’s Birthday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "kanpur": {
+   "name": "Kanpur",
+   "state": "uttar-pradesh",
+   "holidays": [
+    {
+     "d": "2026-01-03",
+     "n": "Birthday of Hazrat Ali",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-15",
+     "n": "Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-02",
+     "n": "Holika Dahan",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-09",
+     "n": "Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-11",
+     "n": "Laxmi Puja (Deepawali)/Ningol Chakkouba/Bhratridwitiya/Bhaidooj/Chitragupt Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "kochi": {
+   "name": "Kochi",
+   "state": "kerala",
+   "holidays": [
+    {
+     "d": "2026-01-02",
+     "n": "New Year Celebration/Mannam Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-20",
+     "n": "Eid-Ul-Fitr (Ramzan)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-02",
+     "n": "Maundy Thursday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-09",
+     "n": "General Election to Kerala Legislative Assembly 2026",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-15",
+     "n": "Bengali New Year’s Day (Nababarsha)/Bohag Bihu/Vishu/Himachal Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-27",
+     "n": "Eid-UI-Adha-(Bakri-Eid)/Id-ul-Zuha",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-25",
+     "n": "First Onam/Milad-i-Sherif (Birthday of Prophet Muhammed)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-21",
+     "n": "Janmotsav of Srimanta Sankardeva/Sree Narayana Guru Samadhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-21",
+     "n": "Vijaya Dasami/Durga Puja (Dasain)/Maha Dashami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "kohima": {
+   "name": "Kohima",
+   "state": "nagaland",
+   "holidays": [
+    {
+     "d": "2026-01-01",
+     "n": "New Year’s Day/Gaan-Ngai",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-01",
+     "n": "Indigenous Faith Day/State Inauguration Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-24",
+     "n": "Christmas Eve",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-26",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "kolkata": {
+   "name": "Kolkata",
+   "state": "west-bengal",
+   "holidays": [
+    {
+     "d": "2026-01-01",
+     "n": "New Year’s Day/Gaan-Ngai",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-12",
+     "n": "Birth Day of Swami Vivekananda",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-23",
+     "n": "Birthday of Netaji Subhas Chandra Bose/Saraswati Puja (Shree Panchami)/Vir Surendrasai Jayanti/Basanta Panchami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-15",
+     "n": "Bengali New Year’s Day (Nababarsha)/Bohag Bihu/Vishu/Himachal Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-29",
+     "n": "General Elections to West Bengal Legislative Assembly 2026",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-09",
+     "n": "Birthday of Rabindranath Tagore",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-07-06",
+     "n": "MHIP Day/Birth Anniversary of Dr. Syama Prasad Mookerjee",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-10",
+     "n": "Mahalaya Amavasye",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-21",
+     "n": "Vijaya Dasami/Durga Puja (Dasain)/Maha Dashami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-11",
+     "n": "Laxmi Puja (Deepawali)/Ningol Chakkouba/Bhratridwitiya/Bhaidooj/Chitragupt Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "lucknow": {
+   "name": "Lucknow",
+   "state": "uttar-pradesh",
+   "holidays": [
+    {
+     "d": "2026-01-03",
+     "n": "Birthday of Hazrat Ali",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-15",
+     "n": "Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-02",
+     "n": "Holika Dahan",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-09",
+     "n": "Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-11",
+     "n": "Laxmi Puja (Deepawali)/Ningol Chakkouba/Bhratridwitiya/Bhaidooj/Chitragupt Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "mumbai": {
+   "name": "Mumbai",
+   "state": "maharashtra",
+   "holidays": [
+    {
+     "d": "2026-01-15",
+     "n": "Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-02-19",
+     "n": "Chhatrapati Shivaji Maharaj Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-14",
+     "n": "Ganesh Chaturthi/Ganesh Puja/Varasiddhi Vinayaka Vrata/Vinayakar Chathurthi/Hartalika",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Diwali (Bali Pratipada)/Deepawali (Govardhan Puja)/Laxmi Puja/Vikram Samvant New Year Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "nagpur": {
+   "name": "Nagpur",
+   "state": "maharashtra",
+   "holidays": [
+    {
+     "d": "2026-01-15",
+     "n": "Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-02-19",
+     "n": "Chhatrapati Shivaji Maharaj Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-14",
+     "n": "Ganesh Chaturthi/Ganesh Puja/Varasiddhi Vinayaka Vrata/Vinayakar Chathurthi/Hartalika",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Diwali (Bali Pratipada)/Deepawali (Govardhan Puja)/Laxmi Puja/Vikram Samvant New Year Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "new-delhi": {
+   "name": "New Delhi",
+   "state": "delhi",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "panaji": {
+   "name": "Panaji",
+   "state": "goa",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-14",
+     "n": "Ganesh Chaturthi/Ganesh Puja/Varasiddhi Vinayaka Vrata/Vinayakar Chathurthi/Hartalika",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-15",
+     "n": "Samvatsari (Chaturthi Paksha)/Nuakhai/Ganesh Chaturthi (2nd Day)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-03",
+     "n": "Feast of St. Francis Xavier",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-19",
+     "n": "Goa Liberation Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "patna": {
+   "name": "Patna",
+   "state": "bihar",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-27",
+     "n": "Shree Ram Navami (Chaite Dasain)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-16",
+     "n": "Chhath Puja/Surya Shashti Dala Chhath (Prath Arghya)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "raipur": {
+   "name": "Raipur",
+   "state": "chhattisgarh",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-09",
+     "n": "Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "ranchi": {
+   "name": "Ranchi",
+   "state": "jharkhand",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-02-23",
+     "n": "Municipal (General) Election 2026",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-27",
+     "n": "Shree Ram Navami (Chaite Dasain)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-31",
+     "n": "Mahavir Janmakalyanak/Mahavir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-22",
+     "n": "Karma Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-16",
+     "n": "Chhath Puja/Surya Shashti Dala Chhath (Prath Arghya)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "shillong": {
+   "name": "Shillong",
+   "state": "meghalaya",
+   "holidays": [
+    {
+     "d": "2026-01-01",
+     "n": "New Year’s Day/Gaan-Ngai",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-13",
+     "n": "Shad Suk Mynsiem",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-22",
+     "n": "Rev Thomas Jones",
+     "t": "ni"
+    },
+    {
+     "d": "2026-07-09",
+     "n": "Beh Deinkhlam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-07-17",
+     "n": "Death Anniversary of U Tirot Singh",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-18",
+     "n": "Unitarian Anniversary Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-21",
+     "n": "Vijaya Dasami/Durga Puja (Dasain)/Maha Dashami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-02",
+     "n": "Nongkrem Dance",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-13",
+     "n": "Wangala Festival",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-23",
+     "n": "Seng Kut Snem",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-12",
+     "n": "Death Anniversary of Pa Togan Nengminja Sangma",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-18",
+     "n": "Death Anniversary of U SoSo Tham",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-24",
+     "n": "Christmas Eve",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-26",
+     "n": "Christmas",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-30",
+     "n": "Death Anniversary of U Kiang Nangbah",
+     "t": "ni"
+    }
+   ]
+  },
+  "shimla": {
+   "name": "Shimla",
+   "state": "himachal-pradesh",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-04",
+     "n": "Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-26",
+     "n": "Shree Ram Navami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-15",
+     "n": "Bengali New Year’s Day (Nababarsha)/Bohag Bihu/Vishu/Himachal Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-29",
+     "n": "Sant Guru Kabir Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-26",
+     "n": "Laxmi Puja/Accession Day/Maharishi Valmiki’s Birthday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-29",
+     "n": "Karva Chauth",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-11",
+     "n": "Laxmi Puja (Deepawali)/Ningol Chakkouba/Bhratridwitiya/Bhaidooj/Chitragupt Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "srinagar": {
+   "name": "Srinagar",
+   "state": "jammu-and-kashmir",
+   "holidays": [
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-13",
+     "n": "Chapchar Kut/Jumat-ul-Vida",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-17",
+     "n": "Shab-I-Qadr",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-27",
+     "n": "Eid-UI-Adha-(Bakri-Eid)/Id-ul-Zuha",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-23",
+     "n": "Birthday of Maharaja Hari Singh Ji",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-26",
+     "n": "Laxmi Puja/Accession Day/Maharishi Valmiki’s Birthday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-24",
+     "n": "Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "thiruvananthapuram": {
+   "name": "Thiruvananthapuram",
+   "state": "kerala",
+   "holidays": [
+    {
+     "d": "2026-01-02",
+     "n": "New Year Celebration/Mannam Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-20",
+     "n": "Eid-Ul-Fitr (Ramzan)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-02",
+     "n": "Maundy Thursday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-09",
+     "n": "General Election to Kerala Legislative Assembly 2026",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-15",
+     "n": "Bengali New Year’s Day (Nababarsha)/Bohag Bihu/Vishu/Himachal Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-27",
+     "n": "Eid-UI-Adha-(Bakri-Eid)/Id-ul-Zuha",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-25",
+     "n": "First Onam/Milad-i-Sherif (Birthday of Prophet Muhammed)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-28",
+     "n": "Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-21",
+     "n": "Janmotsav of Srimanta Sankardeva/Sree Narayana Guru Samadhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-19",
+     "n": "Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-21",
+     "n": "Vijaya Dasami/Durga Puja (Dasain)/Maha Dashami",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  },
+  "vijayawada": {
+   "name": "Vijayawada",
+   "state": "andhra-pradesh",
+   "holidays": [
+    {
+     "d": "2026-01-15",
+     "n": "Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-16",
+     "n": "Thiruvalluvar Day/Kanuma",
+     "t": "ni"
+    },
+    {
+     "d": "2026-01-26",
+     "n": "Republic Day",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-03",
+     "n": "Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-19",
+     "n": "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-21",
+     "n": "Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul",
+     "t": "ni"
+    },
+    {
+     "d": "2026-03-27",
+     "n": "Shree Ram Navami (Chaite Dasain)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-01",
+     "n": "To enable to Banks to close their yearly accounts",
+     "t": "accounts"
+    },
+    {
+     "d": "2026-04-03",
+     "n": "Good Friday",
+     "t": "ni"
+    },
+    {
+     "d": "2026-04-14",
+     "n": "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-01",
+     "n": "Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu",
+     "t": "ni"
+    },
+    {
+     "d": "2026-05-28",
+     "n": "Bakri ID (Id-Uz-Zuha)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-06-26",
+     "n": "Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-15",
+     "n": "Independence Day/Parsi New Year (Shahenshahi)",
+     "t": "ni"
+    },
+    {
+     "d": "2026-08-26",
+     "n": "Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-04",
+     "n": "Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi",
+     "t": "ni"
+    },
+    {
+     "d": "2026-09-14",
+     "n": "Ganesh Chaturthi/Ganesh Puja/Varasiddhi Vinayaka Vrata/Vinayakar Chathurthi/Hartalika",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-02",
+     "n": "Mahatma Gandhi Jayanti",
+     "t": "ni"
+    },
+    {
+     "d": "2026-10-20",
+     "n": "Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja",
+     "t": "ni"
+    },
+    {
+     "d": "2026-11-05",
+     "n": "Declaration of Local Holiday to Banks in NTR district, in connection with the conduct of the 2nd Ordinary Elections to MPTCs/ZPTCs, 2026",
+     "t": "ni"
+    },
+    {
+     "d": "2026-12-25",
+     "n": "Christmas",
+     "t": "ni"
+    }
+   ]
+  }
+ }
+}

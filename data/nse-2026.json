@@ -1,0 +1,114 @@
+{
+ "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+ "bseSource": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars.aspx?page=20251212-8",
+ "bseSource2": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars.aspx?page=20260112-8",
+ "checked": "2026-11-11",
+ "session": {
+  "preOpen": "09:00–09:08",
+  "open": "09:15",
+  "close": "15:30"
+ },
+ "muhurat": "2026-11-08",
+ "holidays": [
+  {
+   "d": "2026-01-15",
+   "n": "Municipal Corporation Election - Maharashtra",
+   "weekend": false
+  },
+  {
+   "d": "2026-01-26",
+   "n": "Republic Day",
+   "weekend": false
+  },
+  {
+   "d": "2026-02-15",
+   "n": "Mahashivratri",
+   "weekend": true
+  },
+  {
+   "d": "2026-03-03",
+   "n": "Holi",
+   "weekend": false
+  },
+  {
+   "d": "2026-03-21",
+   "n": "Id-Ul-Fitr (Ramadan Eid)",
+   "weekend": true
+  },
+  {
+   "d": "2026-03-26",
+   "n": "Shri Ram Navami",
+   "weekend": false
+  },
+  {
+   "d": "2026-03-31",
+   "n": "Shri Mahavir Jayanti",
+   "weekend": false
+  },
+  {
+   "d": "2026-04-03",
+   "n": "Good Friday",
+   "weekend": false
+  },
+  {
+   "d": "2026-04-14",
+   "n": "Dr. Baba Saheb Ambedkar Jayanti",
+   "weekend": false
+  },
+  {
+   "d": "2026-05-01",
+   "n": "Maharashtra Day",
+   "weekend": false
+  },
+  {
+   "d": "2026-05-28",
+   "n": "Bakri Id",
+   "weekend": false
+  },
+  {
+   "d": "2026-06-26",
+   "n": "Muharram",
+   "weekend": false
+  },
+  {
+   "d": "2026-08-15",
+   "n": "Independence Day",
+   "weekend": true
+  },
+  {
+   "d": "2026-09-14",
+   "n": "Ganesh Chaturthi",
+   "weekend": false
+  },
+  {
+   "d": "2026-10-02",
+   "n": "Mahatma Gandhi Jayanti",
+   "weekend": false
+  },
+  {
+   "d": "2026-10-20",
+   "n": "Dussehra",
+   "weekend": false
+  },
+  {
+   "d": "2026-11-08",
+   "n": "Diwali Laxmi Pujan",
+   "weekend": true
+  },
+  {
+   "d": "2026-11-10",
+   "n": "Diwali-Balipratipada",
+   "weekend": false
+  },
+  {
+   "d": "2026-11-24",
+   "n": "Prakash Gurpurb Sri Guru Nanak Dev",
+   "weekend": false
+  },
+  {
+   "d": "2026-12-25",
+   "n": "Christmas",
+   "weekend": false
+  }
+ ]
+}

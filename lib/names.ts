@@ -1,0 +1,51 @@
+// Short, readable labels for RBI's combined holiday descriptions. The full RBI text is always shown too.
+const MAP: Record<string, [string, string]> = {
+  'Christmas': ['Christmas', 'क्रिसमस'],
+  'Christmas Eve': ['Christmas Eve', 'क्रिसमस की पूर्व संध्या'],
+  'Republic Day': ['Republic Day', 'गणतंत्र दिवस'],
+  'Independence Day/Parsi New Year (Shahenshahi)': ['Independence Day', 'स्वतंत्रता दिवस'],
+  'Mahatma Gandhi Jayanti': ['Gandhi Jayanti', 'गांधी जयंती'],
+  'Dasara/Dusshera (Vijaya Dashmi) (Aaso sud-10)/Maha Navami, Ayudhapooja/Durga Puja': ['Dussehra', 'दशहरा'],
+  'Ramzan-Id (Id-Ul-Fitr) (Shawal-1)/Khutub-E-Ramzan/Sarhul': ['Id-ul-Fitr', 'ईद-उल-फ़ित्र'],
+  "Dr. Babasaheb Ambedkar Jayanti/Maha Vishuva Sankranti/Biju/Buisu Festival/Tamil New Year's Day/Bohag Bihu/Cheiraoba/Baisakhi": ['Ambedkar Jayanti / regional new year', 'आंबेडकर जयंती'],
+  'Bakri ID (Id-Uz-Zuha)': ['Bakri Id', 'बकरीद'],
+  'Eid-UI-Adha-(Bakri-Eid)/Id-ul-Zuha': ['Bakri Id', 'बकरीद'],
+  'To enable to Banks to close their yearly accounts': ['Annual closing of accounts', 'वार्षिक खाता बंदी'],
+  'Maharashtra Din/Buddha Pournima/May Day (Labour Day)/Birth Anniversary of Pandit Raghunath Murmu': ['May Day / Buddha Purnima', 'मई दिवस / बुद्ध पूर्णिमा'],
+  'Good Friday': ['Good Friday', 'गुड फ्राइडे'],
+  'Janmashtami (Vaishnva) (Shravan Vad-8)/Krishna Jayanthi': ['Janmashtami', 'जन्माष्टमी'],
+  'Holi/Holi 2nd Day – Dhuleti/Yaosang 2nd Day/Dol Jatra': ['Holi', 'होली'],
+  'Holi (Second Day)/Dol Jatra/Dhulandi/Holika Dahan/Attukal Pongala': ['Holi', 'होली'],
+  'Guru Nanak Jayanti/Karthika Purnima/Rahas Purnima': ['Guru Nanak Jayanti', 'गुरु नानक जयंती'],
+  'Id-E-Milad/Baravafat/Milad-un-Nabi (Birthday of Prophet Mohammad)/Thiruvonam': ['Id-e-Milad', 'ईद-ए-मिलाद'],
+  'Muharram (Yaom-EShahadath)/Last Day of Moharam/Ashoora': ['Muharram', 'मुहर्रम'],
+  'Dussehra (Mahashtami)/Maha Navami/Ayutha Pooja/Durga Puja/Vijaya Dashomi/Durga Ashtami': ['Dussehra / Maha Navami', 'दशहरा / महानवमी'],
+  'Mahavir Janmakalyanak/Mahavir Jayanti': ['Mahavir Jayanti', 'महावीर जयंती'],
+  'Mahavir Jayanti': ['Mahavir Jayanti', 'महावीर जयंती'],
+  'Raksha Bandhan/Pang-Lhabsol/Friday following Eid-i-Milad-ul-Nabi/Sree Narayana Guru Jayanthi/Ayyankali Jayanthi': ['Raksha Bandhan / regional', 'रक्षा बंधन'],
+  'Shree Ram Navami': ['Ram Navami', 'राम नवमी'],
+  'Shree Ram Navami (Chaite Dasain)': ['Ram Navami', 'राम नवमी'],
+  "Gudhi Padwa/Ugadi Festival/Telugu New Year's Day/Sajibu Nongmapanba (Cheiraoba)/1st Navratra": ['Gudi Padwa / Ugadi', 'गुड़ी पड़वा / उगादि'],
+  'Diwali/Laxmi Puja (Deepawali)/Govardhan Pooja/Vishwakarma Day': ['Diwali / Govardhan Puja', 'दिवाली / गोवर्धन पूजा'],
+  'Uttarayana Punyakala/Pongal/Maghe Sankranti/Makara Sankranti/Election to Municipal Corporations in Maharashtra': ['Makar Sankranti / Pongal', 'मकर संक्रांति / पोंगल'],
+  'Ganesh Chaturthi/Ganesh Puja/Varasiddhi Vinayaka Vrata/Vinayakar Chathurthi/Hartalika': ['Ganesh Chaturthi', 'गणेश चतुर्थी'],
+  'Vijaya Dasami/Durga Puja (Dasain)/Maha Dashami': ['Vijaya Dashami', 'विजयादशमी'],
+  'New Year’s Day/Gaan-Ngai': ["New Year's Day", 'नव वर्ष'],
+  'Bengali New Year’s Day (Nababarsha)/Bohag Bihu/Vishu/Himachal Day': ['Bengali New Year / Bihu / Vishu', 'बंगाली नव वर्ष / बिहू'],
+  'Diwali (Bali Pratipada)/Deepawali (Govardhan Puja)/Laxmi Puja/Vikram Samvant New Year Day': ['Diwali (Bali Pratipada)', 'दिवाली (बलि प्रतिपदा)'],
+  'Laxmi Puja/Accession Day/Maharishi Valmiki’s Birthday': ['Laxmi Puja / Valmiki Jayanti', 'लक्ष्मी पूजा / वाल्मीकि जयंती'],
+  'Laxmi Puja (Deepawali)/Ningol Chakkouba/Bhratridwitiya/Bhaidooj/Chitragupt Jayanti': ['Bhai Dooj', 'भाई दूज'],
+  'Makar Sankranti/Magh Bihu': ['Makar Sankranti', 'मकर संक्रांति'],
+  'Chhath Puja/Surya Shashti Dala Chhath (Prath Arghya)': ['Chhath Puja', 'छठ पूजा'],
+  'Kanakadasa Jayanthi': ['Kanakadasa Jayanti', 'कनकदास जयंती'],
+  "New Year's Eve": ["New Year's Eve", 'नव वर्ष की पूर्व संध्या'],
+  'Igas-Bagwal': ['Igas-Bagwal', 'इगास-बग्वाल'],
+  'Goa Liberation Day': ['Goa Liberation Day', 'गोवा मुक्ति दिवस'],
+  'Feast of St. Francis Xavier': ['Feast of St. Francis Xavier', 'सेंट फ्रांसिस ज़ेवियर पर्व'],
+};
+export function shortName(rbi: string, l: 'en' | 'hi' = 'en'): string {
+  const m = MAP[rbi];
+  if (m) return l === 'hi' ? m[1] : m[0];
+  return rbi.split('/').slice(0, 2).join(' / ');
+}
+export const isFullName = (rbi: string) => !MAP[rbi] && rbi.split('/').length <= 2;

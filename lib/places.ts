@@ -1,0 +1,83 @@
+export type State = { slug: string; name: string; hi: string; code: string; offices: string[] };
+export type City = { slug: string; name: string; hi: string; office: string; state: string; derived?: boolean };
+
+export const STATES: State[] = [
+  { slug: 'andhra-pradesh', name: 'Andhra Pradesh', hi: 'आंध्र प्रदेश', code: 'AP', offices: ['vijayawada'] },
+  { slug: 'arunachal-pradesh', name: 'Arunachal Pradesh', hi: 'अरुणाचल प्रदेश', code: 'AR', offices: ['itanagar'] },
+  { slug: 'assam', name: 'Assam', hi: 'असम', code: 'AS', offices: ['guwahati'] },
+  { slug: 'bihar', name: 'Bihar', hi: 'बिहार', code: 'BR', offices: ['patna'] },
+  { slug: 'chandigarh', name: 'Chandigarh', hi: 'चंडीगढ़', code: 'CH', offices: ['chandigarh'] },
+  { slug: 'chhattisgarh', name: 'Chhattisgarh', hi: 'छत्तीसगढ़', code: 'CG', offices: ['raipur'] },
+  { slug: 'delhi', name: 'Delhi', hi: 'दिल्ली', code: 'DL', offices: ['new-delhi'] },
+  { slug: 'goa', name: 'Goa', hi: 'गोवा', code: 'GA', offices: ['panaji'] },
+  { slug: 'gujarat', name: 'Gujarat', hi: 'गुजरात', code: 'GJ', offices: ['ahmedabad'] },
+  { slug: 'himachal-pradesh', name: 'Himachal Pradesh', hi: 'हिमाचल प्रदेश', code: 'HP', offices: ['shimla'] },
+  { slug: 'jammu-and-kashmir', name: 'Jammu & Kashmir', hi: 'जम्मू और कश्मीर', code: 'JK', offices: ['jammu', 'srinagar'] },
+  { slug: 'jharkhand', name: 'Jharkhand', hi: 'झारखंड', code: 'JH', offices: ['ranchi'] },
+  { slug: 'karnataka', name: 'Karnataka', hi: 'कर्नाटक', code: 'KA', offices: ['bengaluru'] },
+  { slug: 'kerala', name: 'Kerala', hi: 'केरल', code: 'KL', offices: ['thiruvananthapuram', 'kochi'] },
+  { slug: 'madhya-pradesh', name: 'Madhya Pradesh', hi: 'मध्य प्रदेश', code: 'MP', offices: ['bhopal'] },
+  { slug: 'maharashtra', name: 'Maharashtra', hi: 'महाराष्ट्र', code: 'MH', offices: ['mumbai', 'nagpur', 'belapur'] },
+  { slug: 'manipur', name: 'Manipur', hi: 'मणिपुर', code: 'MN', offices: ['imphal'] },
+  { slug: 'meghalaya', name: 'Meghalaya', hi: 'मेघालय', code: 'ML', offices: ['shillong'] },
+  { slug: 'mizoram', name: 'Mizoram', hi: 'मिज़ोरम', code: 'MZ', offices: ['aizawl'] },
+  { slug: 'nagaland', name: 'Nagaland', hi: 'नागालैंड', code: 'NL', offices: ['kohima'] },
+  { slug: 'odisha', name: 'Odisha', hi: 'ओडिशा', code: 'OD', offices: ['bhubaneswar'] },
+  { slug: 'rajasthan', name: 'Rajasthan', hi: 'राजस्थान', code: 'RJ', offices: ['jaipur'] },
+  { slug: 'sikkim', name: 'Sikkim', hi: 'सिक्किम', code: 'SK', offices: ['gangtok'] },
+  { slug: 'tamil-nadu', name: 'Tamil Nadu', hi: 'तमिलनाडु', code: 'TN', offices: ['chennai'] },
+  { slug: 'telangana', name: 'Telangana', hi: 'तेलंगाना', code: 'TG', offices: ['hyderabad'] },
+  { slug: 'tripura', name: 'Tripura', hi: 'त्रिपुरा', code: 'TR', offices: ['agartala'] },
+  { slug: 'uttar-pradesh', name: 'Uttar Pradesh', hi: 'उत्तर प्रदेश', code: 'UP', offices: ['lucknow', 'kanpur'] },
+  { slug: 'uttarakhand', name: 'Uttarakhand', hi: 'उत्तराखंड', code: 'UK', offices: ['dehradun'] },
+  { slug: 'west-bengal', name: 'West Bengal', hi: 'पश्चिम बंगाल', code: 'WB', offices: ['kolkata'] },
+];
+
+// office = RBI regional office whose holiday list applies. derived = city has no RBI office of its own;
+// we use the RBI list of the office for its state and say so on the page.
+export const CITIES: City[] = [
+  { slug: 'mumbai', name: 'Mumbai', hi: 'मुंबई', office: 'mumbai', state: 'maharashtra' },
+  { slug: 'delhi', name: 'Delhi', hi: 'दिल्ली', office: 'new-delhi', state: 'delhi' },
+  { slug: 'bengaluru', name: 'Bengaluru', hi: 'बेंगलुरु', office: 'bengaluru', state: 'karnataka' },
+  { slug: 'hyderabad', name: 'Hyderabad', hi: 'हैदराबाद', office: 'hyderabad', state: 'telangana' },
+  { slug: 'chennai', name: 'Chennai', hi: 'चेन्नई', office: 'chennai', state: 'tamil-nadu' },
+  { slug: 'kolkata', name: 'Kolkata', hi: 'कोलकाता', office: 'kolkata', state: 'west-bengal' },
+  { slug: 'pune', name: 'Pune', hi: 'पुणे', office: 'mumbai', state: 'maharashtra', derived: true },
+  { slug: 'ahmedabad', name: 'Ahmedabad', hi: 'अहमदाबाद', office: 'ahmedabad', state: 'gujarat' },
+  { slug: 'jaipur', name: 'Jaipur', hi: 'जयपुर', office: 'jaipur', state: 'rajasthan' },
+  { slug: 'lucknow', name: 'Lucknow', hi: 'लखनऊ', office: 'lucknow', state: 'uttar-pradesh' },
+  { slug: 'kanpur', name: 'Kanpur', hi: 'कानपुर', office: 'kanpur', state: 'uttar-pradesh' },
+  { slug: 'nagpur', name: 'Nagpur', hi: 'नागपुर', office: 'nagpur', state: 'maharashtra' },
+  { slug: 'navi-mumbai', name: 'Navi Mumbai', hi: 'नवी मुंबई', office: 'belapur', state: 'maharashtra' },
+  { slug: 'thane', name: 'Thane', hi: 'ठाणे', office: 'mumbai', state: 'maharashtra', derived: true },
+  { slug: 'surat', name: 'Surat', hi: 'सूरत', office: 'ahmedabad', state: 'gujarat', derived: true },
+  { slug: 'patna', name: 'Patna', hi: 'पटना', office: 'patna', state: 'bihar' },
+  { slug: 'bhopal', name: 'Bhopal', hi: 'भोपाल', office: 'bhopal', state: 'madhya-pradesh' },
+  { slug: 'indore', name: 'Indore', hi: 'इंदौर', office: 'bhopal', state: 'madhya-pradesh', derived: true },
+  { slug: 'chandigarh', name: 'Chandigarh', hi: 'चंडीगढ़', office: 'chandigarh', state: 'chandigarh' },
+  { slug: 'bhubaneswar', name: 'Bhubaneswar', hi: 'भुवनेश्वर', office: 'bhubaneswar', state: 'odisha' },
+  { slug: 'guwahati', name: 'Guwahati', hi: 'गुवाहाटी', office: 'guwahati', state: 'assam' },
+  { slug: 'kochi', name: 'Kochi', hi: 'कोच्चि', office: 'kochi', state: 'kerala' },
+  { slug: 'thiruvananthapuram', name: 'Thiruvananthapuram', hi: 'तिरुवनंतपुरम', office: 'thiruvananthapuram', state: 'kerala' },
+  { slug: 'visakhapatnam', name: 'Visakhapatnam', hi: 'विशाखापत्तनम', office: 'vijayawada', state: 'andhra-pradesh', derived: true },
+  { slug: 'vijayawada', name: 'Vijayawada', hi: 'विजयवाड़ा', office: 'vijayawada', state: 'andhra-pradesh' },
+  { slug: 'dehradun', name: 'Dehradun', hi: 'देहरादून', office: 'dehradun', state: 'uttarakhand' },
+  { slug: 'ranchi', name: 'Ranchi', hi: 'रांची', office: 'ranchi', state: 'jharkhand' },
+  { slug: 'raipur', name: 'Raipur', hi: 'रायपुर', office: 'raipur', state: 'chhattisgarh' },
+  { slug: 'shimla', name: 'Shimla', hi: 'शिमला', office: 'shimla', state: 'himachal-pradesh' },
+  { slug: 'jammu', name: 'Jammu', hi: 'जम्मू', office: 'jammu', state: 'jammu-and-kashmir' },
+  { slug: 'srinagar', name: 'Srinagar', hi: 'श्रीनगर', office: 'srinagar', state: 'jammu-and-kashmir' },
+  { slug: 'panaji', name: 'Panaji (Goa)', hi: 'पणजी (गोवा)', office: 'panaji', state: 'goa' },
+  { slug: 'gangtok', name: 'Gangtok', hi: 'गंगटोक', office: 'gangtok', state: 'sikkim' },
+  { slug: 'imphal', name: 'Imphal', hi: 'इंफाल', office: 'imphal', state: 'manipur' },
+  { slug: 'shillong', name: 'Shillong', hi: 'शिलांग', office: 'shillong', state: 'meghalaya' },
+  { slug: 'agartala', name: 'Agartala', hi: 'अगरतला', office: 'agartala', state: 'tripura' },
+  { slug: 'aizawl', name: 'Aizawl', hi: 'आइज़ोल', office: 'aizawl', state: 'mizoram' },
+  { slug: 'kohima', name: 'Kohima', hi: 'कोहिमा', office: 'kohima', state: 'nagaland' },
+  { slug: 'itanagar', name: 'Itanagar', hi: 'ईटानगर', office: 'itanagar', state: 'arunachal-pradesh' },
+];
+
+export const TOP_CITIES = ['mumbai', 'delhi', 'bengaluru', 'hyderabad', 'chennai', 'kolkata', 'pune', 'ahmedabad', 'jaipur', 'lucknow'];
+
+export const cityBySlug = (s: string) => CITIES.find((c) => c.slug === s);
+export const stateBySlug = (s: string) => STATES.find((c) => c.slug === s);

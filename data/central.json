@@ -1,0 +1,49 @@
+{
+ "source": "https://doptcirculars.nic.in/Default.aspx?URL=2vsQHp2tsbRD",
+ "checked": "2026-11-11",
+ "2026": {
+  "om": "DoPT O.M. No. 12/2/2023-JCA dated 3 July 2025; Bakrid date changed by O.M. No. 12/3/2023-JCA dated 22 May 2026",
+  "holidays": [
+   {"d":"2026-01-26","n":"Republic Day","hi":"गणतंत्र दिवस","c":true},
+   {"d":"2026-03-04","n":"Holi","hi":"होली","c":false},
+   {"d":"2026-03-21","n":"Id-ul-Fitr","hi":"ईद-उल-फ़ित्र","c":true,"moon":true},
+   {"d":"2026-03-26","n":"Ram Navami","hi":"राम नवमी","c":false},
+   {"d":"2026-03-31","n":"Mahavir Jayanti","hi":"महावीर जयंती","c":true},
+   {"d":"2026-04-03","n":"Good Friday","hi":"गुड फ्राइडे","c":true},
+   {"d":"2026-05-01","n":"Buddha Purnima","hi":"बुद्ध पूर्णिमा","c":true},
+   {"d":"2026-05-28","n":"Id-ul-Zuha (Bakrid)","hi":"ईद-उल-ज़ुहा (बकरीद)","c":true,"moon":true},
+   {"d":"2026-06-26","n":"Muharram","hi":"मुहर्रम","c":true,"moon":true},
+   {"d":"2026-08-15","n":"Independence Day","hi":"स्वतंत्रता दिवस","c":true},
+   {"d":"2026-08-26","n":"Milad-un-Nabi (Id-e-Milad)","hi":"मिलाद-उन-नबी","c":true,"moon":true},
+   {"d":"2026-09-04","n":"Janmashtami","hi":"जन्माष्टमी","c":false},
+   {"d":"2026-10-02","n":"Mahatma Gandhi's Birthday","hi":"गांधी जयंती","c":true},
+   {"d":"2026-10-20","n":"Dussehra","hi":"दशहरा","c":true},
+   {"d":"2026-11-08","n":"Diwali (Deepavali)","hi":"दिवाली","c":true},
+   {"d":"2026-11-24","n":"Guru Nanak's Birthday","hi":"गुरु नानक जयंती","c":true},
+   {"d":"2026-12-25","n":"Christmas Day","hi":"क्रिसमस","c":true}
+  ]
+ },
+ "2027": {
+  "om": "DoPT O.M. No. 12/2/2023-JCA dated 16 July 2026",
+  "pdf": "https://dopt.gov.in/static/uploads/2026/08/ebbf46e43f042fbc5c6fe7fd9da2bb2c.pdf",
+  "holidays": [
+   {"d":"2027-01-26","n":"Republic Day","hi":"गणतंत्र दिवस","c":true},
+   {"d":"2027-03-10","n":"Id-ul-Fitr","hi":"ईद-उल-फ़ित्र","c":true,"moon":true},
+   {"d":"2027-03-23","n":"Holi","hi":"होली","c":false},
+   {"d":"2027-03-26","n":"Good Friday","hi":"गुड फ्राइडे","c":true},
+   {"d":"2027-04-15","n":"Ram Navami","hi":"राम नवमी","c":false},
+   {"d":"2027-04-19","n":"Mahavir Jayanti","hi":"महावीर जयंती","c":true},
+   {"d":"2027-05-17","n":"Id-ul-Zuha (Bakrid)","hi":"ईद-उल-ज़ुहा (बकरीद)","c":true,"moon":true},
+   {"d":"2027-05-20","n":"Buddha Purnima","hi":"बुद्ध पूर्णिमा","c":true},
+   {"d":"2027-06-16","n":"Muharram","hi":"मुहर्रम","c":true,"moon":true},
+   {"d":"2027-08-15","n":"Independence Day","hi":"स्वतंत्रता दिवस","c":true},
+   {"d":"2027-08-15","n":"Milad-un-Nabi (Id-e-Milad)","hi":"मिलाद-उन-नबी","c":true,"moon":true},
+   {"d":"2027-08-25","n":"Janmashtami","hi":"जन्माष्टमी","c":false},
+   {"d":"2027-10-02","n":"Mahatma Gandhi's Birthday","hi":"गांधी जयंती","c":true},
+   {"d":"2027-10-09","n":"Dussehra (Vijaya Dashmi)","hi":"दशहरा","c":true},
+   {"d":"2027-10-29","n":"Diwali (Deepavali)","hi":"दिवाली","c":true},
+   {"d":"2027-11-14","n":"Guru Nanak's Birthday","hi":"गुरु नानक जयंती","c":true},
+   {"d":"2027-12-25","n":"Christmas Day","hi":"क्रिसमस","c":true}
+  ]
+ }
+}
