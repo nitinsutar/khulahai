@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   openGraph: { siteName: 'Khula Hai', type: 'website', locale: 'en_IN' },
   twitter: { card: 'summary_large_image' },
   formatDetection: { telephone: false },
+  verification: { google: 'MipxCIwtdwHvb139zN1BSGWMVtNoZbG05cIRUtJAk2w' },
 };
 export const viewport: Viewport = { themeColor: '#F4F4F1', width: 'device-width', initialScale: 1 };
 
