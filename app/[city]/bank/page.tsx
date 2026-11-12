@@ -1,4 +1,4 @@
-import { webPageLd, qaLd } from '@/lib/ld';
+import { webPageLd } from '@/lib/ld';
 import { bankAnswerText } from '@/components/answer';
 import { notFound } from 'next/navigation';
 import { Page } from '@/components/page';
@@ -32,7 +32,7 @@ export default async function P({ params }: { params: Promise<{ city: string }> 
   const st = bankDay(cityHolidays(c), t);
   return (
     <Page alt={`/hi/${c.slug}/bank`}>
-      <JsonLd data={[webPageLd({ name: `Is the bank open today in ${c.name}?`, path: `/${c.slug}/bank`, basedOn: [RBI.source] }), qaLd({ q: `Is the bank open today in ${c.name}?`, a: bankAnswerText(c, st, nextBankOpen(cityHolidays(c), t)), path: `/${c.slug}/bank` }), faqLd(bankFaq(c, 'en')), crumbLd([{ name: 'Home', path: '/' }, { name: c.name, path: `/${c.slug}` }, { name: 'Banks', path: `/${c.slug}/bank` }])]} />
+      <JsonLd data={[webPageLd({ name: `Is the bank open today in ${c.name}?`, path: `/${c.slug}/bank`, basedOn: [RBI.source] }), faqLd(bankFaq(c, 'en')), crumbLd([{ name: 'Home', path: '/' }, { name: c.name, path: `/${c.slug}` }, { name: 'Banks', path: `/${c.slug}/bank` }])]} />
       <BankView city={c} today={t} />
     </Page>
   );

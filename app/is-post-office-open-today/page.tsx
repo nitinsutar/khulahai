@@ -4,7 +4,7 @@ import { Crumb, Pill, Source, Share, Faq, JsonLd, faqLd, crumbLd } from '@/compo
 import { INDIAPOST, LAST_CHECKED, circleShort } from '@/lib/data';
 import { todayIST, fmtLong, fmtMed, dow, addDays } from '@/lib/date';
 import { meta } from '@/lib/meta';
-import { webPageLd, qaLd } from '@/lib/ld';
+import { webPageLd } from '@/lib/ld';
 
 export const revalidate = 300;
 const PATH = '/is-post-office-open-today';
@@ -54,7 +54,6 @@ export default function P() {
     <Page>
       <JsonLd data={[
         webPageLd({ name: 'Is the post office open today?', path: PATH, basedOn: [INDIAPOST.source] }),
-        qaLd({ q: `Is the post office open today (${fmtLong(t)})?`, a, path: PATH }),
         faqLd(faq),
         crumbLd([{ name: 'Home', path: '/' }, { name: 'Post office today', path: PATH }]),
       ]} />

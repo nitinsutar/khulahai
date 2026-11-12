@@ -2,7 +2,7 @@ import { Page } from '@/components/page';
 import { GnjView, gnjAnswer, gnjFaq, gnjData, GNJ } from '@/components/gnj';
 import { meta } from '@/lib/meta';
 import { JsonLd, faqLd, crumbLd } from '@/components/ui';
-import { webPageLd, qaLd } from '@/lib/ld';
+import { webPageLd } from '@/lib/ld';
 import { RBI, NSE, MCX, INDIAPOST } from '@/lib/data';
 
 export const revalidate = 3600;
@@ -21,7 +21,6 @@ export default function P() {
     <Page lang="hi" alt="/is-bank-open-on-guru-nanak-jayanti-2026">
       <JsonLd data={[
         webPageLd({ name: 'गुरु नानक जयंती 2026 पर बैंक खुला है या नहीं?', path: PATH, lang: 'hi', basedOn: [RBI.source, NSE.source, MCX.source, INDIAPOST.source] }),
-        qaLd({ q: `क्या गुरु नानक जयंती 2026 (${GNJ}) को बैंक खुला है?`, a: gnjAnswer('hi'), path: PATH, lang: 'hi' }),
         faqLd(gnjFaq('hi')),
         crumbLd([{ name: 'होम', path: '/hi' }, { name: 'गुरु नानक जयंती 2026', path: PATH }]),
       ]} />

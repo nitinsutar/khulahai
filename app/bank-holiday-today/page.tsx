@@ -4,7 +4,7 @@ import { todayIST, fmtMed } from '@/lib/date';
 import { meta } from '@/lib/meta';
 import { bankDay, officesClosedOn, RBI } from '@/lib/data';
 import { JsonLd, crumbLd } from '@/components/ui';
-import { webPageLd, qaLd } from '@/lib/ld';
+import { webPageLd } from '@/lib/ld';
 
 export const revalidate = 300;
 const PATH = '/bank-holiday-today';
@@ -26,7 +26,6 @@ export default function P() {
     <Page alt="/hi/aaj-bank-khula-hai">
       <JsonLd data={[
         webPageLd({ name: 'Bank holiday today', path: PATH, basedOn: [RBI.source] }),
-        qaLd({ q: 'Is the bank open today?', a: `${a.b} ${a.r}`, path: PATH }),
         crumbLd([{ name: 'Home', path: '/' }, { name: 'Bank holiday today', path: PATH }]),
       ]} />
       <TodayAll day={t} label="today" today={t} />

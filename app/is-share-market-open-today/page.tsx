@@ -4,7 +4,7 @@ import { todayIST, nowISTMinutes, fmtMed, fmtLong } from '@/lib/date';
 import { meta } from '@/lib/meta';
 import { JsonLd, faqLd, crumbLd } from '@/components/ui';
 import { marketDay, nextMarketOpen, NSE } from '@/lib/data';
-import { webPageLd, qaLd } from '@/lib/ld';
+import { webPageLd } from '@/lib/ld';
 
 export const revalidate = 60;
 const PATH = '/is-share-market-open-today';
@@ -26,7 +26,6 @@ export default function P() {
     <Page alt="/hi/share-market">
       <JsonLd data={[
         webPageLd({ name: 'Is the share market open today?', path: PATH, basedOn: [NSE.source, NSE.bseSource] }),
-        qaLd({ q: `Is the share market open today (${fmtLong(t)})?`, a, path: PATH }),
         faqLd(marketFaq('en')),
         crumbLd([{ name: 'Home', path: '/' }, { name: 'Share market today', path: PATH }]),
       ]} />

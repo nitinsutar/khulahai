@@ -14,13 +14,6 @@ export function webPageLd({ name, path, description, lang = 'en', basedOn = [], 
     ...(basedOn.length ? { isBasedOn: basedOn.length === 1 ? basedOn[0] : basedOn } : {}),
   };
 }
-export function qaLd({ q, a, path, lang = 'en' }: { q: string; a: string; path: string; lang?: 'en' | 'hi' }) {
-  const t = nowIST();
-  return {
-    '@context': 'https://schema.org', '@type': 'QAPage', url: abs(path), inLanguage: lang === 'hi' ? 'hi-IN' : 'en-IN',
-    mainEntity: { '@type': 'Question', name: q, text: q, answerCount: 1, dateCreated: t, author: ORG, acceptedAnswer: { '@type': 'Answer', text: a, dateCreated: t, url: abs(path), author: ORG } },
-  };
-}
 export function datasetLd({ name, description, path, csv, temporal, basedOn }: { name: string; description: string; path: string; csv: string; temporal: string; basedOn: string }) {
   return {
     '@context': 'https://schema.org', '@type': 'Dataset', name, description, url: abs(path), creator: ORG,

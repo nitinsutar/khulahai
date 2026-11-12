@@ -1,4 +1,4 @@
-import { webPageLd, qaLd } from '@/lib/ld';
+import { webPageLd } from '@/lib/ld';
 import { bankAnswerText } from '@/components/answer';
 import { notFound } from 'next/navigation';
 import { Page } from '@/components/page';
