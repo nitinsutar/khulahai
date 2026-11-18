@@ -10,8 +10,8 @@ const nextConfig: NextConfig = {
       { source: '/stock-market', destination: '/is-share-market-open-today', permanent: true },
       { source: '/nse-holidays-2026', destination: '/nse-bse-holidays-2026', permanent: true },
       { source: '/bank-holidays', destination: '/bank-holidays-2026', permanent: false },
-      { source: '/alerts', destination: '/', permanent: true, statusCode: 301 },
-      { source: '/hi/alerts', destination: '/hi', permanent: true, statusCode: 301 },
+      { source: '/alerts', destination: '/', statusCode: 301 },
+      { source: '/hi/alerts', destination: '/hi', statusCode: 301 },
     ];
   },
 };
