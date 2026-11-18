@@ -45,7 +45,6 @@ export function Footer({ lang = 'en' }: { lang?: Lang }) {
           <a href="/bank-holidays-2026">Bank holidays 2026</a>
           <a href="/cheque-clearing-date">Cheque clearing date</a>
           <a href="/long-weekends">Long weekends 2026</a>
-          <a href="/alerts">Holiday alerts</a>
           <a href="/bank-holiday-today">Bank holiday today</a>
           <a href="/bank-holiday-tomorrow">Bank holiday tomorrow</a>
           <a href="/saturday-bank-holiday">Saturday bank holidays</a>

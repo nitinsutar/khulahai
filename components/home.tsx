@@ -6,7 +6,7 @@ import { shortName } from '@/lib/names';
 import { BANK_HOURS, POST_HOURS } from '@/lib/site';
 import { SvcIcon } from './icons';
 import { CitySwitcher, Go, Pill } from './ui';
-import { AlertsCta, ToolsHome } from './tools';
+import { ToolsHome } from './tools';
 
 export function HomeView({ city, today, lang = 'en', h1 }: { city: City; today: string; lang?: 'en' | 'hi'; h1?: string }) {
   const hi = lang === 'hi';
@@ -117,7 +117,6 @@ export function HomeView({ city, today, lang = 'en', h1 }: { city: City; today: 
           })()}
           <a className="lnk" href="/bank-holiday-tomorrow" style={{ display: 'inline-block', marginTop: 10 }}>{hi ? 'कल कहाँ छुट्टी है →' : 'Bank holiday tomorrow →'}</a>
         </div>
-        <AlertsCta lang={lang} city={city} />
         <div className="adslot" aria-hidden="true" />
       </aside>
     </div>

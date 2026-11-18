@@ -13,7 +13,7 @@ import type { Lang } from '@/lib/lang';
 import { cityAlts } from '@/lib/lang';
 import { LangLinks } from './ui';
 import { RegionalBankView, regionalBankFaq } from './localeViews';
-import { AlertsCta, ChequeCta } from './tools';
+import { ChequeCta } from './tools';
 
 export function bankFaq(city: City, lang: Lang) {
   if (lang !== 'en' && lang !== 'hi') return regionalBankFaq(city, lang);
@@ -108,7 +108,6 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
           ))}
           <a className="lnk" href={`/bank-holidays/${['january','february','march','april','may','june','july','august','september','october','november','december'][monthNum(today) - 1]}-2026`} style={{ display: 'inline-block', marginTop: 10 }}>{hi ? 'सभी राज्यों की इस महीने की छुट्टियाँ →' : 'This month across India →'}</a>
         </div>
-        <AlertsCta lang={lang} city={city} />
         <div className="adslot" aria-hidden="true" />
       </aside>
     </div>

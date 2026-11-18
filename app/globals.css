@@ -293,5 +293,5 @@ main{padding:14px 0 40px}
 .toolform .btn{width:100%}
 .toolform button.btn{cursor:pointer;border:0;font:inherit}
 @media (min-width:640px){
-  .toolgrid{grid-template-columns:repeat(3,1fr)}
+  .toolgrid{grid-template-columns:repeat(2,1fr)}
 }

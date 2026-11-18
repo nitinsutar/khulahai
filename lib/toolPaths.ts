@@ -1,11 +1,10 @@
 import type { Lang } from './lang';
 
-export type Tool = 'cheque' | 'weekends' | 'alerts';
+export type Tool = 'cheque' | 'weekends';
 
 const BASE: Record<Tool, string> = {
   cheque: '/cheque-clearing-date',
   weekends: '/long-weekends',
-  alerts: '/alerts',
 };
 
 export function toolPath(lang: Lang, tool: Tool, extra = ''): string {

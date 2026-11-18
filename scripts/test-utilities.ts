@@ -3,7 +3,6 @@ import { chequeClearing } from '../lib/clearing';
 import { planForOffice, weekendPlan } from '../lib/weekends';
 import { cityHolidays } from '../lib/data';
 import { cityBySlug } from '../lib/places';
-import { parseIndianMobile, validateSignup } from '../lib/alerts';
 
 let failed = 0;
 function check(name: string, fn: () => void) {
@@ -224,25 +223,6 @@ check('city holidays helper matches office for derived Pune', () => {
   assert.equal(plan.natural.length, mum.natural.length);
 });
 
-
-check('indian mobile parsing', () => {
-  assert.equal(parseIndianMobile('9876543210'), '+919876543210');
-  assert.equal(parseIndianMobile('+91 98765 43210'), '+919876543210');
-  assert.equal(parseIndianMobile('09876543210'), '+919876543210');
-  assert.equal(parseIndianMobile('12345'), null);
-  assert.equal(parseIndianMobile('0876543210'), null);
-});
-
-check('signup validation requires consent, city and phone', () => {
-  const bad = validateSignup({ city: 'mumbai', phone: '9876543210', consent: false });
-  assert.equal(bad.ok, false);
-  const ok = validateSignup({ city: 'pune', phone: '9876543210', email: 'a@b.co', consent: true });
-  assert.equal(ok.ok, true);
-  if (ok.ok) {
-    assert.equal(ok.phone, '+919876543210');
-    assert.equal(ok.city.office, 'mumbai');
-  }
-});
 
 if (failed) {
   console.error(`\n${failed} failed`);

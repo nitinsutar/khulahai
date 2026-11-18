@@ -1,6 +1,5 @@
 {
   "crons": [
-    { "path": "/api/revalidate", "schedule": "35 18 * * *" },
-    { "path": "/api/alerts/run", "schedule": "30 13 * * *" }
+    { "path": "/api/revalidate", "schedule": "35 18 * * *" }
   ]
 }

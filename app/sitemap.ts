@@ -32,8 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     e('/hi/long-weekends', 0.7, 'weekly', { en: '/long-weekends', hi: '/hi/long-weekends' }),
     ...STATES.map((s) => e(`/long-weekends/${s.slug}`, 0.7, 'weekly', { en: `/long-weekends/${s.slug}`, hi: `/hi/long-weekends/${s.slug}` })),
     ...STATES.map((s) => e(`/hi/long-weekends/${s.slug}`, 0.6, 'weekly', { en: `/long-weekends/${s.slug}`, hi: `/hi/long-weekends/${s.slug}` })),
-    e('/alerts', 0.6, 'monthly', { en: '/alerts', hi: '/hi/alerts' }),
-    e('/hi/alerts', 0.5, 'monthly', { en: '/alerts', hi: '/hi/alerts' }),
     ...STATES.map((s) => e(`/bank-holidays-2026/${s.slug}`, 0.8, 'weekly')),
     ...MONTHS.map((m) => e(`/bank-holidays/${m}-2026`, 0.6, 'weekly')),
     ...CITIES.flatMap((c) => {
