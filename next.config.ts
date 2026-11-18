@@ -2,6 +2,7 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
+  outputFileTracingIncludes: { '/og': ['./assets/**/*'] },
   async redirects() {
     return [
       { source: '/share-market', destination: '/is-share-market-open-today', permanent: true },
