@@ -1,12 +1,13 @@
 import { City, stateBySlug } from '@/lib/places';
-import { cityHolidays, nextPostHoliday, nextPostOpen, postDay, PostStatus, LAST_CHECKED, bankDay, upcomingPostHolidays, circleOf, circleShort, INDIAPOST } from '@/lib/data';
+import { cityHolidays, nextPostHoliday, nextPostOpen, postDay, PostStatus, LAST_CHECKED, upcomingPostHolidays, circleOf, circleShort, INDIAPOST } from '@/lib/data';
 import { addDays, fmtDM, fmtLong, fmtMed } from '@/lib/date';
 import { shortName } from '@/lib/names';
 import { T } from '@/lib/text';
-import { postCityH1, GNJ_2026 } from '@/lib/titles';
+import { postCityH1 } from '@/lib/titles';
 import { POST_HOURS } from '@/lib/site';
 import { SvcIcon } from './icons';
-import { CitySwitcher, Crumb, DTile, Faq, Pill, Share, Source } from './ui';
+import { CitySwitcher, Crumb, Faq, Pill, Share, Source } from './ui';
+import { PostCityLead, postCityFaqs } from './cityLead';
 
 const pillOf = (p: PostStatus): 'yes' | 'no' | 'neu' => (p.state === 'closed' ? 'no' : p.state === 'check' ? 'neu' : 'yes');
 export function postLabel(p: PostStatus, l: 'en' | 'hi', long = false) {
@@ -56,13 +57,6 @@ export function PostView({ city, today, lang = 'en' }: { city: City; today: stri
   const cname = hi ? city.hi : city.name;
   const pre = hi ? '/hi' : '';
   const year = today.slice(0, 4) === '2027' ? '2027' : '2026';
-  const unlike: { d: string; b: ReturnType<typeof bankDay>; p: PostStatus }[] = [];
-  for (let i = 0; i <= 30; i++) {
-    const d = addDays(today, i);
-    const b = bankDay(hols, d);
-    const pp = postDay(city.state, d, hols);
-    if (!b.open && b.reason.kind !== 'sunday' && pp.state !== 'closed') unlike.push({ d, b, p: pp });
-  }
   const shareText = hi ? `${cname} में आज डाकघर ${p.state === 'closed' ? 'बंद हैं' : 'खुले हैं'} (${fmtMed(today, 'hi')})` : `Post offices in ${city.name}: ${postLabel(p, 'en')} today (${fmtMed(today)})`;
   return (
     <div className="layout narrow">
@@ -87,32 +81,7 @@ export function PostView({ city, today, lang = 'en' }: { city: City; today: stri
           <a href={INDIAPOST.source} rel="noopener">{hi ? `अवकाश सूची ${year}` : `Holidays list ${year}`}</a>, {circ.name}
         </Source>
         <Share text={shareText} path={`${pre}/${city.slug}/post-office`} lang={lang} ics={{ href: `/ics/post-office-${year}.ics`, label: hi ? 'कैलेंडर में जोड़ें' : 'Add to calendar' }} />
-        {unlike.length > 0 && (
-          <>
-            <div className="sech"><h2>{hi ? 'बैंकों से अलग' : 'Unlike banks'}</h2><span>{hi ? 'अगले 30 दिन' : 'Next 30 days'}</span></div>
-            <div className="card list">
-              {unlike.map((u) => (
-                <div className="row" key={u.d}>
-                  <DTile iso={u.d} lang={lang} />
-                  <div className="nm">{u.b.reason.kind === 'holiday' ? shortName(u.b.reason.rbi!, lang) : u.b.reason.kind === 'saturday2' ? (hi ? 'दूसरा शनिवार' : '2nd Saturday') : hi ? 'चौथा शनिवार' : '4th Saturday'}<small>{hi ? 'बैंक बंद' : 'Banks closed'} · {hi ? 'डाकघर' : 'post office'}: {postLabel(u.p, lang)}</small></div>
-                  <Pill v={pillOf(u.p)} size="xs">{postLabel(u.p, lang)}</Pill>
-                </div>
-              ))}
-            </div>
-          </>
-        )}
-        {today <= GNJ_2026 && (
-          <p className="note">
-            <b>{hi ? '24 नवंबर, गुरु नानक जयंती:' : "24 Nov, Guru Nanak's Birthday:"}</b>{' '}
-            {hi
-              ? 'पूरे भारत में डाकघर बंद हैं। यह भारत डाक की अखिल भारतीय अवकाश सूची में है।'
-              : "Post offices across India are closed. It is on India Post's All-India holiday list."}
-            {' '}<a href="/is-post-office-open-today">{hi ? 'डाकघर आज' : 'Post office today'}</a>
-            {bankDay(cityHolidays(city), GNJ_2026).open
-              ? (hi ? ` ${cname} में उस दिन बैंक खुले रहेंगे।` : ` Banks in ${city.name} stay open that day.`)
-              : (hi ? ` ${cname} में उस दिन बैंक भी बंद हैं।` : ` Banks in ${city.name} are also closed that day.`)}
-          </p>
-        )}
+        <PostCityLead city={city} today={today} lang={lang} />
         <p className="footsrc">
           {hi ? `यह जानकारी भारत डाक की ${circ.name} सूची से है। “अवकाश नहीं” का अर्थ है कि दिन सूची में नहीं है; समय के लिए अपने डाकघर से पुष्टि करें।` : `Status uses India Post’s ${circ.name} list${circ.note ? ` (${circ.note})` : ''}. “Not a holiday” means the day is not on the list; confirm Saturday hours with your office.`}{' '}
           <a href={`${hi ? '/hi' : ''}/${city.slug}/bank`}>{hi ? 'बैंक आज' : 'Bank today'}</a>{' · '}
@@ -120,7 +89,7 @@ export function PostView({ city, today, lang = 'en' }: { city: City; today: stri
           <a href="/post-office-holidays-2026">{hi ? '2026 की पूरी सूची →' : 'Full 2026 list →'}</a>
         </p>
         <div className="sech"><h2>{hi ? 'अक्सर पूछे जाने वाले सवाल' : 'Questions people ask'}</h2></div>
-        <Faq items={postFaq(city, lang)} />
+        <Faq items={[...postCityFaqs(city, today, lang), ...postFaq(city, lang)]} />
       </div>
       <aside className="side">
         <div className="card panel"><div className="top"><h2>{hi ? 'दूसरा शहर देखें' : 'Check another city'}</h2></div><CitySwitcher current={city.slug} lang={lang} base="post-office" /></div>

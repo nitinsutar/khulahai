@@ -1,13 +1,14 @@
 import { City, stateBySlug } from '@/lib/places';
-import { bankDay, cityHolidays, nextBankOpen, upcomingBankClosures, RBI, LAST_CHECKED, secondOrFourthSat } from '@/lib/data';
-import { addDays, dow, fmtDM, fmtLong, fmtMed, monthName, monthNum } from '@/lib/date';
+import { bankDay, cityHolidays, nextBankOpen, upcomingBankClosures, RBI, LAST_CHECKED } from '@/lib/data';
+import { addDays, fmtDM, fmtLong, fmtMed, monthName, monthNum } from '@/lib/date';
 import { bankReason, bankShort, T } from '@/lib/text';
-import { bankCityH1, gnjCityBankLine, GNJ_2026 } from '@/lib/titles';
+import { bankCityH1 } from '@/lib/titles';
 import { shortName } from '@/lib/names';
 import { BANK_HOURS } from '@/lib/site';
 import { SvcIcon } from './icons';
 import { BankAnswer } from './answer';
 import { CitySwitcher, Crumb, DTile, Faq, Pill, Share, Source } from './ui';
+import { BankCityLead, bankCityFaqs } from './cityLead';
 
 export function bankFaq(city: City, lang: 'en' | 'hi') {
   const st = stateBySlug(city.state)!;
@@ -34,17 +35,10 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
   const tm = bankDay(hols, addDays(today, 1));
   const y = bankDay(hols, addDays(today, -1));
   const nb = nextBankOpen(hols, today);
-  const sat = addDays(today, (6 - dow(today) + 7) % 7);
-  const satS = bankDay(hols, sat);
   const up = upcomingBankClosures(hols, addDays(today, 1), 40);
   const cname = hi ? city.hi : city.name;
   const where = hi ? st.hi : st.name;
-  const sameMonthSats = (() => {
-    const out: string[] = [];
-    for (let d = sat; monthNum(d) === monthNum(sat); d = addDays(d, 7)) if (secondOrFourthSat(d) && d !== sat) out.push(d);
-    return out;
-  })();
-  const faq = bankFaq(city, lang);
+  const faq = [...bankCityFaqs(city, today, lang), ...bankFaq(city, lang)];
   const pre = hi ? '/hi' : '';
   const shareText = hi ? `${cname} में आज बैंक ${b.open ? 'खुले हैं' : 'बंद हैं'} (${fmtMed(today, 'hi')})` : `Banks in ${city.name} are ${b.open ? 'open' : 'closed'} today (${fmtMed(today)})`;
   return (
@@ -73,19 +67,11 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
         </Source>
         <Share text={shareText} path={`${pre}/${city.slug}/bank`} lang={lang} ics={{ href: `/ics/bank-${city.state}-2026.ics`, label: hi ? 'कैलेंडर में जोड़ें' : 'Add to calendar' }} />
 
-        <p className="note">{hi ? 'यह स्थिति अनुसूचित बैंकों (SBI, HDFC, ICICI आदि) के लिए है। कुछ सहकारी बैंक और क्षेत्रीय ग्रामीण बैंक (RRB) राज्य की अलग सूची मान सकते हैं — अपनी शाखा से पुष्टि करें।' : 'This covers scheduled banks (SBI, HDFC, ICICI, Axis and others). Some co-operative banks and regional rural banks (RRBs) may follow a different state list — check with your branch.'}</p>
-        <div className={`card module ${satS.open ? 'openm' : 'closed'}`}>
-          <div className="k t">{sat === today ? (hi ? 'आज, शनिवार' : 'Today, Saturday') : hi ? 'इस शनिवार' : 'This Saturday'}, {fmtDM(sat, lang)}</div>
-          <h3>{satS.open ? (hi ? 'बैंक खुले' : 'Banks open') : hi ? 'बैंक बंद' : 'Banks closed'} <Pill v={satS.open ? 'yes' : 'no'} size="xs">{bankShort(satS.reason, lang)}</Pill></h3>
-          <p>
-            {hi ? 'सभी अनुसूचित और गैर-अनुसूचित बैंक हर महीने के दूसरे और चौथे शनिवार को बंद रहते हैं।' : 'All scheduled and non-scheduled banks close on the second and fourth Saturday of every month.'}
-            {sameMonthSats.length > 0 && (hi ? ` इस महीने ${sameMonthSats.map((d) => fmtDM(d, 'hi')).join(', ')} भी।` : ` This month, also ${sameMonthSats.map((d) => fmtDM(d)).join(', ')}.`)}
-          </p>
-        </div>
-
-        <div className="sech"><h2>{hi ? `${cname} में आगे की छुट्टियाँ` : `Upcoming bank closures in ${city.name}`}</h2><span>{hi ? 'अगले 40 दिन, रविवार छोड़कर' : 'Next 40 days, excl. Sundays'}</span></div>
+        <BankCityLead city={city} today={today} lang={lang} />
+        <p className="note">{hi ? 'यह स्थिति अनुसूचित बैंकों (SBI, HDFC, ICICI आदि) के लिए है। कुछ सहकारी बैंक और क्षेत्रीय ग्रामीण बैंक (RRB) राज्य की अलग सूची मान सकते हैं, अपनी शाखा से पुष्टि करें।' : 'This covers scheduled banks (SBI, HDFC, ICICI, Axis and others). Some co-operative banks and regional rural banks (RRBs) may follow a different state list, so check with your branch.'}</p>
+        <div className="sech"><h2>{hi ? 'पूरे देश में बैंक शनिवार' : 'Nationwide bank Saturdays'}</h2><span>{hi ? 'अगले 40 दिन' : 'Next 40 days'}</span></div>
         <div className="card list">
-          {up.length === 0 ? <div className="row"><div className="nm">{hi ? 'कोई छुट्टी नहीं' : 'No closures in this period'}</div></div> : up.map((u) => (
+          {up.filter((u) => u.reason.kind === 'saturday2' || u.reason.kind === 'saturday4').map((u) => (
             <div className="row" key={u.date}>
               <DTile iso={u.date} lang={lang} />
               <div className="nm">{bankShort(u.reason, lang)}<small className="t">{fmtLong(u.date, lang)}</small></div>
@@ -93,7 +79,6 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
             </div>
           ))}
         </div>
-        {today <= GNJ_2026 && (() => { const line = gnjCityBankLine(city, today, bankDay(hols, GNJ_2026), lang); return line ? <p className="note"><b>{hi ? '24 नवंबर, गुरु नानक जयंती:' : '24 Nov, Guru Nanak Jayanti:'}</b> {line}{' '}<a href={hi ? '/hi/guru-nanak-jayanti-2026-bank-khula-hai' : '/is-bank-open-on-guru-nanak-jayanti-2026'}>{hi ? 'शहरवार सूची' : 'City-wise list'}</a>.</p> : null; })()}
         <p className="footsrc">
           <a href={`/bank-holidays-2026/${city.state}`}>{hi ? `${where} की 2026 की पूरी सूची →` : `Full 2026 bank holiday list for ${st.name} →`}</a>{' · '}
           <a href={`${pre}/${city.slug}/post-office`}>{hi ? 'डाकघर आज' : 'Post office today'}</a>{' · '}
