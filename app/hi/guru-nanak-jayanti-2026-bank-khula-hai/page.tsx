@@ -10,8 +10,8 @@ const PATH = '/hi/guru-nanak-jayanti-2026-bank-khula-hai';
 export function generateMetadata() {
   const n = gnjData().closed.length;
   return meta({
-    title: 'गुरु नानक जयंती 2026 (24 नवंबर) को बैंक खुला है या नहीं? शहरवार सूची',
-    description: `ज़्यादातर नहीं — 24 नवंबर 2026 को आरबीआई के 34 में से ${n} केंद्रों (मुंबई, दिल्ली सहित) में बैंक बंद; बेंगलुरु, चेन्नई में खुले। NSE/BSE बंद, MCX शाम खुला।`,
+    title: `गुरु नानक जयंती 24 नवंबर: ${n} केंद्रों में बैंक बंद`,
+    description: `गुरु नानक जयंती, 24 नवंबर 2026: 34 में से ${n} केंद्रों (मुंबई, दिल्ली) में बैंक बंद। बेंगलुरु, चेन्नई, पटना, अहमदाबाद में खुले। NSE/BSE बंद; MCX शाम खुला।`,
     path: PATH, en: '/is-bank-open-on-guru-nanak-jayanti-2026', hi: PATH,
     og: { t: 'गुरु नानक जयंती 2026', s: `24 नवंबर · ${n} केंद्रों में बैंक बंद`, v: 'no' },
   });

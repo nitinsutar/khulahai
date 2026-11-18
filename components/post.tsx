@@ -3,6 +3,7 @@ import { cityHolidays, nextPostHoliday, nextPostOpen, postDay, PostStatus, LAST_
 import { addDays, fmtDM, fmtLong, fmtMed } from '@/lib/date';
 import { shortName } from '@/lib/names';
 import { T } from '@/lib/text';
+import { postCityH1, GNJ_2026 } from '@/lib/titles';
 import { POST_HOURS } from '@/lib/site';
 import { SvcIcon } from './icons';
 import { CitySwitcher, Crumb, DTile, Faq, Pill, Share, Source } from './ui';
@@ -69,7 +70,7 @@ export function PostView({ city, today, lang = 'en' }: { city: City; today: stri
         <Crumb lang={lang} items={[{ href: hi ? '/hi' : '/', label: hi ? 'होम' : 'Home' }, { href: hi ? undefined : `/${city.slug}`, label: cname }, { label: hi ? 'डाकघर' : 'Post office' }]} />
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="post" size="lg" />
-          <h1 className="qh">{hi ? `क्या आज ${cname} में डाकघर खुला है?` : `Is the post office open today in ${city.name}?`}</h1>
+          <h1 className="qh">{postCityH1(city, today, p, lang)}</h1>
           <p className="big" id="ans">{hi ? `${cname} में डाकघर` : `Post office in ${city.name}`}</p>
           <div className="statusrow"><Pill v={pillOf(p)} size="lg">{postLabel(p, lang, true)}</Pill><span className="dt t">{fmtLong(today, lang)}</span></div>
           <p className="answer"><b>{p.state === 'closed' ? (hi ? `नहीं, ${cname} में डाकघर आज, ${fmtLong(today, 'hi')}, बंद हैं।` : `No, post offices in ${city.name} are closed today, ${fmtLong(today)}.`) : p.state === 'open' ? (hi ? `हाँ, ${cname} में डाकघर आज, ${fmtLong(today, 'hi')}, खुले हैं।` : `Yes, post offices in ${city.name} are open today, ${fmtLong(today)}.`) : (hi ? `${cname} में आज, ${fmtLong(today, 'hi')}, डाक अवकाश नहीं है।` : `Today, ${fmtLong(today)}, is not a postal holiday in ${city.name}.`)}</b> {postReason(p, lang, circle)} (<a href={INDIAPOST.source} rel="noopener">{hi ? 'भारत डाक अवकाश सूची' : 'India Post holidays list'}</a>){circ.note ? (hi ? '' : ` ${circ.note}.`) : ''} {hi ? 'डाक घर बैंक छुट्टी सूची से अलग सूची मानते हैं।' : 'Post offices follow a different list from banks.'}</p>
@@ -100,8 +101,22 @@ export function PostView({ city, today, lang = 'en' }: { city: City; today: stri
             </div>
           </>
         )}
+        {today <= GNJ_2026 && (
+          <p className="note">
+            <b>{hi ? '24 नवंबर, गुरु नानक जयंती:' : "24 Nov, Guru Nanak's Birthday:"}</b>{' '}
+            {hi
+              ? 'पूरे भारत में डाकघर बंद हैं। यह भारत डाक की अखिल भारतीय अवकाश सूची में है।'
+              : "Post offices across India are closed. It is on India Post's All-India holiday list."}
+            {' '}<a href="/is-post-office-open-today">{hi ? 'डाकघर आज' : 'Post office today'}</a>
+            {bankDay(cityHolidays(city), GNJ_2026).open
+              ? (hi ? ` ${cname} में उस दिन बैंक खुले रहेंगे।` : ` Banks in ${city.name} stay open that day.`)
+              : (hi ? ` ${cname} में उस दिन बैंक भी बंद हैं।` : ` Banks in ${city.name} are also closed that day.`)}
+          </p>
+        )}
         <p className="footsrc">
           {hi ? `यह जानकारी भारत डाक की ${circ.name} सूची से है। “अवकाश नहीं” का अर्थ है कि दिन सूची में नहीं है; समय के लिए अपने डाकघर से पुष्टि करें।` : `Status uses India Post’s ${circ.name} list${circ.note ? ` (${circ.note})` : ''}. “Not a holiday” means the day is not on the list; confirm Saturday hours with your office.`}{' '}
+          <a href={`${hi ? '/hi' : ''}/${city.slug}/bank`}>{hi ? 'बैंक आज' : 'Bank today'}</a>{' · '}
+          <a href={hi ? `/${city.slug}/post-office` : `/hi/${city.slug}/post-office`}>{hi ? 'English' : 'हिंदी'}</a>{' · '}
           <a href="/post-office-holidays-2026">{hi ? '2026 की पूरी सूची →' : 'Full 2026 list →'}</a>
         </p>
         <div className="sech"><h2>{hi ? 'अक्सर पूछे जाने वाले सवाल' : 'Questions people ask'}</h2></div>

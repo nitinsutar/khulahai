@@ -1,10 +1,11 @@
 import { notFound } from 'next/navigation';
 import { Page } from '@/components/page';
-import { PostView, postFaq, postLabel } from '@/components/post';
+import { PostView, postFaq } from '@/components/post';
 import { CITIES, cityBySlug } from '@/lib/places';
-import { todayIST, fmtMed } from '@/lib/date';
+import { todayIST, fmtDMs } from '@/lib/date';
 import { meta } from '@/lib/meta';
 import { postDay, cityHolidays } from '@/lib/data';
+import { postCityMeta } from '@/lib/titles';
 import { JsonLd, faqLd, crumbLd } from '@/components/ui';
 
 export const revalidate = 300;
@@ -15,11 +16,12 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const c = cityBySlug((await params).city)!;
   const t = todayIST();
   const p = postDay(c.state, t, cityHolidays(c));
+  const m = postCityMeta(c, t, p, 'en');
   return meta({
-    title: `Is Post Office Open Today in ${c.name}? ${fmtMed(t)} — ${postLabel(p, 'en')}`,
-    description: `Post offices in ${c.name}: ${postLabel(p, 'en')} today, ${fmtMed(t)}. Typical counter hours, tomorrow's status, and the India Post holiday list for the circle.`,
+    title: m.title,
+    description: m.description,
     path: `/${c.slug}/post-office`, en: `/${c.slug}/post-office`, hi: `/hi/${c.slug}/post-office`,
-    og: { t: `Post office in ${c.name}`, s: `${postLabel(p, 'en')} today · ${fmtMed(t)}`, v: p.state === 'closed' ? 'no' : p.state === 'check' ? 'neu' : 'yes' },
+    og: { t: m.title, s: `${fmtDMs(t)}`, v: m.ogV },
   });
 }
 export default async function P({ params }: { params: Promise<{ city: string }> }) {

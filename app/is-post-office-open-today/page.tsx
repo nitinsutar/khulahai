@@ -2,9 +2,10 @@ import { Page } from '@/components/page';
 import { SvcIcon } from '@/components/icons';
 import { Crumb, Pill, Source, Share, Faq, JsonLd, faqLd, crumbLd } from '@/components/ui';
 import { INDIAPOST, LAST_CHECKED, circleShort } from '@/lib/data';
-import { todayIST, fmtLong, fmtMed, dow, addDays } from '@/lib/date';
+import { todayIST, fmtLong, fmtMed, fmtDMs, dow, addDays } from '@/lib/date';
 import { meta } from '@/lib/meta';
 import { webPageLd } from '@/lib/ld';
+import { postNationalMeta, GNJ_2026 } from '@/lib/titles';
 
 export const revalidate = 300;
 const PATH = '/is-post-office-open-today';
@@ -32,12 +33,13 @@ function summary(d: string) {
 }
 export async function generateMetadata() {
   const t = todayIST();
-  const { a } = summary(t);
+  const { a, closed, all } = summary(t);
+  const m = postNationalMeta(t, a, closed.length, all?.n, dow(t) === 6, dow(t) === 0);
   return meta({
-    title: `Is the Post Office Open Today? ${fmtMed(t)} — India Post Circle-wise Status`,
-    description: `${a.split('. ')[0]}. Circle-wise status from the India Post holidays list, plus tomorrow.`.slice(0, 300),
+    title: m.title,
+    description: m.description,
     path: PATH,
-    og: { t: 'Post office today', s: fmtMed(t) },
+    og: { t: m.title, s: fmtDMs(t), v: m.ogV },
   });
 }
 const faq = [
@@ -47,9 +49,10 @@ const faq = [
 ];
 export default function P() {
   const t = todayIST();
-  const { rows, a } = summary(t);
+  const { rows, a, closed, all } = summary(t);
   const tm = addDays(t, 1);
   const ts = summary(tm);
+  const h1 = postNationalMeta(t, a, closed.length, all?.n, dow(t) === 6, dow(t) === 0).title;
   return (
     <Page>
       <JsonLd data={[
@@ -62,7 +65,7 @@ export default function P() {
           <Crumb items={[{ href: '/', label: 'Home' }, { label: 'Post office today' }]} />
           <section className="card hero" aria-labelledby="ans">
             <SvcIcon s="post" size="lg" />
-            <h1 className="qh">Is the post office open today?</h1>
+            <h1 className="qh">{h1}</h1>
             <p className="big" id="ans">Post offices in India</p>
             <div className="statusrow"><span className="dt t">{fmtLong(t)}</span></div>
             <p className="answer"><b>{a.split('. ')[0]}.</b> {a.split('. ').slice(1).join('. ')} (<a href={INDIAPOST.source} rel="noopener">India Post holidays list</a>). Post offices follow their own list, not the bank holiday list.</p>
@@ -76,10 +79,11 @@ export default function P() {
             ))}
           </div>
           <p className="note"><b>Tomorrow ({fmtMed(tm)}):</b> {ts.a}</p>
-          <Share text={`Is the post office open today? (${fmtMed(t)})`} path={PATH} />
+          {t <= GNJ_2026 && <p className="note"><b>24 Nov, Guru Nanak&apos;s Birthday:</b> post offices across India are closed. It is on India Post&apos;s All-India holiday list. Banks are not closed nationwide that day. <a href="/is-bank-open-on-guru-nanak-jayanti-2026">See where banks are open or closed</a>.</p>}
+          <Share text={`Is the post office open today? (${fmtDMs(t)})`} path={PATH} />
           <div className="sech"><h2>Questions people ask</h2></div>
           <Faq items={faq} />
-          <p className="footsrc"><a href="/post-office-holidays-2026">Post office holidays 2026</a> · <a href="/mumbai/post-office">Mumbai</a> · <a href="/delhi/post-office">Delhi</a> · <a href="/bank-holiday-today">Bank holiday today</a></p>
+          <p className="footsrc"><a href="/post-office-holidays-2026">Post office holidays 2026</a> · <a href="/mumbai/post-office">Mumbai</a> · <a href="/delhi/post-office">Delhi</a> · <a href="/kolkata/post-office">Kolkata</a> · <a href="/bank-holiday-today">Bank holiday today</a> · <a href="/is-bank-open-on-guru-nanak-jayanti-2026">Guru Nanak Jayanti</a></p>
         </div>
         <aside className="side"><div className="card panel"><div className="top"><h2>Check your city</h2></div>
           {['mumbai', 'delhi', 'bengaluru', 'kolkata', 'chennai', 'hyderabad', 'pune', 'ahmedabad'].map((c) => <div className="prow" key={c}><a href={`/${c}/post-office`}>{c[0].toUpperCase() + c.slice(1)}</a></div>)}

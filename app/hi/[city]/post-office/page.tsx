@@ -1,10 +1,11 @@
 import { notFound } from 'next/navigation';
 import { Page } from '@/components/page';
-import { PostView, postFaq, postLabel } from '@/components/post';
+import { PostView, postFaq } from '@/components/post';
 import { CITIES, cityBySlug } from '@/lib/places';
-import { todayIST, fmtMed } from '@/lib/date';
+import { todayIST } from '@/lib/date';
 import { meta } from '@/lib/meta';
 import { postDay, cityHolidays } from '@/lib/data';
+import { postCityMeta } from '@/lib/titles';
 import { JsonLd, faqLd } from '@/components/ui';
 
 export const revalidate = 300;
@@ -15,11 +16,12 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const c = cityBySlug((await params).city)!;
   const t = todayIST();
   const p = postDay(c.state, t, cityHolidays(c));
+  const m = postCityMeta(c, t, p, 'hi');
   return meta({
-    title: `आज ${c.hi} में डाकघर खुला है या नहीं? (${fmtMed(t, 'hi')})`,
-    description: `${c.hi} में डाकघर आज: ${postLabel(p, 'hi')}। सामान्य समय, कल की स्थिति और भारत डाक की अवकाश सूची।`,
+    title: m.title,
+    description: m.description,
     path: `/hi/${c.slug}/post-office`, en: `/${c.slug}/post-office`, hi: `/hi/${c.slug}/post-office`,
-    og: { t: `${c.hi} में डाकघर`, s: postLabel(p, 'hi', true) },
+    og: { t: m.title, s: m.title, v: m.ogV },
   });
 }
 export default async function P({ params }: { params: Promise<{ city: string }> }) {

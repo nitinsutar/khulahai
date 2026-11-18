@@ -49,7 +49,7 @@ export function GnjView({ lang = 'en' }: { lang?: 'en' | 'hi' }) {
         <Crumb lang={lang} items={[{ href: hi ? '/hi' : '/', label: hi ? 'होम' : 'Home' }, { href: '/bank-holidays/november-2026', label: hi ? 'नवंबर 2026' : 'November 2026' }, { label: hi ? 'गुरु नानक जयंती' : 'Guru Nanak Jayanti' }]} />
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="bank" size="lg" />
-          <h1 className="qh">{hi ? 'गुरु नानक जयंती 2026 पर बैंक खुला है या नहीं?' : 'Is the bank open on Guru Nanak Jayanti 2026?'}</h1>
+          <h1 className="qh">{hi ? `गुरु नानक जयंती 24 नवंबर: ${gnjData().closed.length} केंद्रों में बैंक बंद` : `Guru Nanak Jayanti 24 Nov: banks closed in ${gnjData().closed.length} centres`}</h1>
           <p className="big" id="ans">{hi ? `बैंक ${closed.length} केंद्रों में बंद` : `Banks closed in ${closed.length} of 34 centres`}</p>
           <div className="statusrow"><Pill v="no" size="lg">{hi ? 'ज़्यादातर बंद' : 'Mostly closed'}</Pill><span className="dt t">{fmtLong(GNJ, lang)}</span></div>
           <p className="answer"><b>{gnjAnswer(lang).split(hi ? '। ' : '. ')[0]}{hi ? '।' : '.'}</b> {gnjAnswer(lang).split(hi ? '। ' : '. ').slice(1).join(hi ? '। ' : '. ')} (<a href={RBI.source} rel="noopener">{hi ? 'आरबीआई अवकाश तालिका' : 'RBI holiday matrix'}</a>)</p>

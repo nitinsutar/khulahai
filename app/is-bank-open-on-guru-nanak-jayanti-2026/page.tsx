@@ -10,8 +10,8 @@ const PATH = '/is-bank-open-on-guru-nanak-jayanti-2026';
 export function generateMetadata() {
   const n = gnjData().closed.length;
   return meta({
-    title: 'Is Bank Open on Guru Nanak Jayanti 2026 (24 Nov)? City-wise List',
-    description: `Mostly no — banks are closed on Tue 24 Nov 2026 for Guru Nanak Jayanti at ${n} of 34 RBI centres incl. Mumbai & Delhi; open in Bengaluru, Chennai. NSE/BSE closed, MCX evening open.`,
+    title: `Guru Nanak Jayanti 24 Nov: banks closed in ${n} centres`,
+    description: `Guru Nanak Jayanti 24 Nov: banks closed at ${n} of 34 centres (Mumbai, Delhi). Open in Bengaluru, Chennai, Patna and Ahmedabad. NSE/BSE closed; MCX evening open.`,
     path: PATH, en: PATH, hi: '/hi/guru-nanak-jayanti-2026-bank-khula-hai',
     og: { t: 'Guru Nanak Jayanti 2026', s: `24 Nov · banks closed in ${n} of 34 centres`, v: 'no' },
   });

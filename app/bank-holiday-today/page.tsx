@@ -1,8 +1,9 @@
 import { Page } from '@/components/page';
-import { TodayAll, todayAllAnswer } from '@/components/lists';
-import { todayIST, fmtMed } from '@/lib/date';
+import { TodayAll } from '@/components/lists';
+import { todayIST, fmtDMs } from '@/lib/date';
 import { meta } from '@/lib/meta';
-import { bankDay, officesClosedOn, RBI } from '@/lib/data';
+import { RBI } from '@/lib/data';
+import { bankNationalMeta } from '@/lib/titles';
 import { JsonLd, crumbLd } from '@/components/ui';
 import { webPageLd } from '@/lib/ld';
 
@@ -10,18 +11,16 @@ export const revalidate = 300;
 const PATH = '/bank-holiday-today';
 export async function generateMetadata() {
   const t = todayIST();
-  const n = officesClosedOn(t).length;
-  const all = !bankDay([], t).open;
+  const m = bankNationalMeta(t, 'en', 'today');
   return meta({
-    title: `Bank Holiday Today (${fmtMed(t)}): Is the Bank Open Today or Not?`,
-    description: all ? `No — banks are closed across India today, ${fmtMed(t)} (${bankDay([], t).reason.kind === 'sunday' ? 'Sunday' : 'bank Saturday'}). UPI and ATMs work. See next working day.` : n ? `Banks are open in most of India today, ${fmtMed(t)}, but closed at ${n} RBI centres. See exactly where, city by city, from RBI’s holiday matrix.` : `Yes — banks are open across India today, ${fmtMed(t)}. No RBI centre lists a holiday. Check your city and tomorrow.`,
+    title: m.title,
+    description: m.description,
     path: PATH, en: PATH, hi: '/hi/aaj-bank-khula-hai',
-    og: { t: 'Bank holiday today', s: fmtMed(t) },
+    og: { t: m.title, s: fmtDMs(t), v: m.ogV },
   });
 }
 export default function P() {
   const t = todayIST();
-  const a = todayAllAnswer(t, 'today');
   return (
     <Page alt="/hi/aaj-bank-khula-hai">
       <JsonLd data={[

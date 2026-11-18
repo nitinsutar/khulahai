@@ -3,6 +3,7 @@ import { stateHolidays, saturdaysOff, RBI, LAST_CHECKED, officesClosedOn, bankDa
 import { addDays, dow, fmtLong, fmtMed, monthName, monthNum, MONTHS, dayNum } from '@/lib/date';
 import { shortName } from '@/lib/names';
 import { T } from '@/lib/text';
+import { bankNationalH1 } from '@/lib/titles';
 import { SvcIcon } from './icons';
 import { Crumb, DTile, Pill, Share, Source } from './ui';
 
@@ -189,7 +190,7 @@ export function TodayAll({ day, label, today, lang = 'en' }: { day: string; labe
         <Crumb lang={lang} items={[{ href: hi ? '/hi' : '/', label: hi ? 'होम' : 'Home' }, { label: hi ? 'आज बैंक खुला है?' : isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today' }]} />
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="bank" size="lg" />
-          <h1 className="qh">{hi ? 'आज बैंक खुला है या नहीं?' : isTomorrow ? 'Is tomorrow a bank holiday?' : 'Is today a bank holiday? Is the bank open today?'}</h1>
+          <h1 className="qh">{bankNationalH1(day, lang, isTomorrow ? 'tomorrow' : 'today')}</h1>
           <p className="big" id="ans">{hi ? 'आज की बैंक छुट्टी' : isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today'}</p>
           <div className="statusrow">
             {!base.open ? <Pill v="no" size="lg">{hi ? 'पूरे भारत में बंद' : 'Closed across India'}</Pill> : closed.length ? <Pill v="no" size="lg">{hi ? `34 में से ${closed.length} केंद्रों में बंद` : `Closed in ${closed.length} of 34 centres`}</Pill> : <Pill v="yes" size="lg">{hi ? 'पूरे भारत में खुला' : 'Open across India'}</Pill>}
@@ -219,7 +220,7 @@ export function TodayAll({ day, label, today, lang = 'en' }: { day: string; labe
         </div>
         <p className="note">{hi ? 'यह अनुसूचित बैंकों के लिए है। सहकारी बैंक और क्षेत्रीय ग्रामीण बैंक (RRB) अलग हो सकते हैं। पंजाब और हरियाणा के लिए आरबीआई चंडीगढ़ की सूची दिखाई जाती है।' : 'Covers scheduled banks. Co-operative banks and regional rural banks (RRBs) may differ. Punjab and Haryana use the RBI Chandigarh list (a mapping).'}</p>
         <Share lang={lang} text={hi ? `आज बैंक खुला है या नहीं (${fmtMed(day, 'hi')})` : `${isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today'} (${fmtMed(day)})`} path={hi ? '/hi/aaj-bank-khula-hai' : isTomorrow ? '/bank-holiday-tomorrow' : '/bank-holiday-today'} />
-        <p className="footsrc">{hi ? <><a href="/bank-holiday-today">English</a> · <a href="/hi/guru-nanak-jayanti-2026-bank-khula-hai">गुरु नानक जयंती 2026</a></> : <>{isTomorrow ? <a href="/bank-holiday-today">Bank holiday today →</a> : <a href="/bank-holiday-tomorrow">Bank holiday tomorrow →</a>} · <a href="/saturday-bank-holiday">Saturday rules</a> · <a href="/bank-holidays/november-2026">November 2026</a> · <a href="/is-bank-open-on-guru-nanak-jayanti-2026">Guru Nanak Jayanti</a></>}</p>
+        <p className="footsrc">{hi ? <><a href="/bank-holiday-today">English</a> · <a href="/is-post-office-open-today">डाकघर आज</a> · <a href="/hi/guru-nanak-jayanti-2026-bank-khula-hai">गुरु नानक जयंती 2026</a></> : <>{isTomorrow ? <a href="/bank-holiday-today">Bank holiday today →</a> : <a href="/bank-holiday-tomorrow">Bank holiday tomorrow →</a>} · <a href="/is-post-office-open-today">Post office today</a> · <a href="/saturday-bank-holiday">Saturday rules</a> · <a href="/bank-holidays/november-2026">November 2026</a> · <a href="/is-bank-open-on-guru-nanak-jayanti-2026">Guru Nanak Jayanti</a> · <a href="/hi/aaj-bank-khula-hai">हिंदी</a></>}</p>
       </div>
       <aside className="side">
         <div className="card panel">

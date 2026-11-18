@@ -1,14 +1,13 @@
 import { webPageLd } from '@/lib/ld';
-import { bankAnswerText } from '@/components/answer';
 import { notFound } from 'next/navigation';
 import { Page } from '@/components/page';
 import { BankView, bankFaq } from '@/components/bank';
-import { CITIES, cityBySlug, stateBySlug } from '@/lib/places';
-import { todayIST, fmtMed } from '@/lib/date';
+import { CITIES, cityBySlug } from '@/lib/places';
+import { todayIST, fmtDMs } from '@/lib/date';
 import { meta } from '@/lib/meta';
-import { bankDay, cityHolidays, nextBankOpen, RBI } from '@/lib/data';
+import { bankDay, cityHolidays, RBI } from '@/lib/data';
+import { bankCityMeta, GNJ_2026 } from '@/lib/titles';
 import { JsonLd, faqLd, crumbLd } from '@/components/ui';
-import { bankShort } from '@/lib/text';
 
 export const revalidate = 300;
 export const dynamicParams = false;
@@ -18,11 +17,13 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const c = cityBySlug((await params).city)!;
   const t = todayIST();
   const s = bankDay(cityHolidays(c), t);
+  const gnj = bankDay(cityHolidays(c), GNJ_2026);
+  const m = bankCityMeta(c, t, s, 'en', gnj);
   return meta({
-    title: `Is Bank Open Today in ${c.name}? ${fmtMed(t)}: ${s.open ? 'Open' : 'Closed'}`,
-    description: `${s.open ? 'Yes' : 'No'} — banks in ${c.name} are ${s.open ? 'open' : 'closed'} today, ${fmtMed(t)}: ${bankShort(s.reason, 'en')}. See tomorrow, this Saturday, next working day and the RBI holiday list for ${stateBySlug(c.state)!.name}.`,
+    title: m.title,
+    description: m.description,
     path: `/${c.slug}/bank`, en: `/${c.slug}/bank`, hi: `/hi/${c.slug}/bank`,
-    og: { t: `Banks in ${c.name}`, s: `${s.open ? 'Open' : 'Closed'} today · ${fmtMed(t)}`, v: s.open ? 'yes' : 'no' },
+    og: { t: m.title, s: `${s.open ? 'Open' : 'Closed'} today · ${fmtDMs(t)}`, v: m.ogV },
   });
 }
 export default async function P({ params }: { params: Promise<{ city: string }> }) {

@@ -1,14 +1,13 @@
 import { webPageLd } from '@/lib/ld';
-import { bankAnswerText } from '@/components/answer';
 import { notFound } from 'next/navigation';
 import { Page } from '@/components/page';
 import { BankView, bankFaq } from '@/components/bank';
 import { CITIES, cityBySlug } from '@/lib/places';
-import { todayIST, fmtMed } from '@/lib/date';
+import { todayIST } from '@/lib/date';
 import { meta } from '@/lib/meta';
-import { bankDay, cityHolidays, nextBankOpen, RBI } from '@/lib/data';
+import { bankDay, cityHolidays, RBI } from '@/lib/data';
+import { bankCityMeta, GNJ_2026 } from '@/lib/titles';
 import { JsonLd, faqLd, crumbLd } from '@/components/ui';
-import { bankShort } from '@/lib/text';
 
 export const revalidate = 300;
 export const dynamicParams = false;
@@ -18,11 +17,13 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const c = cityBySlug((await params).city)!;
   const t = todayIST();
   const s = bankDay(cityHolidays(c), t);
+  const gnj = bankDay(cityHolidays(c), GNJ_2026);
+  const m = bankCityMeta(c, t, s, 'hi', gnj);
   return meta({
-    title: `आज ${c.hi} में बैंक खुला है या नहीं? ${fmtMed(t, 'hi')}: ${s.open ? 'खुला' : 'बंद'}`,
-    description: `${s.open ? 'हाँ' : 'नहीं'} — ${c.hi} में आज बैंक ${s.open ? 'खुले हैं' : 'बंद हैं'} — ${bankShort(s.reason, 'hi')}। कल, इस शनिवार और अगले कार्य दिवस की जानकारी, आरबीआई सूची से।`,
+    title: m.title,
+    description: m.description,
     path: `/hi/${c.slug}/bank`, en: `/${c.slug}/bank`, hi: `/hi/${c.slug}/bank`,
-    og: { t: `${c.hi} में बैंक`, s: s.open ? 'आज खुला है' : 'आज बंद है', v: s.open ? 'yes' : 'no' },
+    og: { t: m.title, s: s.open ? 'आज खुला है' : 'आज बंद है', v: m.ogV },
   });
 }
 export default async function P({ params }: { params: Promise<{ city: string }> }) {

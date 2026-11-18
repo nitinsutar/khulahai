@@ -2,6 +2,7 @@ import { City, stateBySlug } from '@/lib/places';
 import { bankDay, cityHolidays, nextBankOpen, upcomingBankClosures, RBI, LAST_CHECKED, secondOrFourthSat } from '@/lib/data';
 import { addDays, dow, fmtDM, fmtLong, fmtMed, monthName, monthNum } from '@/lib/date';
 import { bankReason, bankShort, T } from '@/lib/text';
+import { bankCityH1, gnjCityBankLine, GNJ_2026 } from '@/lib/titles';
 import { shortName } from '@/lib/names';
 import { BANK_HOURS } from '@/lib/site';
 import { SvcIcon } from './icons';
@@ -52,7 +53,7 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
         <Crumb lang={lang} items={[{ href: hi ? '/hi' : '/', label: hi ? 'होम' : 'Home' }, { href: hi ? undefined : `/${city.slug}`, label: cname }, { label: hi ? 'बैंक' : 'Banks' }]} />
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="bank" size="lg" />
-          <h1 className="qh">{hi ? `क्या आज ${cname} में बैंक खुला है?` : `Is the bank open today in ${city.name}?`}</h1>
+          <h1 className="qh">{bankCityH1(city, today, b, lang)}</h1>
           <p className="big" id="ans">{hi ? `${cname} में बैंक` : `Banks in ${city.name}`}</p>
           <div className="statusrow"><Pill v={b.open ? 'yes' : 'no'} size="lg">{b.open ? T.open(lang) : T.closed(lang)}</Pill><span className="dt t">{fmtLong(today, lang)}</span></div>
           <BankAnswer city={city} s={b} nextOpen={nb} lang={lang} />
@@ -92,10 +93,12 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
             </div>
           ))}
         </div>
+        {today <= GNJ_2026 && (() => { const line = gnjCityBankLine(city, today, bankDay(hols, GNJ_2026), lang); return line ? <p className="note"><b>{hi ? '24 नवंबर, गुरु नानक जयंती:' : '24 Nov, Guru Nanak Jayanti:'}</b> {line}{' '}<a href={hi ? '/hi/guru-nanak-jayanti-2026-bank-khula-hai' : '/is-bank-open-on-guru-nanak-jayanti-2026'}>{hi ? 'शहरवार सूची' : 'City-wise list'}</a>.</p> : null; })()}
         <p className="footsrc">
           <a href={`/bank-holidays-2026/${city.state}`}>{hi ? `${where} की 2026 की पूरी सूची →` : `Full 2026 bank holiday list for ${st.name} →`}</a>{' · '}
           <a href={`${pre}/${city.slug}/post-office`}>{hi ? 'डाकघर आज' : 'Post office today'}</a>{' · '}
-          <a href={hi ? '/hi/share-market' : '/is-share-market-open-today'}>{hi ? 'शेयर बाज़ार आज' : 'Share market today'}</a>
+          <a href={hi ? '/hi/share-market' : '/is-share-market-open-today'}>{hi ? 'शेयर बाज़ार आज' : 'Share market today'}</a>{' · '}
+          <a href={hi ? `/${city.slug}/bank` : `/hi/${city.slug}/bank`}>{hi ? 'English' : 'हिंदी'}</a>
         </p>
         <div className="sech"><h2>{hi ? 'अक्सर पूछे जाने वाले सवाल' : 'Questions people ask'}</h2></div>
         <Faq items={faq} />

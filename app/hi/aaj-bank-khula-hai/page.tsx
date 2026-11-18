@@ -1,8 +1,9 @@
 import { Page } from '@/components/page';
-import { TodayAll, todayAllAnswer } from '@/components/lists';
-import { todayIST, fmtMed } from '@/lib/date';
+import { TodayAll } from '@/components/lists';
+import { todayIST, fmtDM } from '@/lib/date';
 import { meta } from '@/lib/meta';
-import { bankDay, officesClosedOn, RBI } from '@/lib/data';
+import { RBI } from '@/lib/data';
+import { bankNationalMeta } from '@/lib/titles';
 import { JsonLd, crumbLd } from '@/components/ui';
 import { webPageLd } from '@/lib/ld';
 
@@ -10,18 +11,16 @@ export const revalidate = 300;
 const PATH = '/hi/aaj-bank-khula-hai';
 export async function generateMetadata() {
   const t = todayIST();
-  const n = officesClosedOn(t).length;
-  const all = !bankDay([], t).open;
+  const m = bankNationalMeta(t, 'hi', 'today');
   return meta({
-    title: `आज बैंक खुला है या नहीं? (${fmtMed(t, 'hi')}) आज की बैंक छुट्टी`,
-    description: all ? `नहीं — आज, ${fmtMed(t, 'hi')}, पूरे भारत में बैंक बंद हैं। UPI और ATM चलते रहेंगे।` : n ? `आज, ${fmtMed(t, 'hi')}, ज़्यादातर भारत में बैंक खुले हैं, लेकिन ${n} आरबीआई केंद्रों में बंद हैं। अपने शहर की स्थिति देखें।` : `हाँ — आज, ${fmtMed(t, 'hi')}, पूरे भारत में बैंक खुले हैं। किसी भी आरबीआई केंद्र पर अवकाश नहीं है।`,
+    title: m.title,
+    description: m.description,
     path: PATH, en: '/bank-holiday-today', hi: PATH,
-    og: { t: 'आज बैंक खुला है?', s: fmtMed(t, 'hi') },
+    og: { t: m.title, s: fmtDM(t, 'hi'), v: m.ogV },
   });
 }
 export default function P() {
   const t = todayIST();
-  const a = todayAllAnswer(t, 'today', 'hi');
   return (
     <Page lang="hi" alt="/bank-holiday-today">
       <JsonLd data={[

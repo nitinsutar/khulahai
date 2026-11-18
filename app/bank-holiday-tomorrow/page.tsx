@@ -1,16 +1,18 @@
 import { Page } from '@/components/page';
 import { TodayAll } from '@/components/lists';
-import { todayIST, addDays, fmtMed } from '@/lib/date';
+import { todayIST, addDays, fmtDMs } from '@/lib/date';
 import { meta } from '@/lib/meta';
+import { bankNationalMeta } from '@/lib/titles';
 
 export const revalidate = 300;
 export async function generateMetadata() {
   const d = addDays(todayIST(), 1);
+  const m = bankNationalMeta(d, 'en', 'tomorrow');
   return meta({
-    title: `Bank Holiday Tomorrow? ${fmtMed(d)} — Are Banks Open Tomorrow?`,
-    description: `Is tomorrow a bank holiday? See where banks are closed on ${fmtMed(d)} across India, by state and city, from RBI’s holiday matrix.`,
+    title: m.title,
+    description: m.description,
     path: '/bank-holiday-tomorrow',
-    og: { t: 'Bank holiday tomorrow', s: fmtMed(d) },
+    og: { t: m.title, s: fmtDMs(d), v: m.ogV },
   });
 }
 export default function P() {
