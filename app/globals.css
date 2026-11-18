@@ -264,3 +264,34 @@ main{padding:14px 0 40px}
 @media (min-width:960px){.hero .big{font-size:42px}}
 .note{font-size:12.5px;color:var(--ink2);background:#FFF8E6;border:1px solid #F3E3B5;border-radius:14px;padding:10px 12px;margin:0 0 10px;line-height:1.5}
 .tbl .y{color:var(--yes);font-weight:600}.tbl .n{color:var(--no);font-weight:600}
+
+/* tools */
+.toolnav{display:flex;flex-wrap:wrap;gap:8px 14px;margin:-4px 4px 14px;font-size:13.5px;font-weight:600;color:var(--ink2)}
+.toolnav a{color:var(--accent)}
+.toolnav a:hover{text-decoration:underline}
+.toolnav [aria-current=page]{color:var(--ink)}
+.tools{margin:8px 0 16px}
+.toolgrid{display:grid;grid-template-columns:1fr;gap:10px}
+.toolcard{padding:16px;display:block}
+.toolcard .tt{font-family:var(--fh);font-size:18px;font-weight:800;letter-spacing:-.02em;display:flex;align-items:center;justify-content:space-between;gap:10px;margin:6px 0 8px;line-height:1.15}
+.toolcard p{font-size:13.5px;color:var(--ink2);line-height:1.45}
+.toolcta{padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0}
+.toolcta p{font-size:14px;color:var(--ink2);line-height:1.4;margin-top:4px}
+.toolcta .lnk{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;flex:none}
+.subh{font-family:var(--fh);font-size:15px;font-weight:700;letter-spacing:-.02em;margin:16px 4px 8px}
+.officeplan{margin-bottom:8px}
+.toolform{padding:18px 16px;display:flex;flex-direction:column;gap:14px;margin-bottom:12px}
+.toolform .fg{display:flex;flex-direction:column;gap:6px}
+.toolform label,.toolform legend{font-size:13px;font-weight:600;color:var(--ink)}
+.toolform .hint{font-size:12.5px;color:var(--ink2);font-weight:400;line-height:1.45;margin:0 0 6px}
+.toolform input[type=date],.toolform input[type=tel],.toolform input[type=email],.toolform select{
+  height:44px;border:1px solid var(--line);border-radius:12px;padding:0 12px;background:var(--bg);font:inherit;color:var(--ink);width:100%;
+}
+.toolform fieldset{border:0}
+.toolform .radio,.toolform .consent{display:flex;align-items:flex-start;gap:10px;font-size:14px;font-weight:500;color:var(--ink2);line-height:1.45}
+.toolform .radio input,.toolform .consent input{margin-top:3px;accent-color:var(--accent);width:18px;height:18px;flex:none}
+.toolform .btn{width:100%}
+.toolform button.btn{cursor:pointer;border:0;font:inherit}
+@media (min-width:640px){
+  .toolgrid{grid-template-columns:repeat(3,1fr)}
+}

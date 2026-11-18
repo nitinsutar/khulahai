@@ -13,6 +13,7 @@ import type { Lang } from '@/lib/lang';
 import { cityAlts } from '@/lib/lang';
 import { LangLinks } from './ui';
 import { RegionalBankView, regionalBankFaq } from './localeViews';
+import { AlertsCta, ChequeCta } from './tools';
 
 export function bankFaq(city: City, lang: Lang) {
   if (lang !== 'en' && lang !== 'hi') return regionalBankFaq(city, lang);
@@ -72,6 +73,7 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
           <a href={RBI.source} rel="noopener">{hi ? 'अवकाश तालिका' : 'Holiday Matrix'}</a>, {RBI.offices[city.office].name} {hi ? 'कार्यालय' : 'office'}{city.derived ? (hi ? ` (${where} की सूची)` : ` (${st.name} list)`) : ''}
         </Source>
         <Share text={shareText} path={`${pre}/${city.slug}/bank`} lang={lang} ics={{ href: `/ics/bank-${city.state}-2026.ics`, label: hi ? 'कैलेंडर में जोड़ें' : 'Add to calendar' }} />
+        <ChequeCta lang={lang} city={city} />
 
         <BankCityLead city={city} today={today} lang={lang} />
         <p className="note">{hi ? 'यह स्थिति अनुसूचित बैंकों (SBI, HDFC, ICICI आदि) के लिए है। कुछ सहकारी बैंक और क्षेत्रीय ग्रामीण बैंक (RRB) राज्य की अलग सूची मान सकते हैं, अपनी शाखा से पुष्टि करें।' : 'This covers scheduled banks (SBI, HDFC, ICICI, Axis and others). Some co-operative banks and regional rural banks (RRBs) may follow a different state list, so check with your branch.'}</p>
@@ -106,6 +108,7 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
           ))}
           <a className="lnk" href={`/bank-holidays/${['january','february','march','april','may','june','july','august','september','october','november','december'][monthNum(today) - 1]}-2026`} style={{ display: 'inline-block', marginTop: 10 }}>{hi ? 'सभी राज्यों की इस महीने की छुट्टियाँ →' : 'This month across India →'}</a>
         </div>
+        <AlertsCta lang={lang} city={city} />
         <div className="adslot" aria-hidden="true" />
       </aside>
     </div>

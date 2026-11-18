@@ -38,6 +38,13 @@ export default function P() {
           <Crumb items={[{ href: '/', label: 'Home' }, { label: 'Bank holidays 2026' }]} />
           <div className="phero"><SvcIcon s="bank" size="lg" /><div><div className="e">Banks · All India</div><h1>Bank holidays 2026</h1></div></div>
           <p className="lead">Pick your state for the full RBI list. Banks also close every Sunday and on the 2nd and 4th Saturday of every month.</p>
+          <a className="card toolcta" href="/long-weekends">
+            <div>
+              <div className="k">Long weekends</div>
+              <p>See remaining 3-day breaks in 2026, and days where taking one leave gives you four, from the same official lists.</p>
+            </div>
+            <span className="lnk">Open the planner</span>
+          </a>
           <StateGrid hrefFor={(s) => `/bank-holidays-2026/${s}`} />
           <Source tag="RBI" checked={LAST_CHECKED}><a href={RBI.source} rel="noopener">{RBI.title}</a></Source>
           <p className="footsrc" style={{ marginTop: 0 }}><a href="/data/bank-holidays-2026.csv" download>Download all 34 RBI centres as CSV</a> · Punjab &amp; Haryana use the RBI Chandigarh list (a mapping). Co-operative banks and RRBs may differ.</p>

@@ -28,6 +28,8 @@ export default function P() {
           </ul>
           <h2>What we label as “typical”</h2>
           <p>Bank branch hours (10:00–16:00) and post office counter hours (10:00–17:00) are typical, not official — they vary by branch. India Post does not list Saturdays as holidays and Saturday hours vary, so we say “not a holiday — check hours locally” rather than claim a post office is open or closed.</p>
+          <h2>Holiday alerts</h2>
+          <p>If you sign up for a holiday alert, we store your WhatsApp number and city only with your consent, so we can later send a reminder the evening before a bank holiday. No messages are sent until a WhatsApp service is connected. When sending begins, this page and the alerts page will include a way to stop.</p>
           <h2>Last checked</h2>
           <p className="t">All lists were last checked against the official sources on {LAST_CHECKED}. Spotted a mistake? Holidays can change at short notice (for example by a state notification); the official source always wins. Corrections: tell us the page and the official notification, and we will re-check and update the page and its “last checked” date.</p>
         </div>

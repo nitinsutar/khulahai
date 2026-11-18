@@ -15,6 +15,7 @@ export function Header({ lang = 'en', alt, alts }: { lang?: Lang; alt?: string; 
           <a href={lang === 'hi' ? '/hi/share-market' : '/nse-bse-holidays-2026'}>{lang === 'hi' ? 'शेयर बाज़ार' : 'NSE & BSE holidays'}</a>
           <a href="/post-office-holidays-2026">{t(lang, 'postOffice')}</a>
           <a href={TODAY_PATH[lang]}>{lang === 'hi' ? 'आज बैंक' : lang === 'en' ? 'Today' : t(lang, 'today')}</a>
+          <a href={lang === 'hi' ? '/hi#tools' : '/#tools'}>{lang === 'hi' ? 'साधन' : 'Tools'}</a>
         </nav>
         <div className="hright">
           <div className="lang" role="group" aria-label="Language">
@@ -42,6 +43,9 @@ export function Footer({ lang = 'en' }: { lang?: Lang }) {
       <div className="wrap">
         <nav aria-label="Footer">
           <a href="/bank-holidays-2026">Bank holidays 2026</a>
+          <a href="/cheque-clearing-date">Cheque clearing date</a>
+          <a href="/long-weekends">Long weekends 2026</a>
+          <a href="/alerts">Holiday alerts</a>
           <a href="/bank-holiday-today">Bank holiday today</a>
           <a href="/bank-holiday-tomorrow">Bank holiday tomorrow</a>
           <a href="/saturday-bank-holiday">Saturday bank holidays</a>

@@ -6,6 +6,7 @@ import { shortName } from '@/lib/names';
 import { BANK_HOURS, POST_HOURS } from '@/lib/site';
 import { SvcIcon } from './icons';
 import { CitySwitcher, Go, Pill } from './ui';
+import { AlertsCta, ToolsHome } from './tools';
 
 export function HomeView({ city, today, lang = 'en', h1 }: { city: City; today: string; lang?: 'en' | 'hi'; h1?: string }) {
   const hi = lang === 'hi';
@@ -72,6 +73,7 @@ export function HomeView({ city, today, lang = 'en', h1 }: { city: City; today: 
             <div className="s">{nf ? shortName(nf.n, lang) : hi ? '2026 में और नहीं' : 'None left in 2026'}{nf ? <><br />{hi ? st.hi : st.name}</> : null}</div>
           </a>
         </div>
+        <ToolsHome lang={lang} city={city} />
         <div className="card else">
           <div className="top"><h2>{hi ? 'दूसरे शहरों में बैंक आज' : 'Banks in other cities today'}</h2><a className="lnk" href="/bank-holiday-today">{hi ? 'सभी केंद्र →' : 'All centres →'}</a></div>
           <div className="chips">
@@ -115,6 +117,7 @@ export function HomeView({ city, today, lang = 'en', h1 }: { city: City; today: 
           })()}
           <a className="lnk" href="/bank-holiday-tomorrow" style={{ display: 'inline-block', marginTop: 10 }}>{hi ? 'कल कहाँ छुट्टी है →' : 'Bank holiday tomorrow →'}</a>
         </div>
+        <AlertsCta lang={lang} city={city} />
         <div className="adslot" aria-hidden="true" />
       </aside>
     </div>

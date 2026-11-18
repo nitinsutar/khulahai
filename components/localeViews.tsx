@@ -10,6 +10,7 @@ import { t } from '@/lib/copy';
 import { SvcIcon } from './icons';
 import { BankCityLead, bankCityFaqs, PostCityLead, postCityFaqs } from './cityLead';
 import { CitySwitcher, Crumb, DTile, Faq, LangLinks, Pill, Share, Source } from './ui';
+import { ChequeCta } from './tools';
 
 const RBI_URL = 'https://rbi.org.in/Scripts/HolidayMatrixDisplay.aspx';
 
@@ -94,6 +95,7 @@ export function RegionalBankView({ city, today, lang }: { city: City; today: str
           <a href={RBI.source} rel="noopener">{t(lang, 'rbiList')}</a>, {RBI.offices[city.office].name}{city.derived ? ` (${where})` : ''}
         </Source>
         <Share text={shareText} path={`${pre}/${city.slug}/bank`} lang={lang} ics={{ href: `/ics/bank-${city.state}-2026.ics`, label: t(lang, 'addCal') }} />
+        <ChequeCta city={city} />
         <BankCityLead city={city} today={today} lang={lang} />
         <p className="note">{t(lang, 'scheduledNote')}</p>
         <div className="sech"><h2>{lang === 'mr' ? 'देशभर बँक शनिवार' : lang === 'gu' ? 'દેશભરમાં બેંક શનિવાર' : 'সারা দেশে ব্যাংক শনিবার'}</h2><span>{lang === 'mr' ? 'पुढचे 40 दिवस' : lang === 'gu' ? 'આગામી 40 દિવસ' : 'পরের 40 দিন'}</span></div>

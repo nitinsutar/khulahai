@@ -6,6 +6,7 @@ import { T } from '@/lib/text';
 import { bankNationalH1 } from '@/lib/titles';
 import { SvcIcon } from './icons';
 import { Crumb, DTile, Pill, Share, Source, LangLinks } from './ui';
+import { WeekendCta } from './tools';
 import type { Lang } from '@/lib/lang';
 import { todayAlts } from '@/lib/lang';
 import { RegionalTodayAll, regionalTodayAllAnswer } from './localeViews';
@@ -70,6 +71,7 @@ export function StateYear({ slug, today }: { slug: string; today: string }) {
         <div className="legend"><span><i className="hol" />Festival holiday</span><span><i className="wk" />Sunday / 2nd &amp; 4th Saturday</span><span><i className="td" />Today</span></div>
         <Source tag="RBI" checked={LAST_CHECKED}><a href={RBI.source} rel="noopener">Holiday Matrix</a> · {st.offices.map((o) => RBI.offices[o].name).join(', ')}</Source>
         <Share text={`Bank holidays 2026 in ${st.name}`} path={`/bank-holidays-2026/${slug}`} ics={{ href: `/ics/bank-${slug}-2026.ics` }} />
+        <WeekendCta stateSlug={slug} stateName={st.name} />
         <div className="sech"><h2>All {st.name} bank holidays 2026</h2><span><span className="t">{list.length}</span> days</span></div>
         <div className="card list">
           {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => {
