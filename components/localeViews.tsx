@@ -77,7 +77,7 @@ export function RegionalBankView({ city, today, lang }: { city: City; today: str
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="bank" size="lg" />
           <h1 className="qh">{bankCityH1(city, today, b, lang)}</h1>
-          <p className="big" id="ans">{lang === 'mr' ? `${loc} बँक` : lang === 'gu' ? `${loc} બેંક` : `${loc} ব্যাংক`}</p>
+          <p className="big" id="ans">{lang === 'mr' ? `आज ${loc} बँक चालू आहे का?` : lang === 'gu' ? `આજે ${loc} બેંક ખુલ્લી છે?` : `আজকে ${loc} কি ব্যাংক খোলা থাকবে?`}</p>
           <div className="statusrow"><Pill v={b.open ? 'yes' : 'no'} size="lg">{b.open ? T.open(lang) : T.closed(lang)}</Pill><span className="dt t">{fmtLong(today, lang)}</span></div>
           <RegionalBankAnswer city={city} s={b} nextOpen={nb} lang={lang} />
           {b.open && y.reason.kind === 'holiday' && <p className="reason">{lang === 'mr' ? `काल (${fmtMed(y.date, lang)}) बँक ${shortName(y.reason.rbi!, lang)} मुळे बंद होत्या.` : lang === 'gu' ? `ગઈકાલે (${fmtMed(y.date, lang)}) બેંક ${shortName(y.reason.rbi!, lang)}ને કારણે બંધ હતી.` : `গতকাল (${fmtMed(y.date, lang)}) ব্যাংক ${shortName(y.reason.rbi!, lang)}-এর জন্য বন্ধ ছিল।`}</p>}
@@ -198,7 +198,7 @@ export function RegionalPostView({ city, today, lang }: { city: City; today: str
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="post" size="lg" />
           <h1 className="qh">{postCityH1(city, today, p, lang)}</h1>
-          <p className="big" id="ans">{lang === 'mr' ? `${loc} पोस्ट ऑफिस` : lang === 'gu' ? `${loc} પોસ્ટ ઑફિસ` : `${loc} পোস্ট অফিস`}</p>
+          <p className="big" id="ans">{lang === 'mr' ? `आज ${loc} पोस्ट ऑफिस चालू आहे का?` : lang === 'gu' ? `આજે ${loc} પોસ્ટ ઑફિસ ખુલ્લું છે?` : `আজকে ${loc} কি পোস্ট অফিস খোলা থাকবে?`}</p>
           <div className="statusrow"><Pill v={pillOf(p)} size="lg">{regionalPostLabel(p, lang, true)}</Pill><span className="dt t">{fmtLong(today, lang)}</span></div>
           <p className="answer"><b>{head}</b> {regionalPostReason(p, lang, circle)} (<a href={INDIAPOST.source} rel="noopener">{t(lang, 'postList')}</a>)</p>
           <div className="hrs">
@@ -280,7 +280,7 @@ export function RegionalTodayAll({ day, label, today, lang }: { day: string; lab
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="bank" size="lg" />
           <h1 className="qh">{bankNationalH1(day, lang, label)}</h1>
-          <p className="big" id="ans">{t(lang, 'bankHolidayToday')}</p>
+          <p className="big" id="ans">{t(lang, 'todayBankQ')}</p>
           <div className="statusrow">
             {!base.open ? <Pill v="no" size="lg">{t(lang, 'closedAcross')}</Pill> : closed.length ? <Pill v="no" size="lg">{lang === 'mr' ? `34 पैकी ${closed.length} केंद्रे बंद` : lang === 'gu' ? `34માંથી ${closed.length} કેન્દ્ર બંધ` : `34টির মধ্যে ${closed.length}টি কেন্দ্র বন্ধ`}</Pill> : <Pill v="yes" size="lg">{t(lang, 'openAcross')}</Pill>}
             <span className="dt t">{fmtLong(day, lang)}</span>

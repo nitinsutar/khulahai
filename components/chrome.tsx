@@ -14,7 +14,7 @@ export function Header({ lang = 'en', alt, alts }: { lang?: Lang; alt?: string; 
           <a href="/bank-holidays-2026">{lang === 'hi' ? 'बैंक छुट्टियाँ' : lang === 'mr' ? 'बँक सुट्ट्या' : lang === 'gu' ? 'બેંક રજાઓ' : lang === 'bn' ? 'ব্যাংক ছুটি' : 'Bank holidays'}</a>
           <a href={lang === 'hi' ? '/hi/share-market' : '/nse-bse-holidays-2026'}>{lang === 'hi' ? 'शेयर बाज़ार' : 'NSE & BSE holidays'}</a>
           <a href="/post-office-holidays-2026">{t(lang, 'postOffice')}</a>
-          <a href={TODAY_PATH[lang]}>{lang === 'hi' ? 'आज की छुट्टी' : lang === 'en' ? 'Today' : t(lang, 'today')}</a>
+          <a href={TODAY_PATH[lang]}>{lang === 'hi' ? 'आज बैंक' : lang === 'en' ? 'Today' : t(lang, 'today')}</a>
         </nav>
         <div className="hright">
           <div className="lang" role="group" aria-label="Language">

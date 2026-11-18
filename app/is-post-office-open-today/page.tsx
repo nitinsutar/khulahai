@@ -66,7 +66,7 @@ export default function P() {
           <section className="card hero" aria-labelledby="ans">
             <SvcIcon s="post" size="lg" />
             <h1 className="qh">{h1}</h1>
-            <p className="big" id="ans">Post offices in India</p>
+            <p className="big" id="ans">Is the post office open today?</p>
             <div className="statusrow"><span className="dt t">{fmtLong(t)}</span></div>
             <p className="answer"><b>{a.split('. ')[0]}.</b> {a.split('. ').slice(1).join('. ')} (<a href={INDIAPOST.source} rel="noopener">India Post holidays list</a>). Post offices follow their own list, not the bank holiday list.</p>
           </section>

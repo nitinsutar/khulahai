@@ -54,7 +54,7 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="bank" size="lg" />
           <h1 className="qh">{bankCityH1(city, today, b, lang)}</h1>
-          <p className="big" id="ans">{hi ? `${cname} में बैंक` : `Banks in ${city.name}`}</p>
+          <p className="big" id="ans">{hi ? `आज ${cname} में बैंक खुला है?` : `Is the bank open today in ${city.name}?`}</p>
           <div className="statusrow"><Pill v={b.open ? 'yes' : 'no'} size="lg">{b.open ? T.open(lang) : T.closed(lang)}</Pill><span className="dt t">{fmtLong(today, lang)}</span></div>
           <BankAnswer city={city} s={b} nextOpen={nb} lang={lang} />
           {b.open && y.reason.kind === 'holiday' && <p className="reason">{hi ? `कल (${fmtMed(y.date, 'hi')}) बैंक ${shortName(y.reason.rbi!, 'hi')} के लिए बंद थे।` : `Yesterday (${fmtMed(y.date)}) banks were closed for ${shortName(y.reason.rbi!)}.`}</p>}

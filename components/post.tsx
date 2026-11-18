@@ -73,7 +73,7 @@ export function PostView({ city, today, lang = 'en' }: { city: City; today: stri
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="post" size="lg" />
           <h1 className="qh">{postCityH1(city, today, p, lang)}</h1>
-          <p className="big" id="ans">{hi ? `${cname} में डाकघर` : `Post office in ${city.name}`}</p>
+          <p className="big" id="ans">{hi ? `आज ${cname} में डाकघर खुला है?` : `Is the post office open today in ${city.name}?`}</p>
           <div className="statusrow"><Pill v={pillOf(p)} size="lg">{postLabel(p, lang, true)}</Pill><span className="dt t">{fmtLong(today, lang)}</span></div>
           <p className="answer"><b>{p.state === 'closed' ? (hi ? `नहीं, ${cname} में डाकघर आज, ${fmtLong(today, 'hi')}, बंद हैं।` : `No, post offices in ${city.name} are closed today, ${fmtLong(today)}.`) : p.state === 'open' ? (hi ? `हाँ, ${cname} में डाकघर आज, ${fmtLong(today, 'hi')}, खुले हैं।` : `Yes, post offices in ${city.name} are open today, ${fmtLong(today)}.`) : (hi ? `${cname} में आज, ${fmtLong(today, 'hi')}, डाक अवकाश नहीं है।` : `Today, ${fmtLong(today)}, is not a postal holiday in ${city.name}.`)}</b> {postReason(p, lang, circle)} (<a href={INDIAPOST.source} rel="noopener">{hi ? 'भारत डाक अवकाश सूची' : 'India Post holidays list'}</a>){circ.note ? (hi ? '' : ` ${circ.note}.`) : ''} {hi ? 'डाक घर बैंक छुट्टी सूची से अलग सूची मानते हैं।' : 'Post offices follow a different list from banks.'}</p>
           <div className="hrs">

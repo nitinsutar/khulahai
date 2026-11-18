@@ -192,11 +192,11 @@ export function TodayAll({ day, label, today, lang = 'en' }: { day: string; labe
   return (
     <div className="layout narrow">
       <div>
-        <Crumb lang={lang} items={[{ href: hi ? '/hi' : '/', label: hi ? 'होम' : 'Home' }, { label: hi ? 'आज बैंक खुला है?' : isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today' }]} />
+        <Crumb lang={lang} items={[{ href: hi ? '/hi' : '/', label: hi ? 'होम' : 'Home' }, { label: hi ? (isTomorrow ? 'कल बैंक खुला है?' : 'आज बैंक खुला है?') : isTomorrow ? 'Is the bank open tomorrow?' : 'Is the bank open today?' }]} />
         <section className="card hero" aria-labelledby="ans">
           <SvcIcon s="bank" size="lg" />
           <h1 className="qh">{bankNationalH1(day, lang, isTomorrow ? 'tomorrow' : 'today')}</h1>
-          <p className="big" id="ans">{hi ? 'आज की बैंक छुट्टी' : isTomorrow ? 'Bank holiday tomorrow' : 'Bank holiday today'}</p>
+          <p className="big" id="ans">{hi ? (isTomorrow ? 'कल बैंक खुला है?' : 'आज बैंक खुला है?') : isTomorrow ? 'Is the bank open tomorrow?' : 'Is the bank open today?'}</p>
           <div className="statusrow">
             {!base.open ? <Pill v="no" size="lg">{hi ? 'पूरे भारत में बंद' : 'Closed across India'}</Pill> : closed.length ? <Pill v="no" size="lg">{hi ? `34 में से ${closed.length} केंद्रों में बंद` : `Closed in ${closed.length} of 34 centres`}</Pill> : <Pill v="yes" size="lg">{hi ? 'पूरे भारत में खुला' : 'Open across India'}</Pill>}
             <span className="dt t">{fmtLong(day, lang)}</span>
