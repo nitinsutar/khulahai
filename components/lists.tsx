@@ -5,7 +5,10 @@ import { shortName } from '@/lib/names';
 import { T } from '@/lib/text';
 import { bankNationalH1 } from '@/lib/titles';
 import { SvcIcon } from './icons';
-import { Crumb, DTile, Pill, Share, Source } from './ui';
+import { Crumb, DTile, Pill, Share, Source, LangLinks } from './ui';
+import type { Lang } from '@/lib/lang';
+import { todayAlts } from '@/lib/lang';
+import { RegionalTodayAll, regionalTodayAllAnswer } from './localeViews';
 
 export function StateGrid({ hrefFor, current }: { hrefFor: (s: string) => string; current?: string }) {
   return (
@@ -160,7 +163,8 @@ function StateGridMini() {
   return <>{STATES.map((s) => <div className="prow" key={s.slug}><a href={`/bank-holidays-2026/${s.slug}`}>{s.name}</a><span className="k">{s.code}</span></div>)}</>;
 }
 
-export function todayAllAnswer(day: string, label: 'today' | 'tomorrow', lang: 'en' | 'hi' = 'en') {
+export function todayAllAnswer(day: string, label: 'today' | 'tomorrow', lang: Lang = 'en') {
+  if (lang !== 'en' && lang !== 'hi') return regionalTodayAllAnswer(day, label, lang);
   const hi = lang === 'hi';
   const closed = officesClosedOn(day);
   const base = bankDay([], day);
@@ -176,7 +180,8 @@ export function todayAllAnswer(day: string, label: 'today' | 'tomorrow', lang: '
   return hi ? { b: `हाँ, ${w}, ${d}, पूरे भारत में बैंक खुले हैं।`, r: 'किसी भी आरबीआई केंद्र पर अवकाश नहीं है। UPI, ATM और चेक क्लियरिंग सामान्य रूप से चलते हैं।' } : { b: `Yes, banks are open across India ${w}, ${d}.`, r: 'No RBI centre lists a holiday. UPI, ATMs and cheque clearing run as normal.' };
 }
 
-export function TodayAll({ day, label, today, lang = 'en' }: { day: string; label: 'today' | 'tomorrow'; today: string; lang?: 'en' | 'hi' }) {
+export function TodayAll({ day, label, today, lang = 'en' }: { day: string; label: 'today' | 'tomorrow'; today: string; lang?: Lang }) {
+  if (lang !== 'en' && lang !== 'hi') return <RegionalTodayAll day={day} label={label} today={today} lang={lang} />;
   const hi = lang === 'hi';
   const closed = officesClosedOn(day);
   const base = bankDay([], day);

@@ -2,6 +2,7 @@ import { Page } from '@/components/page';
 import { TodayAll } from '@/components/lists';
 import { todayIST, fmtDMs } from '@/lib/date';
 import { meta } from '@/lib/meta';
+import { todayAlts, hrefLangMap } from '@/lib/lang';
 import { RBI } from '@/lib/data';
 import { bankNationalMeta } from '@/lib/titles';
 import { JsonLd, crumbLd } from '@/components/ui';
@@ -15,14 +16,14 @@ export async function generateMetadata() {
   return meta({
     title: m.title,
     description: m.description,
-    path: PATH, en: PATH, hi: '/hi/aaj-bank-khula-hai',
+    path: PATH, languages: hrefLangMap(todayAlts()),
     og: { t: m.title, s: fmtDMs(t), v: m.ogV },
   });
 }
 export default function P() {
   const t = todayIST();
   return (
-    <Page alt="/hi/aaj-bank-khula-hai">
+    <Page alts={todayAlts()}>
       <JsonLd data={[
         webPageLd({ name: 'Bank holiday today', path: PATH, basedOn: [RBI.source] }),
         crumbLd([{ name: 'Home', path: '/' }, { name: 'Bank holiday today', path: PATH }]),

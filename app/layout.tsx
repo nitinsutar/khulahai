@@ -1,11 +1,13 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Plus_Jakarta_Sans, Mukta } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans, Mukta, Noto_Sans_Gujarati, Noto_Sans_Bengali } from 'next/font/google';
 import './globals.css';
 import { SITE_URL } from '@/lib/site';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['600', '700', '800'], variable: '--font-jakarta', display: 'swap' });
 const mukta = Mukta({ subsets: ['devanagari', 'latin'], weight: ['400', '500', '600', '700'], variable: '--font-mukta', display: 'swap', preload: false });
+const gu = Noto_Sans_Gujarati({ subsets: ['gujarati'], weight: ['400', '600', '700'], variable: '--font-gu', display: 'swap', preload: false });
+const bn = Noto_Sans_Bengali({ subsets: ['bengali'], weight: ['400', '600', '700'], variable: '--font-bn', display: 'swap', preload: false });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -21,7 +23,7 @@ export const viewport: Viewport = { themeColor: '#F4F4F1', width: 'device-width'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-IN" className={`${inter.variable} ${jakarta.variable} ${mukta.variable}`}>
+    <html lang="en-IN" className={`${inter.variable} ${jakarta.variable} ${mukta.variable} ${gu.variable} ${bn.variable}`}>
       <body>{children}</body>
     </html>
   );

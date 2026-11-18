@@ -8,15 +8,21 @@ import { POST_HOURS } from '@/lib/site';
 import { SvcIcon } from './icons';
 import { CitySwitcher, Crumb, Faq, Pill, Share, Source } from './ui';
 import { PostCityLead, postCityFaqs } from './cityLead';
+import type { Lang } from '@/lib/lang';
+import { cityAlts } from '@/lib/lang';
+import { LangLinks } from './ui';
+import { RegionalPostView, regionalPostFaq, regionalPostLabel, regionalPostReason } from './localeViews';
 
 const pillOf = (p: PostStatus): 'yes' | 'no' | 'neu' => (p.state === 'closed' ? 'no' : p.state === 'check' ? 'neu' : 'yes');
-export function postLabel(p: PostStatus, l: 'en' | 'hi', long = false) {
+export function postLabel(p: PostStatus, l: Lang, long = false) {
+  if (l !== 'en' && l !== 'hi') return regionalPostLabel(p, l, long);
   const hi = l === 'hi';
   if (p.state === 'closed') return long ? T.closed(l) : T.c(l);
   if (p.state === 'check') return p.kind === 'saturday' ? (hi ? 'अवकाश नहीं' : 'Not a holiday') : hi ? 'स्थानीय रूप से जाँचें' : 'Check locally';
   return long ? (hi ? 'काउंटर आज खुले हैं' : 'Counters open today') : T.o(l);
 }
-export function postReason(p: PostStatus, l: 'en' | 'hi', circle: string) {
+export function postReason(p: PostStatus, l: Lang, circle: string) {
+  if (l !== 'en' && l !== 'hi') return regionalPostReason(p, l, circle);
   const hi = l === 'hi';
   switch (p.kind) {
     case 'holiday': return hi ? `भारत डाक के ${circle} की सूची में अवकाश: ${p.hi}${p.allIndia ? ' (अखिल भारतीय अवकाश)' : ''}।` : `India Post holiday for the ${circle}: ${p.name}${p.allIndia ? ' (an All-India postal holiday)' : ''}.${p.moon ? ' The date can shift with moon sighting.' : ''}`;
@@ -28,7 +34,8 @@ export function postReason(p: PostStatus, l: 'en' | 'hi', circle: string) {
   }
 }
 
-export function postFaq(city: City, l: 'en' | 'hi') {
+export function postFaq(city: City, l: Lang) {
+  if (l !== 'en' && l !== 'hi') return regionalPostFaq(city, l);
   if (l === 'hi')
     return [
       { q: 'क्या आज स्पीड पोस्ट की डिलीवरी होगी?', a: 'यह स्टेटस डाकघर काउंटरों के लिए है, डिलीवरी की गारंटी नहीं। छुट्टियों पर डिलीवरी आमतौर पर रुकती है।' },
@@ -43,7 +50,8 @@ export function postFaq(city: City, l: 'en' | 'hi') {
   ];
 }
 
-export function PostView({ city, today, lang = 'en' }: { city: City; today: string; lang?: 'en' | 'hi' }) {
+export function PostView({ city, today, lang = 'en' }: { city: City; today: string; lang?: Lang }) {
+  if (lang !== 'en' && lang !== 'hi') return <RegionalPostView city={city} today={today} lang={lang} />;
   const hi = lang === 'hi';
   const st = stateBySlug(city.state)!;
   const hols = cityHolidays(city);
@@ -85,7 +93,7 @@ export function PostView({ city, today, lang = 'en' }: { city: City; today: stri
         <p className="footsrc">
           {hi ? `यह जानकारी भारत डाक की ${circ.name} सूची से है। “अवकाश नहीं” का अर्थ है कि दिन सूची में नहीं है; समय के लिए अपने डाकघर से पुष्टि करें।` : `Status uses India Post’s ${circ.name} list${circ.note ? ` (${circ.note})` : ''}. “Not a holiday” means the day is not on the list; confirm Saturday hours with your office.`}{' '}
           <a href={`${hi ? '/hi' : ''}/${city.slug}/bank`}>{hi ? 'बैंक आज' : 'Bank today'}</a>{' · '}
-          <a href={hi ? `/${city.slug}/post-office` : `/hi/${city.slug}/post-office`}>{hi ? 'English' : 'हिंदी'}</a>{' · '}
+          <LangLinks lang={lang} alts={cityAlts(city.slug, 'post-office')} />{' · '}
           <a href="/post-office-holidays-2026">{hi ? '2026 की पूरी सूची →' : 'Full 2026 list →'}</a>
         </p>
         <div className="sech"><h2>{hi ? 'अक्सर पूछे जाने वाले सवाल' : 'Questions people ask'}</h2></div>

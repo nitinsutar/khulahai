@@ -1,3 +1,6 @@
+import type { Lang } from '@/lib/lang';
+import { cityName, citiesForLang, prefix, LANG_NAME, HTML_LANG, type Alt } from '@/lib/lang';
+import { t as tx } from '@/lib/copy';
 import { IArrow, IBack, ICal, IPin, IWa } from './icons';
 import { CITIES } from '@/lib/places';
 import { abs } from '@/lib/site';
@@ -6,9 +9,9 @@ import { dayNum, fmtDow } from '@/lib/date';
 export function Pill({ v, children, size = '' }: { v: 'yes' | 'no' | 'neu'; children: React.ReactNode; size?: string }) {
   return <span className={`pill ${size} ${v}`}><i aria-hidden="true" />{children}</span>;
 }
-export function Crumb({ items, lang = 'en' }: { items: { href?: string; label: string }[]; lang?: 'en' | 'hi' }) {
+export function Crumb({ items, lang = 'en' }: { items: { href?: string; label: string }[]; lang?: Lang }) {
   return (
-    <nav className="crumb" aria-label={lang === 'hi' ? 'ब्रेडक्रम्ब' : 'Breadcrumb'}>
+    <nav className="crumb" aria-label={tx(lang, 'crumb')}>
       <IBack />
       {items.map((it, i) => (
         <span key={i} style={{ display: 'contents' }}>
@@ -19,45 +22,60 @@ export function Crumb({ items, lang = 'en' }: { items: { href?: string; label: s
     </nav>
   );
 }
-export function Source({ tag, children, checked, lang = 'en' }: { tag: string; children: React.ReactNode; checked: string; lang?: 'en' | 'hi' }) {
+export function Source({ tag, children, checked, lang = 'en' }: { tag: string; children: React.ReactNode; checked: string; lang?: Lang }) {
   return (
     <div className="srcrow">
       <div className="source"><span className="tag">{tag}</span><span>{children}</span></div>
-      <span className="checked t">{lang === 'hi' ? 'अंतिम जाँच' : 'Last checked'}: {checked}</span>
+      <span className="checked t">{tx(lang, 'lastChecked')}: {checked}</span>
     </div>
   );
 }
-export function DTile({ iso, lang = 'en', no = false }: { iso: string; lang?: 'en' | 'hi'; no?: boolean }) {
+export function DTile({ iso, lang = 'en', no = false }: { iso: string; lang?: Lang; no?: boolean }) {
   return <div className={`dtile${no ? ' no' : ''}`}><b>{dayNum(iso)}</b><span>{fmtDow(iso, lang)}</span></div>;
 }
 export function Go() {
   return <span className="go" aria-hidden="true"><IArrow /></span>;
 }
-export function Share({ text, path, lang = 'en', ics }: { text: string; path: string; lang?: 'en' | 'hi'; ics?: { href: string; label?: string } }) {
+export function Share({ text, path, lang = 'en', ics }: { text: string; path: string; lang?: Lang; ics?: { href: string; label?: string } }) {
   const wa = `https://wa.me/?text=${encodeURIComponent(text + ' ' + abs(path))}`;
   return (
     <div className="actions">
-      {ics && <a className="btn pri" href={ics.href} download><ICal />{ics.label ?? (lang === 'hi' ? 'कैलेंडर में जोड़ें (.ics)' : 'Add to calendar (.ics)')}</a>}
-      <a className="btn wa" href={wa} target="_blank" rel="noopener noreferrer"><IWa />{lang === 'hi' ? 'WhatsApp पर भेजें' : 'Share on WhatsApp'}</a>
+      {ics && <a className="btn pri" href={ics.href} download><ICal />{ics.label ?? (tx(lang, 'addCal'))}</a>}
+      <a className="btn wa" href={wa} target="_blank" rel="noopener noreferrer"><IWa />{tx(lang, 'shareWa')}</a>
     </div>
   );
 }
-export function CitySwitcher({ current, lang = 'en', base = 'hub' }: { current?: string; lang?: 'en' | 'hi'; base?: 'hub' | 'bank' | 'post-office' }) {
-  const pre = lang === 'hi' ? '/hi' : '';
-  const href = (s: string) => (base === 'hub' ? (lang === 'hi' ? `/hi/${s}/bank` : `/${s}`) : `${pre}/${s}/${base}`);
-  const cur = CITIES.find((c) => c.slug === current);
+export function CitySwitcher({ current, lang = 'en', base = 'hub' }: { current?: string; lang?: Lang; base?: 'hub' | 'bank' | 'post-office' }) {
+  const pre = prefix(lang);
+  const list = citiesForLang(lang);
+  const href = (s: string) => (base === 'hub' ? (lang === 'en' ? `/${s}` : `${pre}/${s}/bank`) : `${pre}/${s}/${base}`);
+  const cur = list.find((c) => c.slug === current) ?? CITIES.find((c) => c.slug === current);
   return (
     <details className="cs">
-      <summary><IPin />{cur ? <span className="csn">{(lang === 'hi' ? cur.hi : cur.name) + ' · '}</span> : null}{lang === 'hi' ? 'शहर बदलें' : 'Change'}<span className="csn">{lang === 'hi' ? '' : ' city'}</span></summary>
+      <summary><IPin />{cur ? <span className="csn">{cityName(cur, lang) + ' · '}</span> : null}{tx(lang, 'changeCity')}</summary>
       <div className="menu">
-        <p>{lang === 'hi' ? 'अपना शहर चुनें' : 'Pick your city'}</p>
+        <p>{tx(lang, 'pickCity')}</p>
         <div className="grid">
-          {[...CITIES].sort((a, b) => a.name.localeCompare(b.name)).map((c) => (
-            <a key={c.slug} href={href(c.slug)} className={c.slug === current ? 'on' : ''}>{lang === 'hi' ? c.hi : c.name}</a>
+          {[...list].sort((a, b) => a.name.localeCompare(b.name)).map((c) => (
+            <a key={c.slug} href={href(c.slug)} className={c.slug === current ? 'on' : ''}>{cityName(c, lang)}</a>
           ))}
         </div>
       </div>
     </details>
+  );
+}
+export function LangLinks({ alts, lang }: { alts: Alt[]; lang: Lang }) {
+  const rest = alts.filter((a) => a.lang !== lang);
+  if (!rest.length) return null;
+  return (
+    <>
+      {rest.map((a, i) => (
+        <span key={a.lang}>
+          {i > 0 ? ' · ' : null}
+          <a href={a.href} hrefLang={HTML_LANG[a.lang]} lang={HTML_LANG[a.lang]}>{LANG_NAME[a.lang]}</a>
+        </span>
+      ))}
+    </>
   );
 }
 export function Faq({ items }: { items: { q: string; a: string }[] }) {

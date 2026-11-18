@@ -1,3 +1,5 @@
+import { BCP47, type Lang } from './lang';
+
 // All dates are ISO strings "YYYY-MM-DD" interpreted as calendar days in India (IST).
 export const TZ = 'Asia/Kolkata';
 
@@ -22,9 +24,9 @@ export const dayNum = (iso: string) => Number(iso.slice(8, 10));
 export const monthNum = (iso: string) => Number(iso.slice(5, 7));
 export const yearNum = (iso: string) => Number(iso.slice(0, 4));
 
-type L = 'en' | 'hi';
-const loc = (l: L) => (l === 'hi' ? 'hi-IN' : 'en-IN');
-const f = (iso: string, l: L, o: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat(loc(l), { timeZone: 'UTC', ...o }).format(toUTC(iso));
+type L = Lang;
+const loc = (l: L) => BCP47[l];
+const f = (iso: string, l: L, o: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat(loc(l), { timeZone: 'UTC', numberingSystem: 'latn', ...o }).format(toUTC(iso));
 export const fmtLong = (iso: string, l: L = 'en') => f(iso, l, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 export const fmtMed = (iso: string, l: L = 'en') => f(iso, l, { weekday: 'short', day: 'numeric', month: 'short' });
 export const fmtDM = (iso: string, l: L = 'en') => f(iso, l, { day: 'numeric', month: 'long' });

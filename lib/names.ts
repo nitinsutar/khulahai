@@ -1,3 +1,5 @@
+import type { Lang } from './lang';
+
 // Short, readable labels for RBI's combined holiday descriptions. The full RBI text is always shown too.
 const MAP: Record<string, [string, string]> = {
   'Christmas': ['Christmas', 'क्रिसमस'],
@@ -43,9 +45,29 @@ const MAP: Record<string, [string, string]> = {
   'Goa Liberation Day': ['Goa Liberation Day', 'गोवा मुक्ति दिवस'],
   'Feast of St. Francis Xavier': ['Feast of St. Francis Xavier', 'सेंट फ्रांसिस ज़ेवियर पर्व'],
 };
-export function shortName(rbi: string, l: 'en' | 'hi' = 'en'): string {
+
+const X: Record<string, { mr: string; gu: string; bn: string }> = {
+  'Christmas': { mr: 'नाताळ', gu: 'નાતાલ', bn: 'বড়দিন' },
+  'Christmas Day': { mr: 'नाताळ', gu: 'નાતાલ', bn: 'বড়দিন' },
+  'Guru Nanak Jayanti': { mr: 'गुरु नानक जयंती', gu: 'ગુરુ નાનક જયંતી', bn: 'গুরু নানক জয়ন্তী' },
+  "Guru Nanak's Birthday": { mr: 'गुरु नानक जयंती', gu: 'ગુરુ નાનક જયંતી', bn: 'গুরু নানক জয়ন্তী' },
+  'Guru Nanak’s Birthday': { mr: 'गुरु नानक जयंती', gu: 'ગુરુ નાનક જયંતી', bn: 'গুরু নানক জয়ন্তী' },
+};
+
+function nativeShort(en: string, l: Lang): string | undefined {
+  return l === 'en' || l === 'hi' ? undefined : (X[en]?.[l]);
+}
+
+export function shortName(rbi: string, l: Lang = 'en'): string {
   const m = MAP[rbi];
-  if (m) return l === 'hi' ? m[1] : m[0];
+  if (m) {
+    if (l === 'hi') return m[1];
+    const n = nativeShort(m[0], l);
+    if (n) return n;
+    return m[0];
+  }
+  const n = nativeShort(rbi, l);
+  if (n) return n;
   return rbi.split('/').slice(0, 2).join(' / ');
 }
 export const isFullName = (rbi: string) => !MAP[rbi] && rbi.split('/').length <= 2;

@@ -2,9 +2,12 @@ import { City, stateBySlug } from '@/lib/places';
 import { DayStatus, RBI } from '@/lib/data';
 import { fmtLong, fmtMed } from '@/lib/date';
 import { shortName } from '@/lib/names';
+import type { Lang } from '@/lib/lang';
+import { RegionalBankAnswer } from './localeViews';
 
 const RBI_URL = 'https://rbi.org.in/Scripts/HolidayMatrixDisplay.aspx';
-export function BankAnswer({ city, s, nextOpen, lang = 'en', when = 'today' }: { city: City; s: DayStatus; nextOpen: string; lang?: 'en' | 'hi'; when?: 'today' | 'tomorrow' }) {
+export function BankAnswer({ city, s, nextOpen, lang = 'en', when = 'today' }: { city: City; s: DayStatus; nextOpen: string; lang?: Lang; when?: 'today' | 'tomorrow' }) {
+  if (lang !== 'en' && lang !== 'hi') return <RegionalBankAnswer city={city} s={s} nextOpen={nextOpen} lang={lang} when={when} />;
   const hi = lang === 'hi';
   const centre = RBI.offices[city.office].name;
   const st = stateBySlug(city.state)!;

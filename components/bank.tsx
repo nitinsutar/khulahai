@@ -9,8 +9,13 @@ import { SvcIcon } from './icons';
 import { BankAnswer } from './answer';
 import { CitySwitcher, Crumb, DTile, Faq, Pill, Share, Source } from './ui';
 import { BankCityLead, bankCityFaqs } from './cityLead';
+import type { Lang } from '@/lib/lang';
+import { cityAlts } from '@/lib/lang';
+import { LangLinks } from './ui';
+import { RegionalBankView, regionalBankFaq } from './localeViews';
 
-export function bankFaq(city: City, lang: 'en' | 'hi') {
+export function bankFaq(city: City, lang: Lang) {
+  if (lang !== 'en' && lang !== 'hi') return regionalBankFaq(city, lang);
   const st = stateBySlug(city.state)!;
   if (lang === 'hi')
     return [
@@ -27,7 +32,8 @@ export function bankFaq(city: City, lang: 'en' | 'hi') {
   ];
 }
 
-export function BankView({ city, today, lang = 'en' }: { city: City; today: string; lang?: 'en' | 'hi' }) {
+export function BankView({ city, today, lang = 'en' }: { city: City; today: string; lang?: Lang }) {
+  if (lang !== 'en' && lang !== 'hi') return <RegionalBankView city={city} today={today} lang={lang} />;
   const hi = lang === 'hi';
   const st = stateBySlug(city.state)!;
   const hols = cityHolidays(city);
@@ -83,7 +89,7 @@ export function BankView({ city, today, lang = 'en' }: { city: City; today: stri
           <a href={`/bank-holidays-2026/${city.state}`}>{hi ? `${where} की 2026 की पूरी सूची →` : `Full 2026 bank holiday list for ${st.name} →`}</a>{' · '}
           <a href={`${pre}/${city.slug}/post-office`}>{hi ? 'डाकघर आज' : 'Post office today'}</a>{' · '}
           <a href={hi ? '/hi/share-market' : '/is-share-market-open-today'}>{hi ? 'शेयर बाज़ार आज' : 'Share market today'}</a>{' · '}
-          <a href={hi ? `/${city.slug}/bank` : `/hi/${city.slug}/bank`}>{hi ? 'English' : 'हिंदी'}</a>
+          <LangLinks lang={lang} alts={cityAlts(city.slug, 'bank')} />
         </p>
         <div className="sech"><h2>{hi ? 'अक्सर पूछे जाने वाले सवाल' : 'Questions people ask'}</h2></div>
         <Faq items={faq} />
